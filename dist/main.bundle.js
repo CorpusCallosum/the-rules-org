@@ -413,7 +413,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 var routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
-    { path: 'index-gh.html', redirectTo: '/home', pathMatch: 'full' },
     { path: 'home', component: __WEBPACK_IMPORTED_MODULE_2__home_page_component__["a" /* HomePageComponent */] },
     { path: 'dashboard', component: __WEBPACK_IMPORTED_MODULE_3__dashboard_component__["a" /* DashboardComponent */] },
     { path: 'detail/:id', component: __WEBPACK_IMPORTED_MODULE_5__hero_detail_component__["a" /* HeroDetailComponent */] },
@@ -426,7 +425,7 @@ var AppRoutingModule = (function () {
 }());
 AppRoutingModule = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["b" /* NgModule */])({
-        imports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* RouterModule */].forRoot(routes)],
+        imports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* RouterModule */].forRoot(routes, { useHash: true })],
         exports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* RouterModule */]]
     })
 ], AppRoutingModule);
