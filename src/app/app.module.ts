@@ -8,6 +8,7 @@ import{AppRoutingModule}  from './app-routing.module'
 
 //my custom components and services imported here
 import { AppComponent }        from './app.component';
+import { HomePageComponent }   from './home-page.component';
 import { HeroDetailComponent } from './hero-detail.component';
 import { HeroesComponent }     from './heroes.component';
 import { HeroService }         from './hero.service';
@@ -19,6 +20,8 @@ import { DashboardComponent }  from './dashboard.component';
   declarations: [
   //and declared here:
     AppComponent,
+    HomePageComponent,
+
     DashboardComponent,
     HeroDetailComponent,
     HeroesComponent
