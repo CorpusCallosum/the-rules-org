@@ -11,6 +11,7 @@ import { HeroDetailComponent }  from './hero-detail.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'index-gh.html', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home',  component: HomePageComponent },
   { path: 'dashboard',  component: DashboardComponent },
   { path: 'detail/:id', component: HeroDetailComponent },
