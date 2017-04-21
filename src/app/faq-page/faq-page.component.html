@@ -1,3 +1,42 @@
-<p>
-  faq-page works!
-</p>
+<div class="page-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h2>Frequently Asked Questions</h2>
+      </div>
+      <div class="col-md-4">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search for...">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">Go!</button>
+          </span>
+        </div><!-- /input-group -->
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="panel-group" id="accordion">
+
+          <div class="panel panel-default" *ngFor="let question of [0,1,2,3,4,5]; let i = index">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{i}}">
+                <h1>Collapsible Group {{i}}</h1></a>
+              </h4>
+            </div>
+            <div id="collapse{{i}}" class="panel-collapse collapse">
+              <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+              minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat.</div>
+            </div>
+          </div>
+          
+          
+        </div>
+      </div>  
+    </div>
+  
+  </div>
+</div>
