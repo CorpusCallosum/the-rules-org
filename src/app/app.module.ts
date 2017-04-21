@@ -10,12 +10,7 @@ import{AppRoutingModule}  from './app-routing.module'
 import { AppComponent }        from './app.component';
 import { HomePageComponent }   from './home-page.component';
 import { AboutPageComponent }   from './about-page.component';
-
-//old shit
-import { HeroDetailComponent } from './hero-detail.component';
-import { HeroesComponent }     from './heroes.component';
-import { HeroService }         from './hero.service';
-import { DashboardComponent }  from './dashboard.component';
+import { FaqPageComponent }    from './faq-page/faq-page.component';
 
 
 //
@@ -25,9 +20,7 @@ import { DashboardComponent }  from './dashboard.component';
     AppComponent,
     HomePageComponent,
     AboutPageComponent,
-    DashboardComponent,
-    HeroDetailComponent,
-    HeroesComponent
+    FaqPageComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +28,7 @@ import { DashboardComponent }  from './dashboard.component';
     HttpModule,
     AppRoutingModule
   ],
-  providers: [HeroService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
