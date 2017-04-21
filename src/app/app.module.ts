@@ -9,6 +9,9 @@ import{AppRoutingModule}  from './app-routing.module'
 //my custom components and services imported here
 import { AppComponent }        from './app.component';
 import { HomePageComponent }   from './home-page.component';
+import { AboutPageComponent }   from './about-page.component';
+
+//old shit
 import { HeroDetailComponent } from './hero-detail.component';
 import { HeroesComponent }     from './heroes.component';
 import { HeroService }         from './hero.service';
@@ -21,7 +24,7 @@ import { DashboardComponent }  from './dashboard.component';
   //and declared here:
     AppComponent,
     HomePageComponent,
-
+    AboutPageComponent,
     DashboardComponent,
     HeroDetailComponent,
     HeroesComponent
