@@ -54,7 +54,7 @@ export class FaqPageComponent implements OnInit {
       //return true;
       console.log("searching : "+q.questionTxt);
       console.log("for : "+that.searchTerm);
-      if(q.questionTxt.search(that.searchTerm) != -1)
+      if(q.questionTxt.toLowerCase().search(that.searchTerm.toLowerCase()) != -1)
         return true;
       else
         return false;
