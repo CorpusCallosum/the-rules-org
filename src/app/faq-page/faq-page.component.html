@@ -22,7 +22,10 @@
       <div class="col-md-12">
         <div class="panel-group" id="accordion">
 
-          <div class="panel panel-default" *ngFor="let question of filteredResults; let i = index">
+          <div
+            class="panel panel-default"
+            *ngFor="let question of filteredResults; let i = index"
+          >
             <div class="panel-heading">
               <h4 class="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{i}}">
@@ -30,7 +33,8 @@
                 </a>
               </h4>
             </div>
-            <div id="collapse{{i}}" class="panel-collapse collapse">
+            <div  id="collapse{{i}}" class="panel-collapse collapse"
+                  [ngClass]="{'in': filteredResults.length == 1}">
               <div class="panel-body">
                 {{question.answerTxt}}
               </div>
