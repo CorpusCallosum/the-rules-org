@@ -5,13 +5,15 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomePageComponent }    from './home-page.component';
 import { AboutPageComponent }   from './about-page.component';
 import { FaqPageComponent }     from './faq-page/faq-page.component';
+import { GetInvolvedPageComponent }     from './get-involved-page/get-involved-page.component';
 
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home',  component: HomePageComponent },
   { path: 'about',  component: AboutPageComponent },
-  { path: 'faq',  component: FaqPageComponent }
+  { path: 'faq',  component: FaqPageComponent },
+  { path: 'get-involved',  component: GetInvolvedPageComponent }
 ];
 
 @NgModule({
