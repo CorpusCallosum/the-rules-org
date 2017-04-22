@@ -9,6 +9,7 @@ import {Http} from '@angular/http';
 export class SearchableAccordianComponent implements OnInit {
 
   @Input() title:string;
+  @Input() dataFile:string;
 
   data;
   questions;
@@ -17,49 +18,17 @@ export class SearchableAccordianComponent implements OnInit {
 
   searchTerm:string = "";
 
-   constructor(private http:Http) {
-       // this.http.get('assets/faq.json')
-         //       .subscribe(res => this.questions = res.json(), res => this.filteredResults = res.json());
-                //.subscribe(res => this.data = res.json());
-    }
-
+  constructor(private http:Http) {}
 
   ngOnInit() {
 
-    this.http.get('assets/faq.json')
+    this.http.get('assets/'+this.dataFile)
       .subscribe(res => {
         this.questions = res.json();
         this.updateFilter();
-        //this.filteredResults = this.questions.slice();
       });
   }
 
-  /*questions = [
-    {
-      questionTxt:"What is Pokemon Go?",
-      answerTxt:"DIY farm-to-table bitters, vegan gluten-free air plant cray health goth trust fund keytar flexitarian meh neutra sustainable readymade. Pok pok echo park VHS, post-ironic single-origin coffee vegan 90's wayfarers XOXO vice salvia YOLO umami aesthetic pour-over. Vinyl hot chicken forage neutra crucifix authentic. +1 humblebrag polaroid poke fixie. Umami green juice distillery snackwave, bicycle rights pok pok butcher knausgaard. Cred raclette affogato godard, hoodie kinfolk normcore flannel fashion axe viral coloring book marfa taxidermy. Trust fund pour-over selfies DIY iPhone everyday carry enamel pin roof party vinyl neutra."
-    },
-    {
-      questionTxt:"What is a Causus?",
-      answerTxt:"DIY farm-to-table bitters, vegan gluten-free air plant cray health goth trust fund keytar flexitarian meh neutra sustainable readymade. Pok pok echo park VHS, post-ironic single-origin coffee vegan 90's wayfarers XOXO vice salvia YOLO umami aesthetic pour-over. Vinyl hot chicken forage neutra crucifix authentic. +1 humblebrag polaroid poke fixie. Umami green juice distillery snackwave, bicycle rights pok pok butcher knausgaard. Cred raclette affogato godard, hoodie kinfolk normcore flannel fashion axe viral coloring book marfa taxidermy. Trust fund pour-over selfies DIY iPhone everyday carry enamel pin roof party vinyl neutra."
-    },
-    {
-      questionTxt:"What is Brexit?",
-      answerTxt:"DIY farm-to-table bitters, vegan gluten-free air plant cray health goth trust fund keytar flexitarian meh neutra sustainable readymade. Pok pok echo park VHS, post-ironic single-origin coffee vegan 90's wayfarers XOXO vice salvia YOLO umami aesthetic pour-over. Vinyl hot chicken forage neutra crucifix authentic. +1 humblebrag polaroid poke fixie. Umami green juice distillery snackwave, bicycle rights pok pok butcher knausgaard. Cred raclette affogato godard, hoodie kinfolk normcore flannel fashion axe viral coloring book marfa taxidermy. Trust fund pour-over selfies DIY iPhone everyday carry enamel pin roof party vinyl neutra."
-    },
-    {
-      questionTxt:"What are electoral votes?",
-      answerTxt:"DIY farm-to-table bitters, vegan gluten-free air plant cray health goth trust fund keytar flexitarian meh neutra sustainable readymade. Pok pok echo park VHS, post-ironic single-origin coffee vegan 90's wayfarers XOXO vice salvia YOLO umami aesthetic pour-over. Vinyl hot chicken forage neutra crucifix authentic. +1 humblebrag polaroid poke fixie. Umami green juice distillery snackwave, bicycle rights pok pok butcher knausgaard. Cred raclette affogato godard, hoodie kinfolk normcore flannel fashion axe viral coloring book marfa taxidermy. Trust fund pour-over selfies DIY iPhone everyday carry enamel pin roof party vinyl neutra."
-    },
-    {
-      questionTxt:"What is the Electoral College?",
-      answerTxt:"DIY farm-to-table bitters, vegan gluten-free air plant cray health goth trust fund keytar flexitarian meh neutra sustainable readymade. Pok pok echo park VHS, post-ironic single-origin coffee vegan 90's wayfarers XOXO vice salvia YOLO umami aesthetic pour-over. Vinyl hot chicken forage neutra crucifix authentic. +1 humblebrag polaroid poke fixie. Umami green juice distillery snackwave, bicycle rights pok pok butcher knausgaard. Cred raclette affogato godard, hoodie kinfolk normcore flannel fashion axe viral coloring book marfa taxidermy. Trust fund pour-over selfies DIY iPhone everyday carry enamel pin roof party vinyl neutra."
-    },
-  ]*/
-
- // questions = this.data;
-
- // filteredResults = this.questions.slice();
 
   updateFilter():void{
      console.log(this.questions);
@@ -75,9 +44,8 @@ export class SearchableAccordianComponent implements OnInit {
     })
   }
 
+  //when search input box is typed in, tell the filter to UPDATE
   onChange(): void {
-   // console.log("onChange");
-   // console.log("search term : "+this.searchTerm);
    this.updateFilter();
   }
 
