@@ -2,28 +2,6 @@
 @import 'css/colors';
 @import 'css/fonts';
 
-//GLOBAL STYLES
-
-body{
-  background-color: $bgColor;
-}
-
-h1 {
-  font-size: 2em;
-  margin-bottom: 0;
-  color: $accentColor1;
-}
-h2 {
-  font-size: 1.5em;
-  margin-top: 0;
-  padding-top: 0;
-  color: $accentColor1;
-}
-
-p{
-  color: $textColor;
-}
-
 //NAV BAR
 .navbar{
   background-color: $bgColor;
@@ -46,15 +24,16 @@ nav a {
   padding: 5px 10px;
   text-decoration: none;
   display: inline-block;
-  background-color: #eee;
+  background-color: transparent;
+  color: $accentColor2;
  // border-radius: 4px;
 }
 nav a:visited, a:link {
   //color: #607D8B;
 }
 nav a:hover {
-  //color: #039be5;
-  //background-color: #CFD8DC;
+  color: $accentColor2Shadow;
+  background-color: transparent;
 }
 nav a.active {
   //color: #039be5;

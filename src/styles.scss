@@ -1,4 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+/* IMPORTS */
+@import 'app/css/colors';
+@import 'app/css/fonts';
+
+//GLOBAL STYLES
+body{
+  background-color: $bgColor;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 0;
+  color: $accentColor1;
+}
+h2 {
+  font-size: 1.5em;
+  margin-top: 0;
+  padding-top: 0;
+  color: $accentColor1;
+}
+
+p{
+  color: $textColor;
+}
+
 .row {
   margin: 2em 0;
 }
