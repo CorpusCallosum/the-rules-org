@@ -8,7 +8,7 @@ exports = module.exports = __webpack_require__(15)();
 
 
 // module
-exports.push([module.i, "/* IMPORTS */\n/* COLORS */\n/* FONTS */\nbody {\n  background-color: #222; }\n\nh1 {\n  font-size: 1.2em;\n  color: #999;\n  margin-bottom: 0; }\n\nh2 {\n  font-size: 2em;\n  margin-top: 0;\n  padding-top: 0; }\n\n.navbar {\n  background-color: #222;\n  text-transform: uppercase; }\n\n.navbar-brand {\n  background-color: #33ffff; }\n\n.navbar-brand:hover {\n  background-color: #00cccc; }\n\nnav a {\n  padding: 5px 10px;\n  text-decoration: none;\n  display: inline-block;\n  background-color: #eee;\n  border-radius: 4px; }\n\nnav a:visited, a:link {\n  color: #607D8B; }\n\nnav a.active {\n  color: #039be5; }\n", ""]);
+exports.push([module.i, "/* IMPORTS */\n/* COLORS */\n/* FONTS */\n@font-face {\n  font-family: blackout-midnight;\n  src: url(\"/assets/fonts/blackout/blackout_midnight-webfont.ttf\"); }\n\n@font-face {\n  font-family: blackout-two-am;\n  src: url(\"/assets/fonts/blackout/blackout_two_am-webfont.ttf\"); }\n\nbody {\n  background-color: #222; }\n\nh1 {\n  font-size: 2em;\n  margin-bottom: 0;\n  color: #33ffff; }\n\nh2 {\n  font-size: 1.5em;\n  margin-top: 0;\n  padding-top: 0;\n  color: #33ffff; }\n\np {\n  color: #797979; }\n\n.navbar {\n  background-color: #222;\n  text-transform: uppercase;\n  font-family: blackout-midnight; }\n\n.navbar-brand {\n  background-color: #33ffff;\n  font-size: 2em;\n  color: #222; }\n\n.navbar-brand:hover {\n  background-color: #00cccc;\n  color: #222; }\n\nnav a {\n  padding: 5px 10px;\n  text-decoration: none;\n  display: inline-block;\n  background-color: #eee; }\n", ""]);
 
 // exports
 
