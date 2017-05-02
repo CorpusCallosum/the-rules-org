@@ -1,0 +1,49 @@
+<div class="page-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h2>{{title}}</h2>
+      </div>
+      <div class="col-md-4">
+        <div class="input-group">
+          <input 
+            type="text" class="form-control"
+            placeholder="Search for..."
+            [(ngModel)]="searchTerm"
+            (keyup)="onChange($event)">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">Go!</button>
+          </span>
+        </div><!-- /input-group -->
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="panel-group" id="accordion">
+
+          <div
+            class="panel panel-default"
+            *ngFor="let question of filteredResults; let i = index">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{i}}">
+                  <h2>{{question.questionTxt}}</h2>
+                </a>
+              </h4>
+            </div>
+            <div  id="collapse{{i}}" class="panel-collapse collapse"
+                  [ngClass]="{'in': filteredResults.length == 1}">
+              <div class="panel-body">
+                {{question.answerTxt}}
+              </div>
+            </div>
+          </div>
+          
+          
+        </div>
+      </div>  
+    </div>
+  
+  </div>
+</div>

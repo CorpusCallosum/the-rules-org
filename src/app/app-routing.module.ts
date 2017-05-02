@@ -3,22 +3,21 @@ import { RouterModule, Routes } from '@angular/router';
 
 //ROUTES
 import { HomePageComponent }    from './home-page.component';
+import { AboutPageComponent }   from './about-page.component';
+import { FaqPageComponent }     from './faq-page/faq-page.component';
+import { GetInvolvedPageComponent }     from './get-involved-page/get-involved-page.component';
 
-//OLD STUFF FROM TUTORIAL CAN BE REMOVED LATER
-import { DashboardComponent }   from './dashboard.component';
-import { HeroesComponent }      from './heroes.component';
-import { HeroDetailComponent }  from './hero-detail.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home',  component: HomePageComponent },
-  { path: 'dashboard',  component: DashboardComponent },
-  { path: 'detail/:id', component: HeroDetailComponent },
-  { path: 'heroes',     component: HeroesComponent }
+  { path: 'about',  component: AboutPageComponent },
+  { path: 'faq',  component: FaqPageComponent },
+  { path: 'get-involved',  component: GetInvolvedPageComponent }
 ];
 
 @NgModule({
-  imports: [ RouterModule.forRoot(routes) ],
+  imports: [ RouterModule.forRoot(routes, { useHash: true }) ],
   exports: [ RouterModule ]
 })
 

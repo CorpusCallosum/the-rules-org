@@ -9,10 +9,10 @@ import{AppRoutingModule}  from './app-routing.module'
 //my custom components and services imported here
 import { AppComponent }        from './app.component';
 import { HomePageComponent }   from './home-page.component';
-import { HeroDetailComponent } from './hero-detail.component';
-import { HeroesComponent }     from './heroes.component';
-import { HeroService }         from './hero.service';
-import { DashboardComponent }  from './dashboard.component';
+import { AboutPageComponent }   from './about-page.component';
+import { FaqPageComponent }    from './faq-page/faq-page.component';
+import { GetInvolvedPageComponent } from './get-involved-page/get-involved-page.component';
+import { SearchableAccordianComponent } from './searchable-accordian/searchable-accordian.component';
 
 
 //
@@ -21,10 +21,10 @@ import { DashboardComponent }  from './dashboard.component';
   //and declared here:
     AppComponent,
     HomePageComponent,
-
-    DashboardComponent,
-    HeroDetailComponent,
-    HeroesComponent
+    AboutPageComponent,
+    FaqPageComponent,
+    GetInvolvedPageComponent,
+    SearchableAccordianComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +32,7 @@ import { DashboardComponent }  from './dashboard.component';
     HttpModule,
     AppRoutingModule
   ],
-  providers: [HeroService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
