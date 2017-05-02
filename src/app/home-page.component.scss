@@ -1,0 +1,12 @@
+/* IMPORTS */
+@import 'css/colors';
+@import 'css/fonts';
+
+.top{
+  background-image: url(/assets/images/top-section.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  padding-bottom: 40%;
+}
