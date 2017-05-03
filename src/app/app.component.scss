@@ -4,7 +4,7 @@
 
 //NAV BAR
 .navbar{
-  background-color: $bgColor;
+  background-color: transparent;
   text-transform: uppercase;
   font-family: blackout-midnight;
 }
@@ -26,11 +26,17 @@ nav a {
   display: inline-block;
   background-color: transparent;
   color: $accentColor2;
+  font-size: 1.5em;
  // border-radius: 4px;
 }
-nav a:visited, a:link {
-  //color: #607D8B;
+nav a:focus {
+  color: black;
 }
+
+.nav > li > a:focus {
+  color: $accentColor2Shadow;
+}
+
 nav a:hover {
   color: $accentColor2Shadow;
   background-color: transparent;
