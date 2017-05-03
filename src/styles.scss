@@ -12,20 +12,59 @@ body{
 h1,h2,h3,h4{
   color: $accentColor1;
   font-family: blackout-midnight;
+  text-transform: uppercase;
 }
 
 h1 {
   font-size: 2em;
   margin-bottom: 0;
 }
+
 h2 {
   font-size: 1.5em;
   margin-top: 0;
   padding-top: 0;
 }
 
+h4{
+  color: $accentColor2;
+  font-family: fira-book;
+}
+
 p{
   color: $textColor;
+  font-family: fira-thin;
+  font-size: 1.2em;
+}
+
+a{
+  color: $accentColor2;
+  &:hover{
+    color: $accentColor2Shadow;
+  }
+}
+
+button{
+  font-family: fira-bold;
+  color: black;
+}
+
+.btn{
+  border-radius: 0;
+}
+
+.btn-default{
+  background-color: $accentColor2;
+  border: none;
+}
+
+.form-control{
+  background-color: #555;
+  border-color: #333;
+  color: white;
+  &:focus{
+    border-color: #777;
+  }
 }
 
 //RESPONSIVE BOOTSTRAP STUFF
