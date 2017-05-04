@@ -45,17 +45,21 @@ a{
 }
 
 button{
-  font-family: fira-bold;
+  font-family: blackout-midnight;
   color: black;
 }
 
 .btn{
-  border-radius: 0;
+  border-radius: 3px;
+  //font-size: 1.2em;
 }
 
 .btn-default{
   background-color: $accentColor2;
   border: none;
+  &:hover{
+    background-color: $accentColor2Shadow;
+  }
 }
 
 .form-control{
@@ -75,7 +79,7 @@ button{
 }
 
 .row {
-  margin: 2em 0;
+  margin: 1em 0;
 }
 
 /*VIDEO WRAPPER to maintain aspect ratio */

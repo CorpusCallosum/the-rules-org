@@ -2,7 +2,7 @@
 @import 'css/colors';
 @import 'css/fonts';
 
-//NAV BAR
+//TOP NAV BAR
 .navbar{
   background-color: transparent;
   text-transform: uppercase;
@@ -43,4 +43,14 @@ nav a:hover {
 }
 nav a.active {
   //color: #039be5;
+}
+
+//FOOTER
+.panel-footer{
+  background-color: $accentColor1;
+  font-family: blackout-midnight;
+  color: black;
+  a{
+    color: black;
+  }
 }

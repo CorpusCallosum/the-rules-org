@@ -4,7 +4,7 @@ import {Http} from '@angular/http';
 @Component({
   selector: 'app-searchable-accordian',
   templateUrl: './searchable-accordian.component.html',
-  styleUrls: ['./searchable-accordian.component.css']
+  styleUrls: ['./searchable-accordian.component.scss']
 })
 export class SearchableAccordianComponent implements OnInit {
 
