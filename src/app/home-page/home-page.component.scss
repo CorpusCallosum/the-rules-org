@@ -1,6 +1,6 @@
 /* IMPORTS */
-@import 'css/colors';
-@import 'css/fonts';
+@import '../css/colors';
+@import '../css/fonts';
 
 // Magic parallax mixins
 
@@ -61,6 +61,7 @@ $parallax-ios         : true !default;
   padding-bottom: 40%;
   margin-top: -35px;
   z-index: 9999;
+  background-color: transparent;
 }
 
 $parallaxHeight: 100px;

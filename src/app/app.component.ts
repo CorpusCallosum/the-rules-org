@@ -1,5 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit } from '@angular/core';
 import {ViewEncapsulation} from '@angular/core';
+import {ActivatedRoute} from '@angular/router';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'my-app',
@@ -11,7 +14,22 @@ import {ViewEncapsulation} from '@angular/core';
 export class AppComponent implements OnInit {
    title = 'The Rules Org';
 
-   ngOnInit():void{
+   currentRoute:String;
+   _route:ActivatedRoute;
+   router:Router;
 
+   constructor(route:ActivatedRoute, router:Router) {
+     console.log('route :'+route);
+     console.log('router :'+router);
+     console.log('url :'+router.url)
+
+
+     this._route = route;
+     this.router = router;
+   }
+
+   ngOnInit():void{
+     //this.currentRoute = Location.path;
+     console.log('route :'+this._route)
    }
 }
