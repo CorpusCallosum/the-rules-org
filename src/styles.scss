@@ -2,6 +2,9 @@
 /* IMPORTS */
 @import 'app/css/colors';
 @import 'app/css/fonts';
+@import 'app/css/parallax';
+
+
 
 //GLOBAL STYLES
 body{
@@ -9,15 +12,17 @@ body{
   color: $textColor;
 }
 
+//TEXT STYLES
 h1,h2,h3,h4{
-  color: $accentColor1;
-  font-family: blackout-midnight;
+  color: white;
+  font-family: fira-bold;
   text-transform: uppercase;
 }
 
 h1 {
   font-size: 2em;
   margin-bottom: 0;
+  font-family: blackout-midnight;
 }
 
 h2 {
@@ -27,7 +32,7 @@ h2 {
 }
 
 h4{
-  color: $accentColor2;
+  color: $accentColor2Light;
   font-family: fira-book;
 }
 
@@ -35,15 +40,21 @@ p{
   color: $textColor;
   font-family: fira-thin;
   font-size: 1.2em;
-}
-
-a{
-  color: $accentColor2;
-  &:hover{
-    color: $accentColor2Shadow;
+  strong{
+    font-family: fira-book;
+    color: white;
   }
 }
 
+//LINKS
+a{
+  color: #66d3e0;
+  &:hover{
+    color: $accentColor1;
+  }
+}
+
+//BUTTONS
 button{
   font-family: blackout-midnight;
   color: black;
@@ -58,10 +69,11 @@ button{
   background-color: $accentColor2;
   border: none;
   &:hover{
-    background-color: $accentColor2Shadow;
+    background-color: $accentColor1Shadow;
   }
 }
 
+//FORMS
 .form-control{
   background-color: #555;
   border-color: #333;
@@ -72,6 +84,7 @@ button{
 }
 
 //RESPONSIVE BOOTSTRAP STUFF
+//adds col spacing when cols collapse
 @media (max-width: 991px) {
   [class*="col-"]{
       margin-bottom: 25px;
@@ -79,7 +92,7 @@ button{
 }
 
 .row {
-  margin: 1em 0;
+  margin: 2em 0;
 }
 
 /*VIDEO WRAPPER to maintain aspect ratio */
