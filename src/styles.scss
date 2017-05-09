@@ -1,0 +1,111 @@
+/* You can add global styles to this file, and also import other style files */
+/* IMPORTS */
+@import 'app/css/colors';
+@import 'app/css/fonts';
+@import 'app/css/parallax';
+
+
+
+//GLOBAL STYLES
+body{
+  background-color: $bgColor;
+  color: $textColor;
+}
+
+//TEXT STYLES
+h1,h2,h3,h4{
+  color: white;
+  font-family: fira-bold;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 0;
+  font-family: blackout-midnight;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h4{
+  color: $accentColor2Light;
+  font-family: fira-book;
+}
+
+p{
+  color: $textColor;
+  font-family: fira-thin;
+  font-size: 1.2em;
+  strong{
+    font-family: fira-book;
+    color: white;
+  }
+}
+
+//LINKS
+a{
+  color: #66d3e0;
+  &:hover{
+    color: $accentColor1;
+  }
+}
+
+//BUTTONS
+button{
+  font-family: blackout-midnight;
+  color: black;
+}
+
+.btn{
+  border-radius: 3px;
+  //font-size: 1.2em;
+}
+
+.btn-default{
+  background-color: $accentColor2;
+  border: none;
+  &:hover{
+    background-color: $accentColor1Shadow;
+  }
+}
+
+//FORMS
+.form-control{
+  background-color: #555;
+  border-color: #333;
+  color: white;
+  &:focus{
+    border-color: #777;
+  }
+}
+
+//RESPONSIVE BOOTSTRAP STUFF
+//adds col spacing when cols collapse
+@media (max-width: 991px) {
+  [class*="col-"]{
+      margin-bottom: 25px;
+  }
+}
+
+.row {
+  margin: 2em 0;
+}
+
+/*VIDEO WRAPPER to maintain aspect ratio */
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

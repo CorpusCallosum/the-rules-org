@@ -10,3 +10,34 @@
     font-family: blackout-two-am;
     src: url('/assets/fonts/blackout/blackout_two_am-webfont.ttf');
 }
+
+//FIRA
+@font-face {
+  font-family: fira-thin;
+  src: url('/assets/fonts/fira/FiraSans-Thin.otf') format("opentype");;
+}
+
+@font-face {
+  font-family: fira-book;
+  src: url('/assets/fonts/fira/FiraSans-Book.otf') format("opentype");;
+}
+
+@font-face {
+  font-family: fira-bold;
+  src: url('/assets/fonts/fira/FiraSans-Bold.otf') format("opentype");;
+}
+
+@font-face {
+  font-family: fira-medium;
+  src: url('/assets/fonts/fira/FiraSans-Medium.otf') format("opentype");;
+}
+
+@font-face {
+  font-family: fira-regular;
+  src: url('/assets/fonts/fira/FiraSans-Regular.otf') format("opentype");;
+}
+
+@font-face {
+  font-family: fira-semibold;
+  src: url('/assets/fonts/fira/FiraSans-SemiBold.otf');
+}

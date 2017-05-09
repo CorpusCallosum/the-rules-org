@@ -1,0 +1,20 @@
+/* IMPORTS */
+@import '../css/colors';
+@import '../css/fonts';
+
+.panel{
+  h2{
+    font-family: fira-thin;
+    color:$textHighlightColor;
+    margin:0;
+  }
+}
+
+.panel-default{
+  border-color: #555;
+}
+
+.panel-heading{
+  background-color: #333;
+  border-color: #555;
+}

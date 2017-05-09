@@ -1,9 +1,10 @@
 import { NgModule }             from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+
 //ROUTES
-import { HomePageComponent }    from './home-page.component';
-import { AboutPageComponent }   from './about-page.component';
+import { HomePageComponent }    from './home-page/home-page.component';
+import { AboutPageComponent }   from './about-page/about-page.component';
 import { FaqPageComponent }     from './faq-page/faq-page.component';
 import { GetInvolvedPageComponent }     from './get-involved-page/get-involved-page.component';
 

@@ -2,33 +2,15 @@
 @import 'css/colors';
 @import 'css/fonts';
 
-//GLOBAL STYLES
-
-body{
-  background-color: $bgColor;
-}
-
-h1 {
-  font-size: 2em;
-  margin-bottom: 0;
-  color: $accentColor1;
-}
-h2 {
-  font-size: 1.5em;
-  margin-top: 0;
-  padding-top: 0;
-  color: $accentColor1;
-}
-
-p{
-  color: $textColor;
-}
-
-//NAV BAR
+//TOP NAV BAR
 .navbar{
-  background-color: $bgColor;
+  background-color: #444;
   text-transform: uppercase;
   font-family: blackout-midnight;
+ // z-index: -1;
+  &.home{
+    background-color: transparent;
+  }
 }
 
 .navbar-brand{
@@ -42,20 +24,47 @@ p{
   color: $bgColor;
 }
 
+.navbar-toggle{
+  background-color: $accentColor1;
+  .icon-bar{
+    background-color: black;
+  }
+}
+
+//NAV LINKS
 nav a {
   padding: 5px 10px;
   text-decoration: none;
   display: inline-block;
-  background-color: #eee;
+  background-color: transparent;
+  color: $accentColor1;
+  font-size: 1.5em;
  // border-radius: 4px;
 }
-nav a:visited, a:link {
-  //color: #607D8B;
+nav a:focus {
+  color: black;
 }
+
+.nav > li > a:focus {
+  color: $accentColor1Shadow;
+}
+
 nav a:hover {
-  //color: #039be5;
-  //background-color: #CFD8DC;
+  color: $accentColor1Shadow;
+  background-color: transparent;
 }
 nav a.active {
   //color: #039be5;
+}
+
+//FOOTER
+$footerTextColor:#adadad;
+.panel-footer{
+  background-color: black;
+  font-family: fira-regular;
+  color: #555;
+  border-top: none;
+  a{
+    color: #adadad;
+  }
 }
