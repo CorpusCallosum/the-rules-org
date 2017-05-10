@@ -49,6 +49,12 @@ nav a:focus {
   color: $accentColor1Shadow;
 }
 
+.nav > li{
+  //background-color: black;
+   // border-bottom: 1px solid black;
+
+}
+
 nav a:hover {
   color: $accentColor1Shadow;
   background-color: transparent;
