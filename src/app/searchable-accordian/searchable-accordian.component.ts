@@ -22,7 +22,7 @@ export class SearchableAccordianComponent implements OnInit {
 
   ngOnInit() {
 
-    this.http.get('assets/'+this.dataFile)
+    this.http.get('assets/data/'+this.dataFile)
       .subscribe(res => {
         this.questions = res.json();
         this.updateFilter();

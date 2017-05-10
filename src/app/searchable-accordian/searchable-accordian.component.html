@@ -33,8 +33,8 @@
             </div>
             <div  id="collapse{{i}}" class="panel-collapse collapse"
                   [ngClass]="{'in': filteredResults.length == 1}">
-              <div class="panel-body">
-                {{question.answerTxt}}
+              <div class="panel-body" [innerHTML]="question.answerTxt">
+                <!--{{question.answerTxt}}-->
               </div>
             </div>
           </div>
