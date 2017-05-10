@@ -6,15 +6,39 @@
 @include parallax-init;
 
 .top{
-  background-image: url(/assets/images/top-section.jpg);
+  background-image: url(/assets/images/hero-bg.jpeg);
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  padding-bottom: 40%;
-  margin-top: -35px;
+  padding-bottom: 10%;
   z-index: 9999;
   background-color: transparent;
+  animation: move 100s infinite linear;
+  
+  display: flex;
+  justify-content:center;
+  align-content:center;
+  flex-direction:column;
+  .title{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: .5em;
+    width:80%;
+    font-family: blackout-midnight;
+    color: $accentColor1;
+    font-size: 15vw;
+    line-height: 1;
+    text-align: center;
+  }
+}
+
+@keyframes move {
+   from {
+    background-position: 0 center;
+  }
+  to {
+    background-position: 100vw center;
+  }
 }
 
 .join-the-movement-header{
