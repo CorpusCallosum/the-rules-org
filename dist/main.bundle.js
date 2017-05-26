@@ -6,14 +6,14 @@ webpackJsonp([1,5],{
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(95);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(96);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(58);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_routing_module__ = __webpack_require__(98);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(99);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__home_page_component__ = __webpack_require__(61);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__about_page_component__ = __webpack_require__(58);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__faq_page_faq_page_component__ = __webpack_require__(59);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__get_involved_page_get_involved_page_component__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__home_page_home_page_component__ = __webpack_require__(62);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__about_page_about_page_component__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__faq_page_faq_page_component__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__get_involved_page_get_involved_page_component__ = __webpack_require__(61);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__searchable_accordian_searchable_accordian_component__ = __webpack_require__(101);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -45,8 +45,8 @@ AppModule = __decorate([
         declarations: [
             //and declared here:
             __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */],
-            __WEBPACK_IMPORTED_MODULE_6__home_page_component__["a" /* HomePageComponent */],
-            __WEBPACK_IMPORTED_MODULE_7__about_page_component__["a" /* AboutPageComponent */],
+            __WEBPACK_IMPORTED_MODULE_6__home_page_home_page_component__["a" /* HomePageComponent */],
+            __WEBPACK_IMPORTED_MODULE_7__about_page_about_page_component__["a" /* AboutPageComponent */],
             __WEBPACK_IMPORTED_MODULE_8__faq_page_faq_page_component__["a" /* FaqPageComponent */],
             __WEBPACK_IMPORTED_MODULE_9__get_involved_page_get_involved_page_component__["a" /* GetInvolvedPageComponent */],
             __WEBPACK_IMPORTED_MODULE_10__searchable_accordian_searchable_accordian_component__["a" /* SearchableAccordianComponent */]
@@ -71,7 +71,7 @@ AppModule = __decorate([
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(58);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SearchableAccordianComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -163,7 +163,7 @@ exports = module.exports = __webpack_require__(12)();
 
 
 // module
-exports.push([module.i, "/* IMPORTS */\n/* COLORS */\n/* FONTS */\n@font-face {\n  font-family: blackout-midnight;\n  src: url(\"/the-rules-org/dist/assets/fonts/blackout/blackout_midnight-webfont.ttf\"); }\n\n@font-face {\n  font-family: blackout-two-am;\n  src: url(\"/the-rules-org/dist/assets/fonts/blackout/blackout_two_am-webfont.ttf\"); }\n\n@font-face {\n  font-family: fira-thin;\n  src: url(\"/the-rules-org/dist/assets/fonts/fira/FiraSans-Thin.otf\"); }\n\n@font-face {\n  font-family: fira-book;\n  src: url(\"/the-rules-org/dist/assets/fonts/fira/FiraSans-Book.otf\"); }\n\n@font-face {\n  font-family: fira-bold;\n  src: url(\"/the-rules-org/dist/assets/fonts/fira/FiraSans-Bold.otf\"); }\n\n.navbar {\n  background-color: transparent;\n  text-transform: uppercase;\n  font-family: blackout-midnight; }\n\n.navbar-brand {\n  background-color: #33ffff;\n  font-size: 2em;\n  color: #222; }\n\n.navbar-brand:hover {\n  background-color: #00cccc;\n  color: #222; }\n\nnav a {\n  padding: 5px 10px;\n  text-decoration: none;\n  display: inline-block;\n  background-color: transparent;\n  color: #ffa509;\n  font-size: 1.5em; }\n\nnav a:focus {\n  color: black; }\n\n.nav > li > a:focus {\n  color: #cc6600; }\n\nnav a:hover {\n  color: #cc6600;\n  background-color: transparent; }\n\n.panel-footer {\n  background-color: #33ffff;\n  font-family: blackout-midnight;\n  color: black; }\n  .panel-footer a {\n    color: black; }\n", ""]);
+exports.push([module.i, "/* IMPORTS */\n/* COLORS */\n/* FONTS */\n@font-face {\n  font-family: blackout-midnight;\n  src: url(\"/the-rules-org/dist1/assets/fonts/blackout/blackout_midnight-webfont.ttf\"); }\n\n@font-face {\n  font-family: blackout-two-am;\n  src: url(\"/the-rules-org/dist1/assets/fonts/blackout/blackout_two_am-webfont.ttf\"); }\n\n@font-face {\n  font-family: fira-thin;\n  src: url(\"/the-rules-org/dist1/assets/fonts/fira/FiraSans-Thin.otf\"); }\n\n@font-face {\n  font-family: fira-book;\n  src: url(\"/the-rules-org/dist1/assets/fonts/fira/FiraSans-Book.otf\"); }\n\n@font-face {\n  font-family: fira-bold;\n  src: url(\"/the-rules-org/dist1/assets/fonts/fira/FiraSans-Bold.otf\"); }\n\n.navbar {\n  background-color: #444;\n  text-transform: uppercase;\n  font-family: blackout-midnight; }\n  .navbar.home {\n    background-color: transparent; }\n\n.navbar-brand {\n  background-color: #33ffff;\n  font-size: 2em;\n  color: #222; }\n\n.navbar-brand:hover {\n  background-color: #00cccc;\n  color: #222; }\n\n.navbar-toggle {\n  background-color: #33ffff; }\n  .navbar-toggle .icon-bar {\n    background-color: black; }\n\nnav a {\n  padding: 5px 10px;\n  text-decoration: none;\n  display: inline-block;\n  background-color: transparent;\n  color: #ffa509;\n  font-size: 1.5em; }\n\nnav a:focus {\n  color: black; }\n\n.nav > li > a:focus {\n  color: #cc6600; }\n\nnav a:hover {\n  color: #cc6600;\n  background-color: transparent; }\n\n.panel-footer {\n  background-color: #33ffff;\n  font-family: blackout-midnight;\n  color: black; }\n  .panel-footer a {\n    color: black; }\n", ""]);
 
 // exports
 
@@ -181,7 +181,7 @@ exports = module.exports = __webpack_require__(12)();
 
 
 // module
-exports.push([module.i, "/* IMPORTS */\n/* COLORS */\n/* FONTS */\n@font-face {\n  font-family: blackout-midnight;\n  src: url(\"/the-rules-org/dist/assets/fonts/blackout/blackout_midnight-webfont.ttf\"); }\n\n@font-face {\n  font-family: blackout-two-am;\n  src: url(\"/the-rules-org/dist/assets/fonts/blackout/blackout_two_am-webfont.ttf\"); }\n\n@font-face {\n  font-family: fira-thin;\n  src: url(\"/the-rules-org/dist/assets/fonts/fira/FiraSans-Thin.otf\"); }\n\n@font-face {\n  font-family: fira-book;\n  src: url(\"/the-rules-org/dist/assets/fonts/fira/FiraSans-Book.otf\"); }\n\n@font-face {\n  font-family: fira-bold;\n  src: url(\"/the-rules-org/dist/assets/fonts/fira/FiraSans-Bold.otf\"); }\n\n.top {\n  background-image: url(/the-rules-org/dist/assets/images/top-section.jpg);\n  background-size: cover;\n  background-repeat: no-repeat;\n  background-position: center;\n  width: 100%;\n  padding-bottom: 40%;\n  margin-top: -35px;\n  z-index: 9999; }\n", ""]);
+exports.push([module.i, "/* IMPORTS */\n/* COLORS */\n/* FONTS */\n@font-face {\n  font-family: blackout-midnight;\n  src: url(\"/the-rules-org/dist1/assets/fonts/blackout/blackout_midnight-webfont.ttf\"); }\n\n@font-face {\n  font-family: blackout-two-am;\n  src: url(\"/the-rules-org/dist1/assets/fonts/blackout/blackout_two_am-webfont.ttf\"); }\n\n@font-face {\n  font-family: fira-thin;\n  src: url(\"/the-rules-org/dist1/assets/fonts/fira/FiraSans-Thin.otf\"); }\n\n@font-face {\n  font-family: fira-book;\n  src: url(\"/the-rules-org/dist1/assets/fonts/fira/FiraSans-Book.otf\"); }\n\n@font-face {\n  font-family: fira-bold;\n  src: url(\"/the-rules-org/dist1/assets/fonts/fira/FiraSans-Bold.otf\"); }\n\nhtml, body {\n  width: 100%;\n  height: 100%;\n  margin: 0;\n  padding: 0;\n  overflow: hidden; }\n\nbody {\n  overflow: auto;\n  -webkit-perspective: 1px;\n          perspective: 1px;\n  -webkit-transform-style: preserve-3d;\n          transform-style: preserve-3d; }\n  body, body * {\n    -webkit-transform-style: preserve-3d;\n            transform-style: preserve-3d; }\n\n.top {\n  background-image: url(/the-rules-org/dist1/assets/images/top-section.jpg);\n  background-size: cover;\n  background-repeat: no-repeat;\n  background-position: center;\n  width: 100%;\n  padding-bottom: 40%;\n  margin-top: -35px;\n  z-index: 9999;\n  background-color: transparent; }\n\n.parallaxWrapper {\n  height: 100px;\n  overflow: hidden; }\n\n.join-the-movement-header {\n  -webkit-transform: translateZ(-0.8px) scale(1.8);\n          transform: translateZ(-0.8px) scale(1.8);\n  z-index: -800;\n  background-image: linear-gradient(to bottom right, black, transparent), url(/the-rules-org/dist1/assets/images/join-the-movement.jpg);\n  background-size: cover;\n  background-repeat: no-repeat;\n  background-position: center;\n  width: 100%;\n  height: 100px;\n  background-attachment: fixed; }\n\n.offset-parallax {\n  margin-top: -100px;\n  height: 100px; }\n", ""]);
 
 // exports
 
@@ -199,7 +199,7 @@ exports = module.exports = __webpack_require__(12)();
 
 
 // module
-exports.push([module.i, "/* IMPORTS */\n/* COLORS */\n/* FONTS */\n@font-face {\n  font-family: blackout-midnight;\n  src: url(\"/the-rules-org/dist/assets/fonts/blackout/blackout_midnight-webfont.ttf\"); }\n\n@font-face {\n  font-family: blackout-two-am;\n  src: url(\"/the-rules-org/dist/assets/fonts/blackout/blackout_two_am-webfont.ttf\"); }\n\n@font-face {\n  font-family: fira-thin;\n  src: url(\"/the-rules-org/dist/assets/fonts/fira/FiraSans-Thin.otf\"); }\n\n@font-face {\n  font-family: fira-book;\n  src: url(\"/the-rules-org/dist/assets/fonts/fira/FiraSans-Book.otf\"); }\n\n@font-face {\n  font-family: fira-bold;\n  src: url(\"/the-rules-org/dist/assets/fonts/fira/FiraSans-Bold.otf\"); }\n\n.panel h2 {\n  font-family: fira-thin;\n  color: #ebebeb;\n  margin: 0; }\n\n.panel-default {\n  border-color: #555; }\n\n.panel-heading {\n  background-color: #333;\n  border-color: #555; }\n", ""]);
+exports.push([module.i, "/* IMPORTS */\n/* COLORS */\n/* FONTS */\n@font-face {\n  font-family: blackout-midnight;\n  src: url(\"/the-rules-org/dist1/assets/fonts/blackout/blackout_midnight-webfont.ttf\"); }\n\n@font-face {\n  font-family: blackout-two-am;\n  src: url(\"/the-rules-org/dist1/assets/fonts/blackout/blackout_two_am-webfont.ttf\"); }\n\n@font-face {\n  font-family: fira-thin;\n  src: url(\"/the-rules-org/dist1/assets/fonts/fira/FiraSans-Thin.otf\"); }\n\n@font-face {\n  font-family: fira-book;\n  src: url(\"/the-rules-org/dist1/assets/fonts/fira/FiraSans-Book.otf\"); }\n\n@font-face {\n  font-family: fira-bold;\n  src: url(\"/the-rules-org/dist1/assets/fonts/fira/FiraSans-Bold.otf\"); }\n\n.panel h2 {\n  font-family: fira-thin;\n  color: #ebebeb;\n  margin: 0; }\n\n.panel-default {\n  border-color: #555; }\n\n.panel-heading {\n  background-color: #333;\n  border-color: #555; }\n", ""]);
 
 // exports
 
@@ -248,14 +248,14 @@ module.exports = module.exports.toString();
 /***/ 165:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"page-header\">\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col-md-12\">\n        <h1>About</h1>\n      </div>\n    </div>\n  </div>\n</div>\n\n<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-md-12\">\n      <div class=\"video-container\">\n      <iframe class=\"video\" width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/9ncMdmLFe4Y?rel=0&amp;showinfo=0?ecver=1\" frameborder=\"0\" allowfullscreen></iframe>\n      </div>\n    </div>\n  </div>\n  \n  <!--ABOUT TEXT -->\n  <div class=\"row\">\n    <div class=\"col-md-12\">\n      <p>Locavore ethical flannel, duis tousled actually yr activated charcoal portland helvetica synth gentrify vero enamel pin. Gentrify DIY elit officia church-key, quinoa retro selfies nesciunt delectus. Man braid messenger bag mustache, edison bulb pickled vinyl fixie coloring book man bun next level truffaut chia. Fixie duis irony pabst, waistcoat velit tacos hexagon minim magna aliqua. Put a bird on it chia laborum, 8-bit PBR&B kombucha actually. Direct trade meh organic, af kickstarter mollit reprehenderit nisi mustache. Cray single-origin coffee tacos, wayfarers viral put a bird on it fugiat woke placeat fanny pack heirloom.</p>\n      <a>Blog</a>\n    </div>\n  </div>\n</div>\n\n<div class=\"container\">\n  <div class=\"row\">\n\n    <div class=\"col-md-6\">\n      <h2>Contact</h2>\n      <p>\n        Keytar heirloom tote bag 3 wolf moon typewriter banjo sunt. Mumblecore dolor kitsch, deep v offal slow-carb biodiesel enim. Pork belly cardigan microdosing quinoa aliqua nisi. Wolf proident tousled bitters fingerstache. Quis kitsch est enim freegan, etsy chicharrones. Distillery ramps mlkshk whatever, artisan mustache eiusmod PBR&B occaecat XOXO exercitation pork belly activated charcoal squid trust fund. Chia letterpress readymade la croix 8-bit etsy swag, pok pok et man bun mlkshk salvia green juice.\n      </p>\n      <a href=\"\">info@therules.org</a><br/>\n      <a href=\"\">Facebook</a> / <a href=\"\">Twitter</a>\n    </div>\n\n    <div class=\"col-md-6\">\n      <h2>Find out more…</h2>\n      <p>\n        Keytar heirloom tote bag 3 wolf moon typewriter banjo sunt. Mumblecore dolor kitsch, deep v offal slow-carb biodiesel enim. Pork belly cardigan microdosing quinoa aliqua nisi.\n      </p>\n      <a routerLink=\"/faq\">FAQ</a><br/><br/>\n\n      <p>\n        Distillery ramps mlkshk whatever, artisan mustache eiusmod PBR&B occaecat XOXO exercitation pork belly activated charcoal squid trust fund. Chia letterpress readymade la croix 8-bit etsy swag, pok pok et man bun mlkshk salvia green juice.\n      </p>\n      <a routerLink=\"/get-involved\">Get Involved</a>\n      \n    </div>\n\n  </div>\n</div>"
+module.exports = "  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col-md-12\">\n        <h1>About</h1>\n      </div>\n    </div>\n  </div>\n\n<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-md-12\">\n      <div class=\"video-container\">\n      <iframe class=\"video\" width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/9ncMdmLFe4Y?rel=0&amp;showinfo=0?ecver=1\" frameborder=\"0\" allowfullscreen></iframe>\n      </div>\n    </div>\n  </div>\n  \n  <!--ABOUT TEXT -->\n  <div class=\"row\">\n    <div class=\"col-md-12\">\n      <p>\n        The Rules™ is a global collective of activists, writers, researchers, coders, and others focused on addressing the root causes of inequality, poverty and climate change. We connect the movements and individuals working in diverse ways to resist and reimagine the world and to make known the alternatives to neoliberal capitalism.\n      </p>\n      <p>\n        We recognise the value of all  forms of knowledge - from Indigenous to academic - and weave these into stories that explain how we arrived at our current economic, social, political and environmental crises. We use stories because it is stories that shape the world today. They tell us intuitively how power has come to rest in the hands of the few, rather than the many. Stories reveal how our struggles (from land to labour, biodiversity to our very bodies) are part of the same global system. A system that prioritises the production of capital over everything else is destined to extract all the value it can, from land and people, until that value is exhausted, and the planet destroyed.\n      </p>\n      <p>\n        By studying the stories that the corporate and political elites tell we can see how alternative ones can emerge, and with them, the hope that our societies can be organised differently. We have the power to change the rules.\n      </p>\n      <h2>[SUB-HEAD]</h2>\n      <p>\n        In 2023 TR will supernovae. Just over ten years after our organisation was formed, it’ll cease to exist. We think that doing so will help us focus on making tangible contributions to this work that will last beyond ourselves; it will allow us to take different types of risks; and it will keep us from becoming preoccupied with our own survival, perpetuating the ‘development industrial complex’ of large NGOs. Rather, we are committing our time and energies to serve the transition to the post-capitalist world we know is possible. And indeed, its on its way.\n      </p>\n      <a>Blog</a>\n    </div>\n  </div>\n</div>\n\n<div class=\"container\">\n  <div class=\"row\">\n\n    <div class=\"col-md-6\">\n      <h2>Contact</h2>\n      <p>\n        Keytar heirloom tote bag 3 wolf moon typewriter banjo sunt. Mumblecore dolor kitsch, deep v offal slow-carb biodiesel enim. Pork belly cardigan microdosing quinoa aliqua nisi. Wolf proident tousled bitters fingerstache. Quis kitsch est enim freegan, etsy chicharrones. Distillery ramps mlkshk whatever, artisan mustache eiusmod PBR&B occaecat XOXO exercitation pork belly activated charcoal squid trust fund. Chia letterpress readymade la croix 8-bit etsy swag, pok pok et man bun mlkshk salvia green juice.\n      </p>\n      <a href=\"\">info@therules.org</a><br/>\n      <a href=\"\">Facebook</a> / <a href=\"\">Twitter</a>\n    </div>\n\n    <div class=\"col-md-6\">\n      <h2>Find out more…</h2>\n      <p>\n        Keytar heirloom tote bag 3 wolf moon typewriter banjo sunt. Mumblecore dolor kitsch, deep v offal slow-carb biodiesel enim. Pork belly cardigan microdosing quinoa aliqua nisi.\n      </p>\n      <a routerLink=\"/faq\">FAQ</a><br/><br/>\n\n      <p>\n        Distillery ramps mlkshk whatever, artisan mustache eiusmod PBR&B occaecat XOXO exercitation pork belly activated charcoal squid trust fund. Chia letterpress readymade la croix 8-bit etsy swag, pok pok et man bun mlkshk salvia green juice.\n      </p>\n      <a routerLink=\"/get-involved\">Get Involved</a>\n      \n    </div>\n\n  </div>\n</div>"
 
 /***/ }),
 
 /***/ 166:
 /***/ (function(module, exports) {
 
-module.exports = "<!-- HEADER -->\n<nav class=\"navbar\">\n  <div class=\"container-fluid\">\n    <!-- Brand and toggle get grouped for better mobile display -->\n    <div class=\"navbar-header\">\n      <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\n        <span class=\"sr-only\">Toggle navigation</span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n      </button>\n      <a class=\"navbar-brand\" routerLink=\"/home\">The Rules</a>\n    </div>\n\n    <!-- Collect the nav links, forms, and other content for toggling -->\n    <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n      \n      <ul class=\"nav navbar-nav navbar-right\">\n        <li><a routerLink=\"/about\">/ About</a></li>\n        <li><a href=\"#\">/ Blog</a></li>\n      </ul>\n    </div><!-- /.navbar-collapse -->\n  </div><!-- /.container-fluid -->\n</nav>\n\n     <!--<h1>{{title}}</h1>\n      <nav>\n        <a routerLink=\"/dashboard\" routerLinkActive=\"active\">Dashboard</a>\n        <a routerLink=\"/heroes\" routerLinkActive=\"active\">Heroes</a>\n      </nav>-->\n\n      \n      <router-outlet></router-outlet>\n\n<!-- FOOTER -->\n<footer>\n  <div class=\"panel-footer\">\n\n  <div class=\"container-fluid\">\n  <div class=\"row\">\n\n    <div class=\"col-sm-6\">\n      <a routerLink=\"/about\" >About</a> /\n      <a href=\"\" >Blog</a>\n    </div>\n\n    <div class=\"col-sm-6 text-right\">\n      <a href=\"\" >Activist Ashram</a> /\n      <a href=\"\" >Aurora</a> /\n      <a href=\"\" >Asha</a>\n    </div>\n  </div>\n</div>\n\n    \n  </div>\n</footer>"
+module.exports = "<!-- HEADER -->\n<nav class=\"navbar\" [ngClass]=\"{home: router.url==='/home'}\">\n  <div class=\"container-fluid\">\n    <!-- Brand and toggle get grouped for better mobile display -->\n    <div class=\"navbar-header\">\n      <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\n        <span class=\"sr-only\">Toggle navigation</span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n      </button>\n      <a class=\"navbar-brand\" routerLink=\"/home\">The Rules</a>\n    </div>\n\n    <!-- Collect the nav links, forms, and other content for toggling -->\n    <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n      \n      <ul class=\"nav navbar-nav navbar-right\">\n        <li><a routerLink=\"/about\">/ About</a></li>\n        <li><a href=\"#\">/ Blog</a></li>\n      </ul>\n    </div><!-- /.navbar-collapse -->\n  </div><!-- /.container-fluid -->\n</nav>\n\n     <!--<h1>{{title}}</h1>\n      <nav>\n        <a routerLink=\"/dashboard\" routerLinkActive=\"active\">Dashboard</a>\n        <a routerLink=\"/heroes\" routerLinkActive=\"active\">Heroes</a>\n      </nav>-->\n\n      \n      <router-outlet></router-outlet>\n\n<!-- FOOTER -->\n<footer>\n  <div class=\"panel-footer\">\n\n  <div class=\"container-fluid\">\n  <div class=\"row\">\n\n    <div class=\"col-sm-6\">\n      <a routerLink=\"/about\" >About</a> /\n      <a href=\"\" >Blog</a>\n    </div>\n\n    <div class=\"col-sm-6 text-right\">\n      <a href=\"\" >Activist Ashram</a> /\n      <a href=\"\" >Aurora</a> /\n      <a href=\"\" >Asha</a>\n    </div>\n  </div>\n</div>\n\n    \n  </div>\n</footer>"
 
 /***/ }),
 
@@ -276,7 +276,7 @@ module.exports = "<!--GET INVOLVED PAGE -->\n\n<app-searchable-accordian\n  [tit
 /***/ 169:
 /***/ (function(module, exports) {
 
-module.exports = "  <div class=\"jumbotron top\"> </div>\n\n<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-md-12\">\n      <h1>Our Story</h1>\n    </div>\n  </div>\n<!--</div>\n\n<div class=\"container\">-->\n  <div class=\"row\">\n    <div class=\"col-md-6\">\n    <p>Keytar heirloom tote bag 3 wolf moon typewriter banjo sunt. Mumblecore dolor kitsch, deep v offal slow-carb biodiesel enim. Pork belly cardigan microdosing quinoa aliqua nisi. Wolf proident tousled bitters fingerstache. Quis kitsch est enim freegan, etsy chicharrones. Distillery ramps mlkshk whatever, artisan mustache eiusmod PBR&B occaecat XOXO exercitation pork belly activated charcoal squid trust fund. Chia letterpress readymade la croix 8-bit etsy swag, pok pok et man bun mlkshk salvia green juice.</p>\n    </div>\n    <div class=\"col-md-6\">\n      <div class=\"video-container\">\n        <iframe class=\"video\" width=\"100%\" height=\"300\" src=\"https://www.youtube.com/embed/9ncMdmLFe4Y?rel=0&amp;showinfo=0?ecver=1\" frameborder=\"0\" allowfullscreen></iframe>\n      </div>\n    </div>\n  </div>\n  <div class=\"row\">\n    <div class=\"col-md-3\">IMAGE PLACEHOLDER</div>\n    <div class=\"col-md-9\"><p>Twee pop-up iceland banh mi. Mumblecore ramps biodiesel, bespoke edison bulb et normcore culpa try-hard chia. Kombucha 8-bit waistcoat, messenger bag nostrud next level pinterest man braid shabby chic tilde banjo scenester. Velit photo booth seitan bicycle rights asymmetrical viral. Enim sed banjo pickled. Squid umami hell of lyft. Synth ex cred sustainable viral raclette.</p></div>\n  </div>\n  <div class=\"row\">\n    <div class=\"col-md-12\"><p>Locavore ethical flannel, duis tousled actually yr activated charcoal portland helvetica synth gentrify vero enamel pin. Gentrify DIY elit officia church-key, quinoa retro selfies nesciunt delectus. Man braid messenger bag mustache, edison bulb pickled vinyl fixie coloring book man bun next level truffaut chia. Fixie duis irony pabst, waistcoat velit tacos hexagon minim magna aliqua. Put a bird on it chia laborum, 8-bit PBR&B kombucha actually. Direct trade meh organic, af kickstarter mollit reprehenderit nisi mustache. Cray single-origin coffee tacos, wayfarers viral put a bird on it fugiat woke placeat fanny pack heirloom.</p></div>\n  </div>\n</div>\n\n<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-md-12\">\n      <h2>Join the Movement</h2>\n    </div>\n  </div>\n</div>\n\n<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-md-8\">\n      <p>Keytar heirloom tote bag 3 wolf moon typewriter banjo sunt. Mumblecore dolor kitsch, deep v offal slow-carb biodiesel enim. Pork belly cardigan microdosing quinoa aliqua nisi. Wolf proident tousled bitters fingerstache. Quis kitsch est enim freegan, etsy chicharrones. Distillery ramps mlkshk whatever, artisan mustache eiusmod PBR&B occaecat XOXO exercitation pork belly activated charcoal squid trust fund. Chia letterpress readymade la croix 8-bit etsy swag, pok pok et man bun mlkshk salvia green juice.</p>\n      <a href=\"\">info@therules.org</a><br/>\n      <a href=\"\">Facebook</a> / <a href=\"\">Twitter</a>\n    </div>\n\n    <!-- NEWSLETTER SIGNUP FORM -->\n    <div class=\"col-md-4\">\n      <h4>First Name (Or Nickname)</h4>\n      <input type=\"text\" class=\"form-control\" placeholder=\"\" aria-describedby=\"basic-addon1\">\n\n      <h4>Second Name</h4>\n      <input type=\"text\" class=\"form-control\" placeholder=\"\" aria-describedby=\"basic-addon1\">\n\n      <h4>Email Address</h4>\n      <input type=\"text\" class=\"form-control\" placeholder=\"\" aria-describedby=\"basic-addon1\">\n\n      <br>\n      <button type=\"button\" class=\"btn btn-default\">SIGN UP</button>\n    </div>\n\n  </div>\n</div>"
+module.exports = "  <div class=\"jumbotron top\"> </div>\n\n<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-md-12\">\n      <h1>Our Story</h1>\n    </div>\n  </div>\n<!--</div>\n\n<div class=\"container\">-->\n  <div class=\"row\">\n    <div class=\"col-md-6\">\n    <p>XXX We have a story to share about the future and how people are building it now.\nIf we continue on our current trajectory marked by climate change, rising inequality, and corporate capture of the state, to name but a few issues, by 2023,  the year /TR as an organisation intends to supernovae [link here to about page if we mention intention to supernovae], this world will be a very different place. We can expect natural habitats to continue to collapse,  biodiversity, indigenous lands and ways of life to be lost, and even larger divide between the 1% and the rest of us, all of human life,  geared only towards consumption and production.\n</p>\n    </div>\n    <div class=\"col-md-6\">\n      <div class=\"video-container\">\n        <iframe class=\"video\" width=\"100%\" height=\"300\" src=\"https://www.youtube.com/embed/9ncMdmLFe4Y?rel=0&amp;showinfo=0?ecver=1\" frameborder=\"0\" allowfullscreen></iframe>\n      </div>\n    </div>\n  </div>\n  <div class=\"row\">\n    <div class=\"col-md-3\">IMAGE PLACEHOLDER</div>\n    <div class=\"col-md-9\"><p>The Rules is an activist collective that exists to reveal how these seemingly disparate issues are all interconnected, to shine a light on a diversity of beautiful alternatives, and to contribute to the transition from neoliberal capitalism to a just and thriving world. Another world is possible.</p>\n    </div>\n  </div>\n  <div class=\"row\">\n    <div class=\"col-md-12\">\n      <p>\n        If you’d like to know more, want to stand with us or contribute your story to the tapestry of post-capitalist narratives, have a look around the website. Here you will find more information about The Rules [link to about], what we do [link to whatever we decide], commentary and insight [link to blog] and how to get involved [link to get involved page].\n      </p>\n      <p>\n        In love and solidarity.\n      </p>\n    </div>\n  </div>\n</div>\n\n<div class=\"parallaxWrapper\">\n  <div class=\"join-the-movement-header\">\n  </div>\n</div>\n<div class=\"container offset-parallax\">\n  <div class=\"row\">\n    <div class=\"col-md-12\">\n      <h1>Join the Movement</h1>\n    </div>\n  </div>\n</div>\n\n<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-md-8\">\n      <p>Keytar heirloom tote bag 3 wolf moon typewriter banjo sunt. Mumblecore dolor kitsch, deep v offal slow-carb biodiesel enim. Pork belly cardigan microdosing quinoa aliqua nisi. Wolf proident tousled bitters fingerstache. Quis kitsch est enim freegan, etsy chicharrones. Distillery ramps mlkshk whatever, artisan mustache eiusmod PBR&B occaecat XOXO exercitation pork belly activated charcoal squid trust fund. Chia letterpress readymade la croix 8-bit etsy swag, pok pok et man bun mlkshk salvia green juice.</p>\n      <a href=\"\">info@therules.org</a><br/>\n      <a href=\"\">Facebook</a> / <a href=\"\">Twitter</a>\n    </div>\n\n    <!-- NEWSLETTER SIGNUP FORM -->\n    <div class=\"col-md-4\">\n      <h4>First Name (Or Nickname)</h4>\n      <input type=\"text\" class=\"form-control\" placeholder=\"\" aria-describedby=\"basic-addon1\">\n\n      <h4>Second Name</h4>\n      <input type=\"text\" class=\"form-control\" placeholder=\"\" aria-describedby=\"basic-addon1\">\n\n      <h4>Email Address</h4>\n      <input type=\"text\" class=\"form-control\" placeholder=\"\" aria-describedby=\"basic-addon1\">\n\n      <br>\n      <button type=\"button\" class=\"btn btn-default\">SIGN UP</button>\n    </div>\n\n  </div>\n</div>"
 
 /***/ }),
 
@@ -290,12 +290,12 @@ module.exports = "  <div class=\"container\">\n    <div class=\"row\">\n      <d
 /***/ 205:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(89);
+module.exports = __webpack_require__(90);
 
 
 /***/ }),
 
-/***/ 58:
+/***/ 59:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -326,7 +326,7 @@ AboutPageComponent = __decorate([
 
 /***/ }),
 
-/***/ 59:
+/***/ 60:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -364,7 +364,7 @@ FaqPageComponent = __decorate([
 
 /***/ }),
 
-/***/ 60:
+/***/ 61:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -400,7 +400,7 @@ GetInvolvedPageComponent = __decorate([
 
 /***/ }),
 
-/***/ 61:
+/***/ 62:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -432,7 +432,7 @@ HomePageComponent = __decorate([
 
 /***/ }),
 
-/***/ 88:
+/***/ 89:
 /***/ (function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -441,18 +441,18 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 88;
+webpackEmptyContext.id = 89;
 
 
 /***/ }),
 
-/***/ 89:
+/***/ 90:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(96);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(97);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(100);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(102);
 
@@ -472,11 +472,11 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dyna
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(97);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_page_component__ = __webpack_require__(61);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__about_page_component__ = __webpack_require__(58);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__faq_page_faq_page_component__ = __webpack_require__(59);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__get_involved_page_get_involved_page_component__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_page_home_page_component__ = __webpack_require__(62);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__about_page_about_page_component__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__faq_page_faq_page_component__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__get_involved_page_get_involved_page_component__ = __webpack_require__(61);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppRoutingModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -493,8 +493,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 var routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
-    { path: 'home', component: __WEBPACK_IMPORTED_MODULE_2__home_page_component__["a" /* HomePageComponent */] },
-    { path: 'about', component: __WEBPACK_IMPORTED_MODULE_3__about_page_component__["a" /* AboutPageComponent */] },
+    { path: 'home', component: __WEBPACK_IMPORTED_MODULE_2__home_page_home_page_component__["a" /* HomePageComponent */] },
+    { path: 'about', component: __WEBPACK_IMPORTED_MODULE_3__about_page_about_page_component__["a" /* AboutPageComponent */] },
     { path: 'faq', component: __WEBPACK_IMPORTED_MODULE_4__faq_page_faq_page_component__["a" /* FaqPageComponent */] },
     { path: 'get-involved', component: __WEBPACK_IMPORTED_MODULE_5__get_involved_page_get_involved_page_component__["a" /* GetInvolvedPageComponent */] }
 ];
@@ -519,6 +519,7 @@ AppRoutingModule = __decorate([
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(33);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -526,13 +527,25 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
 
 
 var AppComponent = (function () {
-    function AppComponent() {
+    function AppComponent(route, router) {
         this.title = 'The Rules Org';
+        console.log('route :' + route);
+        console.log('router :' + router);
+        console.log('url :' + router.url);
+        this._route = route;
+        this.router = router;
     }
     AppComponent.prototype.ngOnInit = function () {
+        //this.currentRoute = Location.path;
+        console.log('route :' + this._route);
     };
     return AppComponent;
 }());
@@ -542,9 +555,11 @@ AppComponent = __decorate([
         template: __webpack_require__(166),
         styles: [__webpack_require__(157)],
         encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["X" /* ViewEncapsulation */].None,
-    })
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* Router */]) === "function" && _b || Object])
 ], AppComponent);
 
+var _a, _b;
 //# sourceMappingURL=app.component.js.map
 
 /***/ })
