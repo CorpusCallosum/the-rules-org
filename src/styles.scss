@@ -1,10 +1,9 @@
+/*GLOBAL STYLES HERE*/
 /* You can add global styles to this file, and also import other style files */
 /* IMPORTS */
 @import 'app/css/colors';
 @import 'app/css/fonts';
 @import 'app/css/parallax';
-
-
 
 //GLOBAL STYLES
 body{
@@ -39,8 +38,9 @@ h4{
 
 p{
   color: $textColor;
-  font-family: fira-thin;
-  font-size: 1.2em;
+  font-family: fira-medium;
+  font-size: 18px;
+  margin-bottom: 1em;
   strong{
     font-family: fira-book;
     color: white;
