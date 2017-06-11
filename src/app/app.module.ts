@@ -13,6 +13,7 @@ import { AboutPageComponent }   from './about-page/about-page.component';
 import { FaqPageComponent }    from './faq-page/faq-page.component';
 import { GetInvolvedPageComponent } from './get-involved-page/get-involved-page.component';
 import { SearchableAccordianComponent } from './searchable-accordian/searchable-accordian.component';
+import { BannerComponent } from './banner/banner.component';
 
 
 //
@@ -24,7 +25,8 @@ import { SearchableAccordianComponent } from './searchable-accordian/searchable-
     AboutPageComponent,
     FaqPageComponent,
     GetInvolvedPageComponent,
-    SearchableAccordianComponent
+    SearchableAccordianComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,
