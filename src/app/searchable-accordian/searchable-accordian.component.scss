@@ -4,9 +4,10 @@
 
 .panel{
   h2{
-    font-family: fira-thin;
-    color:$textHighlightColor;
+    font-family: fira-semibold;
+    color:$accentColor1;
     margin:0;
+    font-size: 28px;
   }
 }
 
@@ -19,6 +20,11 @@
   border-color: #555;
 }
 
+//panel style when collapsed
+.collapsed .panel-heading .panel-title h2 { 
+  color:$textHighlightColor;
+}
+
 .panel-body{
   color: #717171;
   font-family: fira-book;
@@ -28,11 +34,11 @@ br{
     display: block;
     margin: 10px 0;
     content: " ";
-  font-size: 24%;
-  }
+    font-size: 24%;
+}
 
-  br:before {
-    display: block;
-    margin-top: 10px;
-    content: "";
+br:before {
+  display: block;
+  margin-top: 10px;
+  content: "";
 }
