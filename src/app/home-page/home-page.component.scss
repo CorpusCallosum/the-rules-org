@@ -5,6 +5,10 @@
 
 @include parallax-init;
 
+video{
+  margin-top: -51px;
+}
+
 .top{
   background-image: url(/assets/images/hero-bg.jpg);
   background-size: cover;
