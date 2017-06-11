@@ -18,3 +18,21 @@
   background-color: #333;
   border-color: #555;
 }
+
+.panel-body{
+  color: #717171;
+  font-family: fira-book;
+}
+
+br{
+    display: block;
+    margin: 10px 0;
+    content: " ";
+  font-size: 24%;
+  }
+
+  br:before {
+    display: block;
+    margin-top: 10px;
+    content: "";
+}

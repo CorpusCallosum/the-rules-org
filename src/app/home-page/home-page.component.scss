@@ -1,90 +1,54 @@
 /* IMPORTS */
 @import '../css/colors';
 @import '../css/fonts';
-
-// Magic parallax mixins
-
-$parallax-perspective : 1 !default;
-$parallax-element     : "body" !default;
-$parallax-ios         : true !default;
-
-@mixin parallax-init(
-  $perspective  : $parallax-perspective,
-  $element      : $parallax-element,
-  $parallax-ios : $parallax-ios
-  ) {
-  @if $element == "body" {
-    html, body {
-      width: 100%;
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-    }
-  }
-  #{$element} {
-    overflow: auto;
-    perspective: $perspective * 1px;
-    transform-style: preserve-3d;
-    // Allows for smooth scrolling but disables parallax effects.
-    @if $parallax-ios == false {
-      -webkit-overflow-scrolling: touch;
-    }
-    // Preserve 3D
-    &, * {
-      transform-style: preserve-3d;
-    }
-  }
-}
-
-@mixin parallax(
-  $distance    : 0,
-  $perspective : $parallax-perspective
-  ) {
-  transform:
-    translateZ($distance * $perspective * 1px)
-    scale(abs($distance - 1))
-  ;
-  z-index: $distance * 1000;
-}
-
-// End of magic parallax mixins
+@import '../css/parallax';
 
 @include parallax-init;
 
 .top{
-  background-image: url(/assets/images/top-section.jpg);
+  background-image: url(/assets/images/hero-bg.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  padding-bottom: 40%;
-  margin-top: -35px;
+  padding-bottom: 5%;
   z-index: 9999;
   background-color: transparent;
+  animation: move 100s infinite linear;
+  margin-top: -.1em;
+  
+  display: flex;
+  justify-content:center;
+  align-content:center;
+  flex-direction:column;
+  .title{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.1vw;
+    width:80%;
+    font-family: blackout-midnight;
+    color: $accentColor1;
+    font-size: 12vw;
+    line-height: 1;
+    text-align: center;
+    text-shadow: 2px 2px 8px #000000;  }
 }
 
-$parallaxHeight: 100px;
-$parallaxAmount: -.8;
-$parallaxCalcHeight: $parallaxHeight * (1+$parallaxAmount);
-
-.parallaxWrapper{
-  height: 100px;
-  overflow: hidden;
+@keyframes move {
+   from {
+    background-position: 0 center;
+  }
+  to {
+    background-position: 100vw center;
+  }
 }
 
 .join-the-movement-header{
   @include parallax($parallaxAmount);
-  background-image: linear-gradient(to bottom right,rgba(0,0,0,1),rgba(0,0,0,0)), url(/assets/images/join-the-movement.jpg);
+  background-image: linear-gradient(to right,rgba(0,0,0,1),rgba(0,0,0,0)), url(/assets/images/join-the-movement.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
   height: $parallaxHeight;
   background-attachment: fixed;
-}
-
-.offset-parallax{
-  margin-top: -$parallaxHeight;
-  height: $parallaxHeight;
 }

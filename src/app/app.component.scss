@@ -7,6 +7,7 @@
   background-color: #444;
   text-transform: uppercase;
   font-family: blackout-midnight;
+  margin:0;
  // z-index: -1;
   &.home{
     background-color: transparent;
@@ -31,12 +32,13 @@
   }
 }
 
+//NAV LINKS
 nav a {
   padding: 5px 10px;
   text-decoration: none;
   display: inline-block;
   background-color: transparent;
-  color: $accentColor2;
+  color: $accentColor1;
   font-size: 1.5em;
  // border-radius: 4px;
 }
@@ -45,11 +47,17 @@ nav a:focus {
 }
 
 .nav > li > a:focus {
-  color: $accentColor2Shadow;
+  color: $accentColor1Shadow;
+}
+
+.nav > li{
+  //background-color: black;
+   // border-bottom: 1px solid black;
+
 }
 
 nav a:hover {
-  color: $accentColor2Shadow;
+  color: $accentColor1Shadow;
   background-color: transparent;
 }
 nav a.active {
@@ -57,11 +65,14 @@ nav a.active {
 }
 
 //FOOTER
+$footerTextColor:#adadad;
 .panel-footer{
-  background-color: $accentColor1;
-  font-family: blackout-midnight;
-  color: black;
+  background-color: black;
+  font-family: fira-regular;
+  color: #555;
+  border-top: none;
+  margin-top: 2em;
   a{
-    color: black;
+    color: #adadad;
   }
 }
