@@ -18,6 +18,14 @@ export class AppComponent implements OnInit {
    _route:ActivatedRoute;
    router:Router;
 
+   menuItems = [
+     {"title":"About", "routerLink":"/about"},
+     {"title":"FAQ", "routerLink":"/faq"},
+     {"title":"Get Involved", "routerLink":"/get-involved"},
+     {"title":"Blog", "url":"/blog"},
+
+   ]
+
    constructor(route:ActivatedRoute, router:Router) {
      console.log('route :'+route);
      console.log('router :'+router);
@@ -26,10 +34,6 @@ export class AppComponent implements OnInit {
 
      this._route = route;
      this.router = router;
-
-     /*this.router.events.filter(event => event instanceof NavigationEnd).subscribe((e: NavigationEnd) => {
-      document.body.scrollTop = 0;
-     });*/
    }
 
    ngOnInit():void{
