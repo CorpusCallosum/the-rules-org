@@ -9,7 +9,8 @@
 body{
   background-color: $bgColor;
   color: $textColor;
-  font-family: fira-thin;
+  font-family: fira-medium;
+  font-size: 18px;
 }
 
 //TEXT STYLES
@@ -52,7 +53,8 @@ p{
 
 //LINKS
 a{
-  color: #66d3e0;
+  color: $textHighlightColor;
+  text-decoration: underline;
   &:hover{
     color: $accentColor1;
   }

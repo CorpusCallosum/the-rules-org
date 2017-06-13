@@ -1,7 +1,7 @@
 import {Component, OnInit } from '@angular/core';
 import {ViewEncapsulation} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
-import { Router } from '@angular/router';
+import { Router, NavigationEnd } from '@angular/router';
 
 
 @Component({
@@ -26,10 +26,27 @@ export class AppComponent implements OnInit {
 
      this._route = route;
      this.router = router;
+
+     /*this.router.events.filter(event => event instanceof NavigationEnd).subscribe((e: NavigationEnd) => {
+      document.body.scrollTop = 0;
+     });*/
    }
 
    ngOnInit():void{
      //this.currentRoute = Location.path;
-     console.log('route :'+this._route)
+     //console.log('route :'+this._route)
+
+     //scroll to top of page on route change
+     this.router.events.subscribe((evt) => {
+        if (!(evt instanceof NavigationEnd)) {
+            return;
+        }
+        //setTimeout(function(){
+            window.scrollTo(0, 1);
+        //}, 0);
+       // window.scrollTo(0, 0)
+      });
    }
+
+
 }
