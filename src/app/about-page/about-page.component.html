@@ -25,15 +25,18 @@
       <p>
         We call that system neoliberal capitalism. Aside from revealing it to be at the root of the crises of our civilisation, we tell stories about alternative systems emerging so that people see that they have the power to change the rules. Finally, we connect the movements working in diverse ways to resist, and reimagine the world.
       </p>
+    </div>
+  </div>
 
+  <div class="row">
+    <div class="col-md-12">
       <h2>What we do</h2>
       <p>There are several ways in which we work to make the radical idea of a post-capitalist world commonsense:</p>
-
     </div>
   </div>
 
   <div class="row badges">
-    <div class="col-md-4 col-sm-4 col-xs-4" *ngFor="let badge of badges; let i = index" (click)="selectBadge(i)">
+    <div class="col-md-4 col-sm-4 col-xs-4 tr-badge" *ngFor="let badge of badges; let i = index" (click)="selectBadge(i)" [ngClass]="{'active': i == selectedBadge}" >
       <img src="assets/images/badges/{{badge.id}}.png" alt="{{badge.title}}" height="auto" width="100%">
       {{badge.title}}
     </div>
@@ -50,10 +53,12 @@
 </div>
 
 <div class="container">
+  <div>
+    <h2>Our Projects</h2>
+  </div>
   <div class="row">
-
     <div class="col-md-6">
-      <h2>Contact</h2>
+      <h2>Project Asha</h2>
       <p>
         Keytar heirloom tote bag 3 wolf moon typewriter banjo sunt. Mumblecore dolor kitsch, deep v offal slow-carb biodiesel enim. Pork belly cardigan microdosing quinoa aliqua nisi. Wolf proident tousled bitters fingerstache. Quis kitsch est enim freegan, etsy chicharrones. Distillery ramps mlkshk whatever, artisan mustache eiusmod PBR&B occaecat XOXO exercitation pork belly activated charcoal squid trust fund. Chia letterpress readymade la croix 8-bit etsy swag, pok pok et man bun mlkshk salvia green juice.
       </p>
@@ -62,7 +67,7 @@
     </div>
 
     <div class="col-md-6">
-      <h2>Find out more…</h2>
+      <h2>Project Aurora</h2>
       <p>
         Keytar heirloom tote bag 3 wolf moon typewriter banjo sunt. Mumblecore dolor kitsch, deep v offal slow-carb biodiesel enim. Pork belly cardigan microdosing quinoa aliqua nisi.
       </p>
@@ -77,3 +82,4 @@
 
   </div>
 </div>
+
