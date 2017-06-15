@@ -1,0 +1,20 @@
+.badges{
+  text-align: center;
+  font-family: fira-regular;
+  font-size: 1.6vw;
+  color: white;
+  background-color: rgba(0,0,0,.2);
+  padding: 2vw;
+  
+
+  .tr-badge{
+    opacity: .7;
+    height: 100%;
+    //border: 1px solid grey;
+  }
+
+  .active{
+    opacity: 1;
+    text-decoration: underline;
+  }
+}

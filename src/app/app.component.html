@@ -1,5 +1,6 @@
 <!-- HEADER -->
-<nav class="navbar" [ngClass]="{home: router.url==='/home'}">
+<!--<nav class="navbar" [ngClass]="{home: router.url==='/home'}">-->
+<nav class="navbar">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -17,20 +18,17 @@
       
       <ul class="nav navbar-nav navbar-right">
         <li><a routerLink="/about">/ About</a></li>
+        <li><a routerLink="/faq">/ FAQ</a></li>
+        <li><a routerLink="/get-involved">/ Get Involved</a></li>
         <li><a href="#">/ Blog</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
 
-     <!--<h1>{{title}}</h1>
-      <nav>
-        <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
-        <a routerLink="/heroes" routerLinkActive="active">Heroes</a>
-      </nav>-->
-
-      
-      <router-outlet></router-outlet>
+<!-- ROUTER OUTLET -->      
+<router-outlet id="router-outlet"></router-outlet>
+<!-- ************* -->
 
 <!-- FOOTER -->
 <footer>
@@ -41,14 +39,16 @@
 
     <div class="col-sm-6">
       <a routerLink="/about" >About</a> /
+      <a routerLink="/faq" >FAQ</a> /
+      <a routerLink="/get-involved" >Get Involved</a> /
       <a href="" >Blog</a>
     </div>
 
-    <div class="col-sm-6 text-right">
+    <!--<div class="col-sm-6 text-right">
       <a href="" >Activist Ashram</a> /
       <a href="" >Aurora</a> /
       <a href="" >Asha</a>
-    </div>
+    </div>-->
   </div>
 </div>
 

@@ -1,10 +1,4 @@
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h1>About</h1>
-      </div>
-    </div>
-  </div>
+<app-banner [imgSrc]="'assets/images/brazil_womans_march.jpg'" [title]="'About'"></app-banner>  
 
 <div class="container">
   <div class="row">
@@ -18,49 +12,77 @@
   <!--ABOUT TEXT -->
   <div class="row">
     <div class="col-md-12">
+      <h2>About The Rules</h2>
       <p>
-        The Rules™ is a global collective of activists, writers, researchers, coders, and others focused on addressing the root causes of inequality, poverty and climate change. We connect the movements and individuals working in diverse ways to resist and reimagine the world and to make known the alternatives to neoliberal capitalism.
+        In 2012, The Rules started out asking why poverty still existed. In looking for the answers, we have grown into a global collective of activists, writers, artists and academics who work to expose the root causes of not just poverty but also of  inequality and climate change.
       </p>
       <p>
-        We recognise the value of all  forms of knowledge - from Indigenous to academic - and weave these into stories that explain how we arrived at our current economic, social, political and environmental crises. We use stories because it is stories that shape the world today. They tell us intuitively how power has come to rest in the hands of the few, rather than the many. Stories reveal how our struggles (from land to labour, biodiversity to our very bodies) are part of the same global system. A system that prioritises the production of capital over everything else is destined to extract all the value it can, from land and people, until that value is exhausted, and the planet destroyed.
+        What we have learned in that time is how much stories shape the world, and also how they can help change it.
       </p>
       <p>
-        By studying the stories that the corporate and political elites tell we can see how alternative ones can emerge, and with them, the hope that our societies can be organised differently. We have the power to change the rules.
+        Narratives can be used to explain how power has come to rest in the hands of the few, rather than the many.  They reveal how our struggles - from land to labour, biodiversity to our very bodies - are part of the same global system, one that prioritises the production of capital - in other words, economic growth - over everything else, and at the expense of everything else.
       </p>
-      <h2>[SUB-HEAD]</h2>
       <p>
-        In 2023 TR will supernovae. Just over ten years after our organisation was formed, it’ll cease to exist. We think that doing so will help us focus on making tangible contributions to this work that will last beyond ourselves; it will allow us to take different types of risks; and it will keep us from becoming preoccupied with our own survival, perpetuating the ‘development industrial complex’ of large NGOs. Rather, we are committing our time and energies to serve the transition to the post-capitalist world we know is possible. And indeed, its on its way.
+        We call that system neoliberal capitalism. Aside from revealing it to be at the root of the crises of our civilisation, we tell stories about alternative systems emerging so that people see that they have the power to change the rules. Finally, we connect the movements working in diverse ways to resist, and reimagine the world.
       </p>
-      <a>Blog</a>
     </div>
   </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <h2>What we do</h2>
+      <p>There are several ways in which we work to make the radical idea of a post-capitalist world commonsense:</p>
+    </div>
+  </div>
+
+  <div class="row badges">
+    <div class="col-md-4 col-sm-4 col-xs-4 tr-badge" *ngFor="let badge of badges; let i = index" (click)="selectBadge(i)" [ngClass]="{'active': i == selectedBadge}" >
+      <img src="assets/images/badges/{{badge.id}}.png" alt="{{badge.title}}" height="auto" width="100%">
+      {{badge.title}}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <p>
+        {{badges[selectedBadge].text}}
+      </p>
+    </div>
+  </div>
+
 </div>
 
 <div class="container">
   <div class="row">
-
+    <div class="col-md-12">
+    <h2>Our Projects</h2>
+    </div>
+  </div>
+  <div class="row">
     <div class="col-md-6">
-      <h2>Contact</h2>
+      <h3>Project Asha</h3>
       <p>
         Keytar heirloom tote bag 3 wolf moon typewriter banjo sunt. Mumblecore dolor kitsch, deep v offal slow-carb biodiesel enim. Pork belly cardigan microdosing quinoa aliqua nisi. Wolf proident tousled bitters fingerstache. Quis kitsch est enim freegan, etsy chicharrones. Distillery ramps mlkshk whatever, artisan mustache eiusmod PBR&B occaecat XOXO exercitation pork belly activated charcoal squid trust fund. Chia letterpress readymade la croix 8-bit etsy swag, pok pok et man bun mlkshk salvia green juice.
       </p>
-      <a href="">info@therules.org</a><br/>
-      <a href="">Facebook</a> / <a href="">Twitter</a>
     </div>
 
     <div class="col-md-6">
-      <h2>Find out more…</h2>
+      <h3>Project Aurora</h3>
       <p>
         Keytar heirloom tote bag 3 wolf moon typewriter banjo sunt. Mumblecore dolor kitsch, deep v offal slow-carb biodiesel enim. Pork belly cardigan microdosing quinoa aliqua nisi.
       </p>
-      <a routerLink="/faq">FAQ</a><br/><br/>
-
       <p>
         Distillery ramps mlkshk whatever, artisan mustache eiusmod PBR&B occaecat XOXO exercitation pork belly activated charcoal squid trust fund. Chia letterpress readymade la croix 8-bit etsy swag, pok pok et man bun mlkshk salvia green juice.
-      </p>
-      <a routerLink="/get-involved">Get Involved</a>
-      
+      </p>      
     </div>
-
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <h2>The TR online community</h2>
+      <p>
+      Across our various social networks we’re nurturing conversations with individuals and organisations who share the belief that our capitalist system needs to be replaced with a myriad of local alternatives that value people and planet. Whether on Facebook, YouTube, Instagram or Twitter, we want create a space for debate, inspiration and collaboration.
+      </p>
+    </div>
   </div>
 </div>
+

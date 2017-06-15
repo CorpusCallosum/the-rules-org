@@ -18,13 +18,13 @@
 }
 
 @font-face {
-  font-family: fira-book;
-  src: url('/assets/fonts/fira/FiraSans-Book.otf') format("opentype");;
+  font-family: fira-regular;
+  src: url('/assets/fonts/fira/FiraSans-Regular.otf') format("opentype");;
 }
 
 @font-face {
-  font-family: fira-bold;
-  src: url('/assets/fonts/fira/FiraSans-Bold.otf') format("opentype");;
+  font-family: fira-book;
+  src: url('/assets/fonts/fira/FiraSans-Book.otf') format("opentype");;
 }
 
 @font-face {
@@ -33,11 +33,21 @@
 }
 
 @font-face {
-  font-family: fira-regular;
-  src: url('/assets/fonts/fira/FiraSans-Regular.otf') format("opentype");;
+  font-family: fira-semibold;
+  src: url('/assets/fonts/fira/FiraSans-SemiBold.otf');
 }
 
 @font-face {
-  font-family: fira-semibold;
-  src: url('/assets/fonts/fira/FiraSans-SemiBold.otf');
+  font-family: fira-bold;
+  src: url('/assets/fonts/fira/FiraSans-Bold.otf') format("opentype");;
+}
+
+@font-face {
+  font-family: fira-bold-italic;
+  src: url('/assets/fonts/fira/FiraSans-BoldItalic.otf') format("opentype");;
+}
+
+@font-face {
+  font-family: fira-extrabold-italic;
+  src: url('/assets/fonts/fira/FiraSans-ExtraBoldItalic.otf') format("opentype");;
 }

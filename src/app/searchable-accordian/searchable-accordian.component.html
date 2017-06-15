@@ -1,46 +1,45 @@
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8">
-        <h2>{{title}}</h2>
-      </div>
-      <div class="col-md-4">
-        <div class="input-group">
-          <input 
-            type="text" class="form-control"
-            placeholder="Search for..."
-            [(ngModel)]="searchTerm"
-            (keyup)="onChange($event)">
-          <span class="input-group-btn">
-            <button class="btn btn-default" type="button">Go!</button>
-          </span>
-        </div><!-- /input-group -->
-      </div>
+<app-banner [imgSrc]="'assets/images/IMG_9348.jpg'" [title]="title"></app-banner>  
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <!--<h2>{{title}}</h2>-->
     </div>
+    <div class="col-md-4">
+        <input 
+          type="text" class="form-control input-lg"
+          placeholder="Search for..."
+          [(ngModel)]="searchTerm"
+          (keyup)="onChange($event)">
+    </div>
+  </div>
 
-    <div class="row">
-      <div class="col-md-12">
-        <div class="panel-group" id="accordion">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="panel-group" id="accordion">
 
-          <div
-            class="panel panel-default"
-            *ngFor="let question of filteredResults; let i = index">
+        <div
+          class="panel panel-default"
+          *ngFor="let question of filteredResults; let i = index">
+
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{i}}" class="collapsed">
             <div class="panel-heading">
-              <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{i}}">
-                  <h2>{{question.questionTxt}}</h2>
-                </a>
-              </h4>
+                <!--<a data-toggle="collapse" data-parent="#accordion" href="#collapse{{i}}">-->
+                  {{question.questionTxt}}
+                <!--</a>-->
             </div>
-            <div  id="collapse{{i}}" class="panel-collapse collapse"
-                  [ngClass]="{'in': filteredResults.length == 1}">
-              <div class="panel-body">
-                {{question.answerTxt}}
-              </div>
-            </div>
+          </a>
+
+         <!-- <div  id="collapse{{i}}" class="panel-collapse collapse"
+                [ngClass]="{'in': filteredResults.length == 1 }"> -->
+              <div  id="collapse{{i}}" class="panel-collapse collapse"
+                [ngClass]="{'in': i == 0 }">
+            <div class="panel-body" [innerHTML]="question.answerTxt"></div>
           </div>
-          
-          
         </div>
-      </div>  
-    </div>
-  
+        
+        
+      </div>
+    </div>  
+  </div>
+
