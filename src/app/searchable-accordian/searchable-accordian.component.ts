@@ -21,7 +21,7 @@ export class SearchableAccordianComponent implements OnInit {
   constructor(private http:Http) {}
 
   ngOnInit() {
-
+    //load data
     this.http.get('assets/data/'+this.dataFile)
       .subscribe(res => {
         this.questions = res.json();
@@ -31,10 +31,9 @@ export class SearchableAccordianComponent implements OnInit {
 
 
   updateFilter():void{
-     console.log(this.questions);
+    console.log(this.questions);
     var that = this;
     this.filteredResults = this.questions.questions.filter(function(q){
-      //return true;
       console.log("searching : "+q.questionTxt);
       console.log("for : "+that.searchTerm);
       if(q.questionTxt.toLowerCase().search(that.searchTerm.toLowerCase()) != -1)

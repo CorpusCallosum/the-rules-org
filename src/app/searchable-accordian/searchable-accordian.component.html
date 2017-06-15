@@ -23,16 +23,17 @@
           *ngFor="let question of filteredResults; let i = index">
 
           <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{i}}" class="collapsed">
-
-          <div class="panel-heading">
-              <!--<a data-toggle="collapse" data-parent="#accordion" href="#collapse{{i}}">-->
-                {{question.questionTxt}}
-              <!--</a>-->
-          </div>
+            <div class="panel-heading">
+                <!--<a data-toggle="collapse" data-parent="#accordion" href="#collapse{{i}}">-->
+                  {{question.questionTxt}}
+                <!--</a>-->
+            </div>
           </a>
 
-          <div  id="collapse{{i}}" class="panel-collapse collapse"
-                [ngClass]="{'in': filteredResults.length == 1}">
+         <!-- <div  id="collapse{{i}}" class="panel-collapse collapse"
+                [ngClass]="{'in': filteredResults.length == 1 }"> -->
+              <div  id="collapse{{i}}" class="panel-collapse collapse"
+                [ngClass]="{'in': i == 0 }">
             <div class="panel-body" [innerHTML]="question.answerTxt"></div>
           </div>
         </div>
