@@ -6,16 +6,11 @@
       <!--<h2>{{title}}</h2>-->
     </div>
     <div class="col-md-4">
-     <!-- <div class="input-group">-->
         <input 
           type="text" class="form-control input-lg"
           placeholder="Search for..."
           [(ngModel)]="searchTerm"
           (keyup)="onChange($event)">
-       <!-- <span class="input-group-btn">
-          <button class="btn btn-default" type="button">Go!</button>
-        </span>
-      </div><!-- /input-group -->
     </div>
   </div>
 
@@ -30,11 +25,9 @@
           <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{i}}" class="collapsed">
 
           <div class="panel-heading">
-            <h4 class="panel-title">
               <!--<a data-toggle="collapse" data-parent="#accordion" href="#collapse{{i}}">-->
-                <h2>{{question.questionTxt}}</h2>
+                {{question.questionTxt}}
               <!--</a>-->
-            </h4>
           </div>
           </a>
 

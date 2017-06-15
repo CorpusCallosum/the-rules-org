@@ -3,6 +3,10 @@
   "questions":
   [
     {
+      "questionTxt":"Connect with us",
+      "answerTxt":"<ul><li>Write an email: <a href='mailto:contact@therules.org'>contact@therules.org</a><li>Comment on a blog post: <a href='http://www.therules.org/blog'>www.therules.org/blog</a></li><li>Leave a comment on the Facebook page: <a href='https://www.facebook.com/therules.org'>https://www.facebook.com/therules.org</a></li><li>Tweet at: <a href='http://twitter.com/therulesorg'>@TheRulesOrg</a></li><li><a href='http://instagram.com/therulesorg'>Check out @therulesorg on Instagram</a></li><li>Find TR on Whatsapp: [Can we use Ashram number here?]</li></ul>"
+    },
+    {
       "questionTxt":"Remix the ideas and content we share and create your own",
       "answerTxt":"No one owns ideas and the best ones are created in collaboration and constantly evolving. Everything on this site is registered under a Creative Commons license. Download, play, remix, and share. All we ask is that when you do so, you remember to share with us too."
     },
