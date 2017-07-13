@@ -1,10 +1,14 @@
-<div class="video-container" [ngClass]="{'animate-hide': hideVideo }">
-  <video id="hero-video" width="100%" height="auto" autoplay
+<div id="hero">
+<div id="video-viewport" [ngClass]="{'animate-hide': hideVideo }">
+  <video id="hero-video" width="1280" height="720" autoplay
           [src]="videos[activeVideoId].src" poster="assets/images/video_placeholder.jpg">
     Your browser does not support the video tag.
   </video>
-  <div class="video-title">{{videoTitle}}</div>
 </div>
+<div class="video-title" [ngClass]="{'animate-hide': hideVideo }">{{videoTitle}}</div>
+</div>
+
+
 
 <!--<div class="jumbotron top">
   <div class="title">CHANGE<br>THE RULES</div>

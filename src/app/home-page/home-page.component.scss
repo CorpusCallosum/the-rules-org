@@ -5,6 +5,10 @@
 
 @include parallax-init;
 
+#hero{
+  position: relative;
+}
+
 .video-container{
   //height: 100%;
   transition: .5s opacity;
@@ -12,6 +16,9 @@
   &.animate-hide{
     opacity: 0;
   }
+  height: .5vh;
+  overflow: hidden;
+  padding-bottom: 76vh;
 }
 
 video{
@@ -19,24 +26,44 @@ video{
   position: relative;
 }
 
-.animate-hide .video-title{
-  margin-right: -100px;
+#video-viewport {
+  position: relative;
+  top: 0;
+  overflow: hidden;
+  &.animate-hide{
+    opacity: 0;
+  }
+ // z-index: -1; /* for accessing the video by click */
 }
+
+#debug {
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  color: #fff;
+  font-size: 12pt;
+}
+
+/*.animate-hide .video-title{
+  margin-right: -100px;
+}*/
 
 .video-title{
   transition: .5s all;
   z-index: 100;
   position: absolute;
-  float: right;
   margin-right: 0px;
   margin-bottom: 10px;
   background-color: rgba(0,0,0,.5);
   padding:10px 30px 10px 10px;
   font-family: fira-regular;
   font-size: 12px;
-  bottom:0;
+  bottom: 0;
   right: 0;
   max-width: 90%;
+  &.animate-hide{
+    margin-right: -100px;
+  }
 }
 
 .top{
