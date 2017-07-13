@@ -7,7 +7,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Install the Angular CLI and Node Packages
 
 First thing's first--
-If you don't already have it, install the Angular CLI by running `sudo npm install -g @angular/cli@latest`
+If you don't already have it, install the Angular CLI globally on your computer by running `sudo npm install -g @angular/cli@latest`
 
 Install the node package by running `sudo npm install`
 

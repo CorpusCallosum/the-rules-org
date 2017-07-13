@@ -9,8 +9,14 @@ import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 export class HomePageComponent implements OnInit {
 
   videos = [
-    {"src":"assets/videos/hero/CHANGE_THE_RULES.m4v", "title":"Change the Rules"},
-    {"src":"assets/videos/hero/CULTURE_HACK_LAB.m4v", "title":"The Culture Hack Lab"},
+    {
+      "src":"assets/videos/hero/CHANGE_THE_RULES.m4v",
+      "title":"Brooklyn offal retro drinking vinegar officia mixtape meggings literally bicycle rights. Duis before they sold out ugh, kitsch wayfarers shaman affogato twee synth chia laboris subway tile post-ironic air plant salvia. 3 wolf moon jean shorts pok pok man braid la croix PBR&B artisan deserunt nulla asymmetrical nisi messenger bag air plant snackwave keffiyeh."
+    },
+    {
+      "src":"assets/videos/hero/CULTURE_HACK_LAB.m4v",
+      "title":"The CHL is the space where we work to better understand what stories are shaping culture. We seek to answer questions such as: what are the stories we believe and share about how the world works? How do these stories help sustain the way human beings or the environment are defined by the economy? The CHL test the ways of effectively changing those stories over time, so as to change our culture."
+    }
   ];
 
   activeVideoId = 0;
@@ -18,7 +24,7 @@ export class HomePageComponent implements OnInit {
   videoObject:HTMLVideoElement;
   hideVideo = true;
 
-  constructor(private ref: ChangeDetectorRef) { 
+  constructor(private ref: ChangeDetectorRef) {
   }
 
    ngOnInit():void{
