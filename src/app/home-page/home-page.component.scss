@@ -5,8 +5,36 @@
 
 @include parallax-init;
 
+.video-container{
+  //height: 100%;
+  transition: .5s opacity;
+  opacity: 1;
+  &.animate-hide{
+    opacity: 0;
+  }
+}
+
 video{
-  //margin-top: -51px;
+  //margin-bottom: -30px;
+  position: relative;
+}
+
+.animate-hide .video-title{
+  margin-right: -100px;
+}
+
+.video-title{
+  transition: .5s all;
+  z-index: 100;
+  position: relative;
+  float: right;
+  margin-right: 0px;
+  margin-bottom: 20px;
+  margin-top: -50px;
+  background-color: rgba(0,0,0,.5);
+  padding:10px 30px 10px 10px;
+  font-family: fira-regular;
+  font-size: 15px;
 }
 
 .top{
