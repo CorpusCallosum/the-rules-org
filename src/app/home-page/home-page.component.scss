@@ -5,19 +5,10 @@
 
 @include parallax-init;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> master
 #hero{
   position: relative;
 }
 
-<<<<<<< HEAD
->>>>>>> master
-=======
->>>>>>> master
 .video-container{
   //height: 100%;
   transition: .5s opacity;
@@ -25,18 +16,9 @@
   &.animate-hide{
     opacity: 0;
   }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-  height: .5vh;
-  overflow: hidden;
-  padding-bottom: 76vh;
->>>>>>> master
-=======
  // height: .5vh;
   overflow: hidden;
  // padding-bottom: 76vh;
->>>>>>> master
 }
 
 video{
@@ -44,27 +26,6 @@ video{
   position: relative;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-.animate-hide .video-title{
-  margin-right: -100px;
-}
-
-.video-title{
-  transition: .5s all;
-  z-index: 100;
-  position: relative;
-  float: right;
-  margin-right: 0px;
-  margin-bottom: 20px;
-  margin-top: -50px;
-  background-color: rgba(0,0,0,.5);
-  padding:10px 30px 10px 10px;
-  font-family: fira-regular;
-  font-size: 15px;
-=======
-=======
->>>>>>> master
 #video-viewport {
   position: relative;
   top: 0;
@@ -103,10 +64,6 @@ video{
   &.animate-hide{
     margin-right: -100px;
   }
-<<<<<<< HEAD
->>>>>>> master
-=======
->>>>>>> master
 }
 
 .top{
