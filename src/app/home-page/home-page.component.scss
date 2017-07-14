@@ -6,11 +6,17 @@
 @include parallax-init;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
 #hero{
   position: relative;
 }
 
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
 .video-container{
   //height: 100%;
@@ -20,10 +26,16 @@
     opacity: 0;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   height: .5vh;
   overflow: hidden;
   padding-bottom: 76vh;
+>>>>>>> master
+=======
+ // height: .5vh;
+  overflow: hidden;
+ // padding-bottom: 76vh;
 >>>>>>> master
 }
 
@@ -32,6 +44,7 @@ video{
   position: relative;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 .animate-hide .video-title{
   margin-right: -100px;
@@ -50,6 +63,8 @@ video{
   font-family: fira-regular;
   font-size: 15px;
 =======
+=======
+>>>>>>> master
 #video-viewport {
   position: relative;
   top: 0;
@@ -88,6 +103,9 @@ video{
   &.animate-hide{
     margin-right: -100px;
   }
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
 }
 
