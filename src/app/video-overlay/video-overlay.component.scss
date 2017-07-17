@@ -12,8 +12,19 @@
     justify-content: center;
     padding: 50px;
   }
+
+  a{
+    display: none;
+    &.open{
+      display: block;
+      position: fixed;
+      top: 10px;
+      right: 10px;
+    }
+  }
+
   iframe{
-    pointer-events: none;
+  //  pointer-events: none;
     &.open{
       pointer-events: visible;
       position: relative;
