@@ -1,0 +1,22 @@
+.video-container{
+  &.open{
+    background-color: rgba(0,0,0, 0.85);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+  }
+  iframe{
+    pointer-events: none;
+    &.open{
+      pointer-events: visible;
+      position: relative;
+    }
+  }
+}
