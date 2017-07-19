@@ -28,6 +28,7 @@
     </div>
   </div>
 
+<!-- WHAT WE DO - BADGES -->
   <div class="row">
     <div class="col-md-12">
       <h2>What we do</h2>
@@ -36,14 +37,17 @@
   </div>
 
   <div class="row badges">
-    <div class="col-md-4 col-sm-4 col-xs-4 tr-badge" *ngFor="let badge of badges; let i = index" (click)="selectBadge(i)" [ngClass]="{'active': i == selectedBadge}" >
+    <div
+      class="col-md-4 col-sm-4 col-xs-4 tr-badge" *ngFor="let badge of badges; let i = index"
+      (click)="selectBadge(i)" (click)="onMouseDown()" [ngClass]="{'active': i == selectedBadge}"
+    >
       <img src="assets/images/badges/{{badge.id}}.png" alt="{{badge.title}}" height="auto" width="100%">
       <h3>{{badge.title}}</h3>
     </div>
   </div>
 
-  <div class="row badge-text">
-    <div class="col-md-12">
+  <div class="row badge-text" [ngClass]="{'animate-open': badgeChanged}">
+    <div class="col-md-12" >
       <p>
         {{badges[selectedBadge].text}}
       </p>

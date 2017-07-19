@@ -27,12 +27,21 @@ export class AboutPageComponent implements OnInit {
    ];
 
    selectedBadge:Number = 0;
+   badgeChanged:boolean = false;
 
    ngOnInit():void{
 
    }
 
    selectBadge(i:Number):void{
+
+     if(i!=this.selectedBadge)
+       this.badgeChanged = true;
+
      this.selectedBadge = i;
+   }
+
+   onMouseDown():void{
+     this.badgeChanged = false;
    }
 }

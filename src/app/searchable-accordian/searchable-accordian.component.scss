@@ -2,6 +2,10 @@
 @import '../css/colors';
 @import '../css/fonts';
 
+.searchbar{
+  margin-bottom: 20px;
+}
+
 .panel{
  /* h2{
     font-family: fira-semibold;
@@ -28,12 +32,13 @@
 }
 
 //panel style when collapsed
-.collapsed .panel-heading { 
-  color:$textHighlightColor;
+.collapsed .panel-heading {
+  color:$textColor;
 }
 
 .panel-body{
-  color: #333;
+  color: $textHighlightColor;
+  background-color: rgba(0,0,0,.7);
   font-family: fira-book;
   font-size: 18px;
   a{
