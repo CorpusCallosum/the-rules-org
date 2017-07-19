@@ -55,6 +55,7 @@ p{
 a{
   color: $textColor;
   text-decoration: underline;
+  cursor: pointer;
   &:hover{
     color: $accentColor1;
   }
@@ -98,7 +99,7 @@ button{
 }
 
 .row {
-  margin: 0px 0px 10px 0px;
+  margin: 30px 0px 20px 0px;
 }
 
 /*VIDEO WRAPPER to maintain aspect ratio */
