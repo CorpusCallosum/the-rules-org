@@ -29,6 +29,9 @@
   font-family: fira-semibold;
   margin:0;
   font-size: 28px;
+  &.open{
+     color: $accentColor1 !important;
+  }
 }
 
 //panel style when collapsed
@@ -38,12 +41,16 @@
 
 .panel-body{
   color: $textHighlightColor;
-  background-color: rgba(0,0,0,.7);
+  background-color: rgba(0,0,0,.9);
   font-family: fira-book;
   font-size: 18px;
   a{
     color: $accentColor1;
   }
+}
+
+.in{
+  height: auto !important;
 }
 
 a{

@@ -17,6 +17,7 @@ export class SearchableAccordianComponent implements OnInit {
 
 
   searchTerm:string = "";
+  panelClicked:Boolean = false;
 
   constructor(private http:Http) {}
 
@@ -41,11 +42,17 @@ export class SearchableAccordianComponent implements OnInit {
       else
         return false;
     })
+    this.panelClicked = false;
   }
 
   //when search input box is typed in, tell the filter to UPDATE
   onChange(): void {
    this.updateFilter();
+  }
+
+  onPanelClick(index:Number): void{
+    if(index!=0)
+      this.panelClicked = true;
   }
 
 }
