@@ -1,6 +1,7 @@
 # TheRules
 
 Website front-end for www.therules.org
+dev hosted on: https://corpuscallosum.github.io/the-rules-org/dist/
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
