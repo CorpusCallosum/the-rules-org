@@ -12,11 +12,13 @@ export class HomePageComponent implements OnInit {
   videos = [
     {
       "src":"assets/videos/hero/CHANGE_THE_RULES.m4v",
-      "title":"Brooklyn offal retro drinking vinegar officia mixtape meggings literally bicycle rights. Duis before they sold out ugh, kitsch wayfarers shaman affogato twee synth chia laboris subway tile post-ironic air plant salvia. 3 wolf moon jean shorts pok pok man braid la croix PBR&B artisan deserunt nulla asymmetrical nisi messenger bag air plant snackwave keffiyeh."
+      "title":"Brooklyn offal retro drinking vinegar officia mixtape meggings literally bicycle rights. Duis before they sold out ugh, kitsch wayfarers shaman affogato twee synth chia laboris subway tile post-ironic air plant salvia. 3 wolf moon jean shorts pok pok man braid la croix PBR&B artisan deserunt nulla asymmetrical nisi messenger bag air plant snackwave keffiyeh.",
+      "image":"assets/images/standing-rock.png"
     },
     {
       "src":"assets/videos/hero/CULTURE_HACK_LAB.m4v",
-      "title":"The CHL is the space where we work to better understand what stories are shaping culture. We seek to answer questions such as: what are the stories we believe and share about how the world works? How do these stories help sustain the way human beings or the environment are defined by the economy? The CHL test the ways of effectively changing those stories over time, so as to change our culture."
+      "title":"The CHL is the space where we work to better understand what stories are shaping culture. We seek to answer questions such as: what are the stories we believe and share about how the world works? How do these stories help sustain the way human beings or the environment are defined by the economy? The CHL test the ways of effectively changing those stories over time, so as to change our culture.",
+      "image":"assets/images/standing-rock.png"
     }
   ];
 
@@ -24,6 +26,9 @@ export class HomePageComponent implements OnInit {
   videoTitle:String = "";
   videoObject:HTMLVideoElement;
   hideVideo = true;
+  isVideo = true;
+
+
 
    //video resizing stuff...
    min_w = 300; // minimum video width allowed
@@ -34,7 +39,7 @@ export class HomePageComponent implements OnInit {
   }
 
    ngOnInit():void{
-     console.log("ngOnInit");
+    console.log("ngOnInit");
     this.videoObject =  document.getElementById('hero-video') as HTMLVideoElement;
     this.videoObject.addEventListener('ended',this.onVideoEnded.bind(this),false);
     this.videoObject.addEventListener('loadeddata',this.onVideoLoaded.bind(this),false);
@@ -87,13 +92,6 @@ export class HomePageComponent implements OnInit {
     var scale_h = jQuery(window).width() / this.vid_w_orig;
     var scale_v = jQuery(window).height() / this.vid_h_orig;
     var scale = scale_h > scale_v ? scale_h : scale_v;
-
-    console.log("this.vid_w_orig:", this.vid_w_orig);
-    console.log("this.vid_h_orig:", this.vid_h_orig);
-    console.log("scale_h:", scale_h);
-    console.log("scale_v:", scale_v);
-    console.log("scale:", scale);
-
 
     // don't allow scaled width < minimum video width
     if (scale * this.vid_w_orig < this.min_w) {scale = this.min_w / this.vid_w_orig;};
