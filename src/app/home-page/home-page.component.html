@@ -1,13 +1,14 @@
 <div id="hero">
-<div id="video-viewport" [ngClass]="{'animate-hide': hideVideo }">
-  <video id="hero-video" width="1280" height="720" autoplay muted playsinline
-          poster="./assets/images/standing-rock.png"
-          [src]="videos[activeVideoId].src" poster="assets/images/video_placeholder.jpg">
-    Your browser does not support the video tag.
-  </video>
-  <img [src]="videos[activeVideoId].image" />
-</div>
-<div class="video-title" [ngClass]="{'animate-hide': hideVideo }">{{videoTitle}}</div>
+  <div id="video-viewport" [ngClass]="{'animate-hide': hideVideo }">
+    <video id="hero-video" width="1280" height="720" autoplay muted playsinline
+            poster="./assets/images/standing-rock.png"
+            [src]="videos[activeVideoId].src" poster="assets/images/video_placeholder.jpg">
+      Your browser does not support the video tag.
+    </video>
+    <!--<img [src]="videos[activeVideoId].image" />-->
+    <div class="img" [ngStyle]="{'background-image': 'url('+videos[activeVideoId].image+')'}"> </div>
+  </div>
+  <div class="video-info" [ngClass]="{'animate-hide': hideVideo }">{{videoTitle}}</div>
 </div>
 
 
