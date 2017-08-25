@@ -5,14 +5,22 @@
 
 //TOP NAV BAR
 .navbar{
-  background-color: rgba(50,50,50,.5);
+  background-color: rgba(0,0,0,.7);
   text-transform: uppercase;
   font-family: blackout-midnight;
   margin:0;
   z-index: 999;
   margin-bottom: -50px;
+  width: 100%;
+  
   &.home{
     background-color: transparent;
+  }
+
+  @include breakpoint(sm){
+    position: fixed;
+    top: 0;
+    left: 0;
   }
 }
 
@@ -53,8 +61,6 @@ nav a:focus {
 }
 
 .nav > li{
-  //background-color: black;
-   // border-bottom: 1px solid black;
 
 }
 

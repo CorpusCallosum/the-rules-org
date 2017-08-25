@@ -13,7 +13,7 @@
     //margin-bottom: -30px;
     position: relative;
     display: none;
-    @include breakpoint(laptop){
+    @include breakpoint(sm){
       display: block;
     }
   }
@@ -24,7 +24,7 @@
     height: 100%;
     background-size: cover;
     background-position: center;
-    @include breakpoint(laptop){
+    @include breakpoint(sm){
       display: none;
     }
   }
@@ -52,12 +52,7 @@
   &.animate-hide{
     opacity: 0;
   }
- // z-index: -1; /* for accessing the video by click */
 }
-
-/*.animate-hide .video-title{
-  margin-right: -100px;
-}*/
 
 .video-info{
   transition: .5s all;
@@ -72,8 +67,13 @@
   bottom: 0;
   right: 0;
   max-width: 90%;
+  display: none;
   &.animate-hide{
     margin-right: -100px;
+  }
+
+  @include breakpoint(sm){
+    display: block;
   }
 }
 

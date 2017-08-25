@@ -40,16 +40,27 @@ export class HomePageComponent implements OnInit {
 
    ngOnInit():void{
     console.log("ngOnInit");
-    this.videoObject =  document.getElementById('hero-video') as HTMLVideoElement;
-    this.videoObject.addEventListener('ended',this.onVideoEnded.bind(this),false);
-    this.videoObject.addEventListener('loadeddata',this.onVideoLoaded.bind(this),false);
-    //this.videoTitle = this.videos[this.activeVideoId].title;
 
+
+    //detect mobile?
+    if (typeof window.orientation !== 'undefined') {
+      //mobile
+      ////add timer for triggering slideshow here...
+      
+    }
+    else{
+      //desktop
+      ////add video listeners
+      this.videoObject =  document.getElementById('hero-video') as HTMLVideoElement;
+      this.videoObject.addEventListener('ended',this.onVideoEnded.bind(this),false);
+      this.videoObject.addEventListener('loadeddata',this.onVideoLoaded.bind(this),false);
+    }
+
+    //add window resize listeners
     this.vid_w_orig = parseInt(jQuery('#hero-video').attr('width'));
     this.vid_h_orig = parseInt(jQuery('#hero-video').attr('height'));
     console.log("this.vid_w_orig:", this.vid_w_orig);
     console.log("this.vid_h_orig:", this.vid_h_orig);
-    //jQuery('#debug').append("<p>DOM loaded</p>");
 
     jQuery(window).resize(this.resizeToCover.bind(this));
     jQuery(window).trigger('resize');
@@ -77,7 +88,7 @@ export class HomePageComponent implements OnInit {
   
    resizeToCover():void {
     console.log("resizeToCover");
-    var h = .8; //video heigh as percentage of window height
+    var h = .8; //video height as percentage of window height
     // set the video viewport to the window size
     jQuery('#video-viewport').width(jQuery(window).width());
     jQuery('#video-viewport').height(jQuery(window).height()*h);
