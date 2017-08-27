@@ -1,8 +1,10 @@
 <div id="hero">
-  <div id="video-viewport" [ngClass]="{'animate-hide': hideVideo }">
+  <div id="video-viewport">
     <video id="hero-video" width="1280" height="720" autoplay muted playsinline
             poster="./assets/images/standing-rock.png"
-            [src]="videos[activeVideoId].src" poster="assets/images/video_placeholder.jpg">
+            [src]="videos[activeVideoId].src" poster="assets/images/video_placeholder.jpg"
+            [ngClass]="{'animate-hide': hideVideo }"
+            >
       Your browser does not support the video tag.
     </video>
     <!--<img [src]="videos[activeVideoId].image" />-->

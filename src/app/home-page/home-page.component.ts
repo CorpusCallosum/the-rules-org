@@ -1,4 +1,4 @@
-import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef, OnDestroy } from '@angular/core';
 declare var jQuery:any;
 
 @Component({
@@ -28,30 +28,40 @@ export class HomePageComponent implements OnInit {
   hideVideo = true;
   isVideo = true;
 
+  //video resizing stuff...
+  min_w = 300; // minimum video width allowed
+  vid_w_orig;  // original video dimensions
+  vid_h_orig;
 
-
-   //video resizing stuff...
-   min_w = 300; // minimum video width allowed
-   vid_w_orig;  // original video dimensions
-   vid_h_orig;
+  slideShowTimer;
 
   constructor(private ref: ChangeDetectorRef) {
   }
 
-   ngOnInit():void{
+  ngOnInit():void{
     console.log("ngOnInit");
 
+    //is it mobile?
+    var isMobile:Boolean
+    if (typeof window.orientation !== 'undefined')
+      isMobile = true;
+    else
+      isMobile = false;
 
+    //force mobile for testing
+   // isMobile = true;
+
+    this.videoObject =  document.getElementById('hero-video') as HTMLVideoElement;
     //detect mobile?
-    if (typeof window.orientation !== 'undefined') {
+    if (isMobile) {
       //mobile
       ////add timer for triggering slideshow here...
-
+      clearInterval(this.slideShowTimer);    
+      this.slideShowTimer = setInterval(this.goToNextSlide.bind(this), 5000);
     }
     else{
       //desktop
       ////add video listeners
-      this.videoObject =  document.getElementById('hero-video') as HTMLVideoElement;
       this.videoObject.addEventListener('ended',this.onVideoEnded.bind(this),false);
       this.videoObject.addEventListener('loadeddata',this.onVideoLoaded.bind(this),false);
     }
@@ -74,10 +84,7 @@ export class HomePageComponent implements OnInit {
    onVideoEnded():void{
      console.log("onVideoEnded");
      //show the next video...
-      if(this.activeVideoId >= this.videos.length-1)
-        this.activeVideoId = 0;
-      else
-        this.activeVideoId = this.activeVideoId + 1;
+      this.goToNextSlide();
 
       this.videoObject.currentTime = 0;
       this.videoTitle = "";
@@ -116,5 +123,17 @@ export class HomePageComponent implements OnInit {
     jQuery('#video-viewport').scrollLeft((jQuery('#hero-video').width() - jQuery(window).width()) / 2);
     jQuery('#video-viewport').scrollTop((jQuery('#hero-video').height() - jQuery(window).height()*h) / 2);
   };
+
+  goToNextSlide():void{
+    if(this.activeVideoId >= this.videos.length-1)
+      this.activeVideoId = 0;
+    else
+      this.activeVideoId = this.activeVideoId + 1;
+  }
+
+  ngOnDestroy(){
+    //stop the slide timer when we leave the home page
+    clearInterval(this.slideShowTimer);    
+  }
 
 }
