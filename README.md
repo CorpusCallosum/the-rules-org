@@ -25,9 +25,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-For building to test on gh-pages, use the command `ng build --base-href /the-rules-org/dist/` to change the base href path for support :D
-
-note: don't forget the extra / in front of the base HREF, making it an absolute path!
+For building to test on gh-pages, use the command `npm run build-ghp`. This script is defined in package.json
 
 ## Running unit tests
 

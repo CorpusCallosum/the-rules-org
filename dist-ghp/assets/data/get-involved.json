@@ -1,0 +1,26 @@
+
+{
+  "questions":
+  [
+    {
+      "questionTxt":"Connect with us",
+      "answerTxt":"<ul><li>Write an email: <a href='mailto:contact@therules.org'>contact@therules.org</a><li>Comment on a blog post: <a href='http://www.therules.org/blog'>www.therules.org/blog</a></li><li>Leave a comment on the Facebook page: <a href='https://www.facebook.com/therules.org'>https://www.facebook.com/therules.org</a></li><li>Tweet at: <a href='http://twitter.com/therulesorg'>@TheRulesOrg</a></li><li><a href='http://instagram.com/therulesorg'>Check out @therulesorg on Instagram</a></li><li>Find TR on Whatsapp: [Can we use Ashram number here?]</li></ul>"
+    },
+    {
+      "questionTxt":"Remix the ideas and content we share and create your own",
+      "answerTxt":"No one owns ideas and the best ones are created in collaboration and constantly evolving. Everything on this site is registered under a Creative Commons license. Download, play, remix, and share. All we ask is that when you do so, you remember to share with us too."
+    },
+    {
+      "questionTxt":"Contribute your time and skills",
+      "answerTxt":"This global work is impossible without the collaboration of writers, technologists, artists and translators. If that is you, please email us [link]. We can’t promise that there will be opportunities to get up to any mischief immediately, but knowing who you are now means we can get together when there is."
+    },
+    {
+      "questionTxt":"Connect with a global community",
+      "answerTxt":"As well as in our various social media spaces, it’s also possible to grow your global community by applying for the Activist Ashram. The Ashram is a solidarity network; a space for activists to come together to examine how various struggles are connected as part of a global system of oppression. Solidarity is built through the sharing of stories and experience, analysis, wisdom, friendship and organising tactics. The Ashram also focuses on holistic activism and the spiritual aspects of the struggle. Find out more here: (LINK)"
+    },
+    {
+      "questionTxt":"Donate",
+      "answerTxt":"We do not accept funding from governments, corporations or anyone who wants to compromise our campaigns. We maintain our independence with funds from foundations and individuals dedicated to co-creating a world that works for all. If you would like to contribute financially to changing the rules, <a href='https://donatenow.networkforgood.org/therules' target='_blank'>visit our donation page</a>"
+    }
+  ]
+}
