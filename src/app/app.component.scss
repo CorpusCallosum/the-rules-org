@@ -10,7 +10,7 @@
   font-family: blackout-midnight;
   margin:0;
   z-index: 999;
-  margin-bottom: -50px;
+  margin-bottom: 0px;
   width: 100%;
   
   &.home{
@@ -21,6 +21,7 @@
     position: fixed;
     top: 0;
     left: 0;
+    margin-bottom: -50px;
   }
 }
 
