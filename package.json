@@ -8,7 +8,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build-ghp": "ng build --output-path=dist-ghp/ --base-href=/the-rules-org/dist-ghp/"
   },
   "private": true,
   "dependencies": {
