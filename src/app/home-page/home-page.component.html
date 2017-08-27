@@ -1,7 +1,7 @@
 <div id="hero">
   <div id="video-viewport">
     <video id="hero-video" width="1280" height="720" autoplay muted playsinline
-            poster="./assets/images/standing-rock.png"
+            poster="{{videos[activeVideoId].image}}"
             [src]="videos[activeVideoId].src" poster="assets/images/video_placeholder.jpg"
             [ngClass]="{'animate-hide': hideVideo }"
             >
