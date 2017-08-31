@@ -11,14 +11,14 @@ export class HomePageComponent implements OnInit {
 
   videos = [
     {
+      "src":"assets/videos/hero/chl.mp4",
+      "title":"The CHL is the space where we work to better understand what stories are shaping culture. We seek to answer questions such as: what are the stories we believe and share about how the world works? How do these stories help sustain the way human beings or the environment are defined by the economy? The CHL test the ways of effectively changing those stories over time, so as to change our culture.",
+      "image":"assets/videos/hero/chl.gif"
+    },
+    {
       "src":"assets/videos/hero/CHANGE_THE_RULES.m4v",
       "title":"Brooklyn offal retro drinking vinegar officia mixtape meggings literally bicycle rights. Duis before they sold out ugh, kitsch wayfarers shaman affogato twee synth chia laboris subway tile post-ironic air plant salvia. 3 wolf moon jean shorts pok pok man braid la croix PBR&B artisan deserunt nulla asymmetrical nisi messenger bag air plant snackwave keffiyeh.",
       "image":"assets/images/slideshow/change-the-rules.jpg"
-    },
-    {
-      "src":"assets/videos/hero/CULTURE_HACK_LAB.m4v",
-      "title":"The CHL is the space where we work to better understand what stories are shaping culture. We seek to answer questions such as: what are the stories we believe and share about how the world works? How do these stories help sustain the way human beings or the environment are defined by the economy? The CHL test the ways of effectively changing those stories over time, so as to change our culture.",
-      "image":"assets/images/slideshow/culture-hack-lab.jpg"
     }
   ];
 
@@ -56,7 +56,7 @@ export class HomePageComponent implements OnInit {
     if (isMobile) {
       //mobile
       ////add timer for triggering slideshow here...
-      clearInterval(this.slideShowTimer);    
+      clearInterval(this.slideShowTimer);
       this.slideShowTimer = setInterval(this.goToNextSlide.bind(this), 5000);
     }
     else{
@@ -92,7 +92,7 @@ export class HomePageComponent implements OnInit {
       this.ref.detectChanges();
    }
 
-  
+
    resizeToCover():void {
     console.log("resizeToCover");
     var h = .8; //video height as percentage of window height
@@ -133,7 +133,7 @@ export class HomePageComponent implements OnInit {
 
   ngOnDestroy(){
     //stop the slide timer when we leave the home page
-    clearInterval(this.slideShowTimer);    
+    clearInterval(this.slideShowTimer);
   }
 
 }
