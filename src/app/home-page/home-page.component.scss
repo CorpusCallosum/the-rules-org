@@ -123,13 +123,14 @@
   }
 }
 
-.join-the-movement-header{
-  @include parallax($parallaxAmount);
-  background-image: linear-gradient(to right,rgba(0,0,0,1),rgba(0,0,0,0)), url(/assets/images/join-the-movement.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  height: $parallaxHeight;
-  background-attachment: fixed;
+.image-caption{
+  font-family: fira-regular;
+  font-size: 13px;
+  background-color: rgba(0,0,0,1);
+  display: block;
+  padding: 5px 10px;
+  opacity: .8;
+  margin-top: -35px;
 }
+
+
