@@ -9,7 +9,7 @@
 body{
   background-color: $bgColor;
   color: $textColor;
-  font-family: fira-medium;
+  font-family: fira-medium, arial, sans-serif;
   font-size: 18px;
 }
 
@@ -41,8 +41,6 @@ h4{
 }
 
 p{
-  color: $textColor;
-  font-family: fira-medium;
   font-size: 18px;
   margin-bottom: 1em;
   strong{
