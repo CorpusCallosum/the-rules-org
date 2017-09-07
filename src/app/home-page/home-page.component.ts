@@ -1,4 +1,5 @@
 import { Component, OnInit, ChangeDetectorRef, OnDestroy } from '@angular/core';
+import { EmailValidator } from '@angular/forms';
 declare var jQuery:any;
 
 @Component({
@@ -8,6 +9,8 @@ declare var jQuery:any;
 })
 
 export class HomePageComponent implements OnInit {
+
+  email:String;
 
   videos = [
     {
@@ -129,6 +132,29 @@ export class HomePageComponent implements OnInit {
       this.activeVideoId = 0;
     else
       this.activeVideoId = this.activeVideoId + 1;
+  }
+
+  emailError:String = "";
+  formIsValid:Boolean = false;
+  onClickSignUp(){
+
+    //validate the form
+    var emailIsValid:Boolean = this.validateEmail(this.email);
+    if(emailIsValid){
+      this.emailError = "";
+    }
+    else{
+      this.emailError = "Email is invalid, please fix."
+      return;
+    }
+
+    this.formIsValid = true;
+
+  }
+
+  validateEmail(email) {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
   }
 
   ngOnDestroy(){

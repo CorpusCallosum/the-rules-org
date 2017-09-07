@@ -1,10 +1,7 @@
 /* IMPORTS */
 @import '../css/colors';
 @import '../css/fonts';
-@import '../css/parallax';
 @import '../css/breakpoints';
-
-@include parallax-init;
 
 #hero{
   position: relative;
@@ -152,6 +149,7 @@
     font-size: 16px;
   }
   ul{
+    list-style-type: square;
   }
 }
 
