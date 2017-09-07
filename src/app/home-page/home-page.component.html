@@ -7,15 +7,21 @@
             >
       Your browser does not support the video tag.
     </video>
-    <!--<img [src]="videos[activeVideoId].image" />-->
-    <div class="slideShow">
-      <div
+    
+  </div>
+
+  <div class="slideShow">
+      <img [src]="v.image" class="img"
+        *ngFor="let v of videos; let i = index" [attr.data-index]="i"
+        [ngClass]="{'active': activeVideoId==i}"/>
+
+      <!--<div
         class="img"
         [ngStyle]="{'background-image': 'url('+v.image+')'}"
         *ngFor="let v of videos; let i = index" [attr.data-index]="i"
-        [ngClass]="{'active': activeVideoId==i}"> </div>
-    </div>
+        [ngClass]="{'active': activeVideoId==i}"> </div>-->
   </div>
+
   <div class="video-info" [ngClass]="{'animate-hide': hideVideo }">{{videoTitle}}</div>
 </div>
 

@@ -98,7 +98,7 @@ export class HomePageComponent implements OnInit {
     var h = .8; //video height as percentage of window height
     // set the video viewport to the window size
     jQuery('#video-viewport').width(jQuery(window).width());
-    jQuery('#video-viewport').height(jQuery(window).height()*h);
+    jQuery('#video-viewport').height(jQuery(window).height()-80);
 
     console.log("this.vid_w_orig:", this.vid_w_orig);
     console.log("this.vid_h_orig:", this.vid_h_orig);
@@ -107,8 +107,8 @@ export class HomePageComponent implements OnInit {
     console.log("scale:", scale);
 
     // use largest scale factor of horizontal/vertical
-    var scale_h = jQuery(window).width() / this.vid_w_orig;
-    var scale_v = jQuery(window).height() / this.vid_h_orig;
+    var scale_h = (jQuery(window).width() / this.vid_w_orig);
+    var scale_v = (jQuery(window).height() / this.vid_h_orig);
     var scale = scale_h > scale_v ? scale_h : scale_v;
 
     // don't allow scaled width < minimum video width
