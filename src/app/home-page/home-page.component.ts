@@ -10,7 +10,14 @@ declare var jQuery:any;
 
 export class HomePageComponent implements OnInit {
 
+  firstName:String;
+  firstNameError:String = "";
+
+  lastName:String;
+  lastNameError:String = "";
+
   email:String;
+  emailError:String = "";
 
   videos = [
     {
@@ -134,21 +141,38 @@ export class HomePageComponent implements OnInit {
       this.activeVideoId = this.activeVideoId + 1;
   }
 
-  emailError:String = "";
+  
   formIsValid:Boolean = false;
   onClickSignUp(){
+    this.formIsValid = true;
 
     //validate the form
     var emailIsValid:Boolean = this.validateEmail(this.email);
+    
+    if(!this.firstName){
+      this.formIsValid = false;
+      this.firstNameError = "Please enter a first name."
+    }
+    else{
+      this.firstNameError = "";
+    }
+
+    if(!this.lastName){
+      this.formIsValid = false;
+      this.lastNameError = "Please enter a last name."
+    }
+    else{
+      this.lastNameError = "";
+    }
+
     if(emailIsValid){
       this.emailError = "";
     }
     else{
       this.emailError = "Email is invalid, please fix."
-      return;
+      this.formIsValid = false;
     }
 
-    this.formIsValid = true;
 
   }
 
