@@ -1,11 +1,27 @@
 import { Component, OnInit, ChangeDetectorRef, OnDestroy } from '@angular/core';
+import { trigger, transition, style, animate } from '@angular/core'; 
 import { EmailValidator } from '@angular/forms';
+//import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 declare var jQuery:any;
 
 @Component({
   selector: 'my-app',
   templateUrl: './home-page.component.html',
-  styleUrls: ['./home-page.component.scss']
+  styleUrls: ['./home-page.component.scss'],
+  /*animations: [
+    trigger(
+      'enterAnimation', [
+        transition(':enter', [
+          style({transform: 'translateX(100%)', opacity: 0}),
+          animate('500ms', style({transform: 'translateX(0)', opacity: 1}))
+        ]),
+        transition(':leave', [
+          style({transform: 'translateX(0)', opacity: 1}),
+          animate('500ms', style({transform: 'translateX(100%)', opacity: 0}))
+        ])
+      ]
+    )
+  ],*/
 })
 
 export class HomePageComponent implements OnInit {
