@@ -15,6 +15,7 @@ import { GetInvolvedPageComponent } from './get-involved-page/get-involved-page.
 import { SearchableAccordianComponent } from './searchable-accordian/searchable-accordian.component';
 import { BannerComponent } from './banner/banner.component';
 import { VideoOverlayComponent } from './video-overlay/video-overlay.component';
+import { NewsletterSignupComponent } from './newsletter-signup/newsletter-signup.component';
 
 
 //
@@ -28,7 +29,8 @@ import { VideoOverlayComponent } from './video-overlay/video-overlay.component';
     GetInvolvedPageComponent,
     SearchableAccordianComponent,
     BannerComponent,
-    VideoOverlayComponent
+    VideoOverlayComponent,
+    NewsletterSignupComponent
   ],
   imports: [
     BrowserModule,

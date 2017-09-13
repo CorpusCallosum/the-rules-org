@@ -20,11 +20,13 @@
   a{
     //transition: 1s all;
     display: none;
+    font-size: 60px;
+    text-decoration: none;
     &.open{
       display: block;
       position: fixed;
-      top: 10px;
-      right: 10px;
+      top: -17px;
+      right: 15px;
     }
   }
 

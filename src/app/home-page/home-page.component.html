@@ -1,21 +1,27 @@
 <div id="hero">
   <div id="video-viewport">
     <video id="hero-video" width="1280" height="720" autoplay muted playsinline
-            poster="./assets/images/standing-rock.png"
+            poster="{{videos[activeVideoId].image}}"
             [src]="videos[activeVideoId].src" poster="assets/images/video_placeholder.jpg"
             [ngClass]="{'animate-hide': hideVideo }"
             >
       Your browser does not support the video tag.
     </video>
-    <!--<img [src]="videos[activeVideoId].image" />-->
-    <div class="slideShow">
-      <div
+    
+  </div>
+
+  <div class="slideShow">
+      <img [src]="v.image" class="img"
+        *ngFor="let v of videos; let i = index" [attr.data-index]="i"
+        [ngClass]="{'active': activeVideoId==i}"/>
+
+      <!--<div
         class="img"
         [ngStyle]="{'background-image': 'url('+v.image+')'}"
         *ngFor="let v of videos; let i = index" [attr.data-index]="i"
-        [ngClass]="{'active': activeVideoId==i}"> </div>
-    </div>
+        [ngClass]="{'active': activeVideoId==i}"> </div>-->
   </div>
+
   <div class="video-info" [ngClass]="{'animate-hide': hideVideo }">{{videoTitle}}</div>
 </div>
 
@@ -53,9 +59,12 @@
     </div>
   </div>
   <div class="row">
+    <!-- Standing Rock Portrait-->
     <div class="col-md-3 visible-md-block visible-lg-block">
       <img src="./assets/images/standing-rock.png" alt="Standing Rock" height="100%" width="100%">
+      <span class="image-caption">"Portrait of Dakota Woman in Standing Rock by /TR"</span>
     </div>
+
     <div class="col-md-9">
        <p>
         Our work is to connect the dots: to show how these seemingly disparate issues are all interconnected. We reveal and critique the rules of our system but we also shine a light on a diversity of beautiful alternatives, showing that we have the power to change those rules.
@@ -63,11 +72,6 @@
       <p>
         As the Indian writer Arundhati Roy says: “Another world is not only possible, she is on her way. On a quiet day, I can hear her breathing.” The Rules exists to contribute to the transition to this more just and thriving world.
       </p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-12">
-
     </div>
   </div>
 </div>
@@ -86,34 +90,46 @@
         <a href="">Facebook</a> / <a href="">Twitter</a>
       </p>
 
-      <!--<h2>The TR community</h2>-->
-      <p>
-      The Rules community is constantly growing and evolving. We’re deeply diverse, but share one thing in common - an interest in changing the way the world is currently working (even if we might disagree on how that might look). Join in!
-      </p>
-      <ul>
-        <li>Sign up for /TR emails for mischief-making opportunities and remixable content</li>
-        <li>Follow us on Twitter for updates, commentary and culture changing content: <a href="https://www.instagram.com/therulesorg">@TheRulesOrg</a></li>
-        <li>
-          Like us on Facebook for thoughtful insights, opportunities to engage and rigorous debate: <a href="https://www.facebook.com/therules.org">https://www.facebook.com/therules.org</a>
-        </li>
-        <li>Follow us on Instagram for creative interventions and pictures depicting what’s possible: @therulesorg</li>
-      </ul>
+      <div class="join-bottom">
+        <p>
+        The Rules community is constantly growing and evolving. We’re deeply diverse, but share one thing in common - an interest in changing the way the world is currently working (even if we might disagree on how that might look). Join in!
+        </p>
+        <ul>
+          <li>Sign up for /TR emails for mischief-making opportunities and remixable content</li>
+          <li>Follow us on Twitter for updates, commentary and culture changing content: <a href="https://www.instagram.com/therulesorg">@TheRulesOrg</a></li>
+          <li>
+            Like us on Facebook for thoughtful insights, opportunities to engage and rigorous debate: <a href="https://www.facebook.com/therules.org">https://www.facebook.com/therules.org</a>
+          </li>
+          <li>Follow us on Instagram for creative interventions and pictures depicting what’s possible: @therulesorg</li>
+        </ul>
+      </div>
 
     </div>
 
     <!-- NEWSLETTER SIGNUP FORM -->
     <div class="col-md-4">
-      <h4>First Name (Or Nickname)</h4>
-      <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+      <app-newsletter-signup></app-newsletter-signup>
+      <!--<form #f="ngForm">
+        <h4>First Name (Or Nickname)</h4>
+        <input type="text" [(ngModel)]="firstName" name="firstName" class="form-control" placeholder="" aria-describedby="basic-addon1">
+        <div class="errorMessage">{{firstNameError}}</div>
 
-      <h4>Second Name</h4>
-      <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+        <h4>Second Name</h4>
+        <input type="text" [(ngModel)]="lastName" name="lastName" class="form-control" placeholder="" aria-describedby="basic-addon1">
+        <div class="errorMessage">{{lastNameError}}</div>
 
-      <h4>Email Address</h4>
-      <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+        <h4>Email Address</h4>
+        <input type="email" [(ngModel)]="email" name="email" required email class="form-control">
+        <div class="errorMessage">{{emailError}}</div>
 
-      <br>
-      <button type="button" class="btn btn-default">SIGN UP</button>
+        <br>
+
+        <span *ngIf="formIsValid" class="thanks">Thanks for signing up!</span>
+
+        <button *ngIf="!formIsValid" type="button" class="btn btn-default" (click)="onClickSignUp()">
+          SIGN UP
+        </button>
+      </form>-->
     </div>
 
   </div>

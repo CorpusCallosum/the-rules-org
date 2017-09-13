@@ -1,24 +1,50 @@
 import { Component, OnInit, ChangeDetectorRef, OnDestroy } from '@angular/core';
+import { trigger, transition, style, animate } from '@angular/core'; 
+import { EmailValidator } from '@angular/forms';
+//import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 declare var jQuery:any;
 
 @Component({
   selector: 'my-app',
   templateUrl: './home-page.component.html',
-  styleUrls: ['./home-page.component.scss']
+  styleUrls: ['./home-page.component.scss'],
+  /*animations: [
+    trigger(
+      'enterAnimation', [
+        transition(':enter', [
+          style({transform: 'translateX(100%)', opacity: 0}),
+          animate('500ms', style({transform: 'translateX(0)', opacity: 1}))
+        ]),
+        transition(':leave', [
+          style({transform: 'translateX(0)', opacity: 1}),
+          animate('500ms', style({transform: 'translateX(100%)', opacity: 0}))
+        ])
+      ]
+    )
+  ],*/
 })
 
 export class HomePageComponent implements OnInit {
 
+  firstName:String;
+  firstNameError:String = "";
+
+  lastName:String;
+  lastNameError:String = "";
+
+  email:String;
+  emailError:String = "";
+
   videos = [
+    {
+      "src":"assets/videos/hero/chl.mp4",
+      "title":"The CHL is the space where we work to better understand what stories are shaping culture. We seek to answer questions such as: what are the stories we believe and share about how the world works? How do these stories help sustain the way human beings or the environment are defined by the economy? The CHL test the ways of effectively changing those stories over time, so as to change our culture.",
+      "image":"assets/videos/hero/chl.gif"
+    },
     {
       "src":"assets/videos/hero/CHANGE_THE_RULES.m4v",
       "title":"Brooklyn offal retro drinking vinegar officia mixtape meggings literally bicycle rights. Duis before they sold out ugh, kitsch wayfarers shaman affogato twee synth chia laboris subway tile post-ironic air plant salvia. 3 wolf moon jean shorts pok pok man braid la croix PBR&B artisan deserunt nulla asymmetrical nisi messenger bag air plant snackwave keffiyeh.",
       "image":"assets/images/slideshow/change-the-rules.jpg"
-    },
-    {
-      "src":"assets/videos/hero/CULTURE_HACK_LAB.m4v",
-      "title":"The CHL is the space where we work to better understand what stories are shaping culture. We seek to answer questions such as: what are the stories we believe and share about how the world works? How do these stories help sustain the way human beings or the environment are defined by the economy? The CHL test the ways of effectively changing those stories over time, so as to change our culture.",
-      "image":"assets/images/slideshow/culture-hack-lab.jpg"
     }
   ];
 
@@ -56,7 +82,7 @@ export class HomePageComponent implements OnInit {
     if (isMobile) {
       //mobile
       ////add timer for triggering slideshow here...
-      clearInterval(this.slideShowTimer);    
+      clearInterval(this.slideShowTimer);
       this.slideShowTimer = setInterval(this.goToNextSlide.bind(this), 5000);
     }
     else{
@@ -92,13 +118,13 @@ export class HomePageComponent implements OnInit {
       this.ref.detectChanges();
    }
 
-  
+
    resizeToCover():void {
     console.log("resizeToCover");
     var h = .8; //video height as percentage of window height
     // set the video viewport to the window size
     jQuery('#video-viewport').width(jQuery(window).width());
-    jQuery('#video-viewport').height(jQuery(window).height()*h);
+    jQuery('#video-viewport').height(jQuery(window).height()-80);
 
     console.log("this.vid_w_orig:", this.vid_w_orig);
     console.log("this.vid_h_orig:", this.vid_h_orig);
@@ -107,8 +133,8 @@ export class HomePageComponent implements OnInit {
     console.log("scale:", scale);
 
     // use largest scale factor of horizontal/vertical
-    var scale_h = jQuery(window).width() / this.vid_w_orig;
-    var scale_v = jQuery(window).height() / this.vid_h_orig;
+    var scale_h = (jQuery(window).width() / this.vid_w_orig);
+    var scale_v = (jQuery(window).height() / this.vid_h_orig);
     var scale = scale_h > scale_v ? scale_h : scale_v;
 
     // don't allow scaled width < minimum video width
@@ -131,9 +157,49 @@ export class HomePageComponent implements OnInit {
       this.activeVideoId = this.activeVideoId + 1;
   }
 
+  
+  formIsValid:Boolean = false;
+  onClickSignUp(){
+    this.formIsValid = true;
+
+    //validate the form
+    var emailIsValid:Boolean = this.validateEmail(this.email);
+    
+    if(!this.firstName){
+      this.formIsValid = false;
+      this.firstNameError = "Please enter a first name."
+    }
+    else{
+      this.firstNameError = "";
+    }
+
+    if(!this.lastName){
+      this.formIsValid = false;
+      this.lastNameError = "Please enter a last name."
+    }
+    else{
+      this.lastNameError = "";
+    }
+
+    if(emailIsValid){
+      this.emailError = "";
+    }
+    else{
+      this.emailError = "Email is invalid, please fix."
+      this.formIsValid = false;
+    }
+
+
+  }
+
+  validateEmail(email) {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+  }
+
   ngOnDestroy(){
     //stop the slide timer when we leave the home page
-    clearInterval(this.slideShowTimer);    
+    clearInterval(this.slideShowTimer);
   }
 
 }
