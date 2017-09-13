@@ -108,7 +108,8 @@
 
     <!-- NEWSLETTER SIGNUP FORM -->
     <div class="col-md-4">
-      <form #f="ngForm">
+      <app-newsletter-signup></app-newsletter-signup>
+      <!--<form #f="ngForm">
         <h4>First Name (Or Nickname)</h4>
         <input type="text" [(ngModel)]="firstName" name="firstName" class="form-control" placeholder="" aria-describedby="basic-addon1">
         <div class="errorMessage">{{firstNameError}}</div>
@@ -128,7 +129,7 @@
         <button *ngIf="!formIsValid" type="button" class="btn btn-default" (click)="onClickSignUp()">
           SIGN UP
         </button>
-      </form>
+      </form>-->
     </div>
 
   </div>
