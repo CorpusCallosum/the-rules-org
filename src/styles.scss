@@ -66,13 +66,14 @@ button{
 }
 
 .btn{
+  text-transform: uppercase;
   border-radius: 3px;
   //font-size: 1.2em;
 }
 
 .btn-default{
   background-color: $accentColor2;
-  border: none;
+  border: none !important;
   &:hover{
     background-color: $accentColor1Shadow;
   }
