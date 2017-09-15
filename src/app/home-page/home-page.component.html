@@ -28,12 +28,6 @@
 
 <div class="container">
 
-  <!--<div class="row">
-    <div class="col-md-12">
-      <h1>Our World</h1>
-    </div>
-  </div>-->
-
   <div class="row">
     <div class="col-md-6">
      <h1>Our World</h1>
@@ -53,19 +47,16 @@
     </div>
     <div class="col-md-6">
       <app-video-overlay [ytid]="'jA1_vcqvoFs'"></app-video-overlay>
-      <!--<div class="video-container">
-        <iframe class="video" width="100%" height="300" src="https://www.youtube.com/embed/9ncMdmLFe4Y?rel=0&amp;showinfo=0?ecver=1" frameborder="0" allowfullscreen></iframe>
-      </div>-->
     </div>
   </div>
   <div class="row">
     <!-- Standing Rock Portrait-->
-    <div class="col-md-3 visible-md-block visible-lg-block">
+    <div class="col-md-3 col-sm-6">
       <img src="./assets/images/standing-rock.png" alt="Standing Rock" height="100%" width="100%">
       <span class="image-caption">"Portrait of Dakota Woman in Standing Rock by /TR"</span>
     </div>
 
-    <div class="col-md-9">
+    <div class="col-md-9 col-sm-6">
        <p>
         Our work is to connect the dots: to show how these seemingly disparate issues are all interconnected. We reveal and critique the rules of our system but we also shine a light on a diversity of beautiful alternatives, showing that we have the power to change those rules.
       </p>
@@ -86,8 +77,14 @@
       </p>
 
       <p>
-        <a href="">info@therules.org</a><br/>
-        <a href="">Facebook</a> / <a href="">Twitter</a>
+        <a  href="mailto:info@therules.org" target="_blank">
+          info@therules.org
+        </a>
+        <br/>
+        <a href="https://www.instagram.com/therulesorg" target="_blank">
+          Facebook
+        </a> / 
+        <a href="https://twitter.com/TheRulesOrg" target="_blank">Twitter</a>
       </p>
 
       <div class="join-bottom">
@@ -96,7 +93,7 @@
         </p>
         <ul>
           <li>Sign up for /TR emails for mischief-making opportunities and remixable content</li>
-          <li>Follow us on Twitter for updates, commentary and culture changing content: <a href="https://www.instagram.com/therulesorg">@TheRulesOrg</a></li>
+          <li>Follow us on Twitter for updates, commentary and culture changing content: <a href="https://www.instagram.com/therulesorg" target="_blank">@TheRulesOrg</a></li>
           <li>
             Like us on Facebook for thoughtful insights, opportunities to engage and rigorous debate: <a href="https://www.facebook.com/therules.org">https://www.facebook.com/therules.org</a>
           </li>
@@ -109,27 +106,6 @@
     <!-- NEWSLETTER SIGNUP FORM -->
     <div class="col-md-4">
       <app-newsletter-signup></app-newsletter-signup>
-      <!--<form #f="ngForm">
-        <h4>First Name (Or Nickname)</h4>
-        <input type="text" [(ngModel)]="firstName" name="firstName" class="form-control" placeholder="" aria-describedby="basic-addon1">
-        <div class="errorMessage">{{firstNameError}}</div>
-
-        <h4>Second Name</h4>
-        <input type="text" [(ngModel)]="lastName" name="lastName" class="form-control" placeholder="" aria-describedby="basic-addon1">
-        <div class="errorMessage">{{lastNameError}}</div>
-
-        <h4>Email Address</h4>
-        <input type="email" [(ngModel)]="email" name="email" required email class="form-control">
-        <div class="errorMessage">{{emailError}}</div>
-
-        <br>
-
-        <span *ngIf="formIsValid" class="thanks">Thanks for signing up!</span>
-
-        <button *ngIf="!formIsValid" type="button" class="btn btn-default" (click)="onClickSignUp()">
-          SIGN UP
-        </button>
-      </form>-->
     </div>
 
   </div>
