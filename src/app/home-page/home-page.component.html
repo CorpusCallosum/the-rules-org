@@ -15,14 +15,10 @@
         *ngFor="let v of videos; let i = index" [attr.data-index]="i"
         [ngClass]="{'active': activeVideoId==i}"/>
 
-      <!--<div
-        class="img"
-        [ngStyle]="{'background-image': 'url('+v.image+')'}"
-        *ngFor="let v of videos; let i = index" [attr.data-index]="i"
-        [ngClass]="{'active': activeVideoId==i}"> </div>-->
+      
   </div>
 
-  <div class="video-info" [ngClass]="{'animate-hide': hideVideo }">{{videoTitle}}</div>
+  <!--<div class="video-info" [ngClass]="{'animate-hide': hideVideo }">{{videoTitle}}</div>-->
 </div>
 
 
@@ -120,7 +116,7 @@
 
       <br>
       <p>
-        If you still have questions about The Rules, you may be able to <a routerLink="/faq">find your answers here</a>. If you can’t find what you’re looking for, you can email <a href="mailto:contact@therules.org">contact@therules.org</a>.
+        If you still have questions about The Rules, you may be able to <a routerLink="/faq">find your answers here</a>. If you can’t find what you’re looking for, you can email <a href="mailto:contact@therules.org" target="_blank">contact@therules.org</a>.
       </p>
 
     </div>

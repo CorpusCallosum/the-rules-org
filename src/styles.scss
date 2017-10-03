@@ -36,7 +36,7 @@ h2 {
 }
 
 h4{
-  color: $accentColor2Light;
+  color: white;
   font-family: fira-book;
 }
 
@@ -46,8 +46,10 @@ p{
   strong{
     font-family: fira-book;
     color: white;
+    font-style: italic;
   }
 }
+
 
 //LINKS
 a{
