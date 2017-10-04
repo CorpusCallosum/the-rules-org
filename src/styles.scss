@@ -50,13 +50,22 @@ p{
   }
 }
 
+strong{
+  font-family: fira-bold;
+  color: white;
+}
+
+li{
+  margin: 10px 0px;
+}
+
 
 //LINKS
 a{
   color: $textColor;
   text-decoration: underline;
   cursor: pointer;
-  &:hover{
+  &:hover, &:focus{
     color: $accentColor1;
   }
 }
