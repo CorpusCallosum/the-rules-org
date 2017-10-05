@@ -4,7 +4,7 @@
   [
     {
       "questionTxt":"What is The Rules?",
-      "answerTxt":"The Rules is a global network of activists, organizers, designers, researchers, writers, coders and others dedicated to changing the rules that create inequality, poverty and climate change. <a href='/#/about' routerLink='/about'>You can find out more here</a>"
+      "answerTxt":"The Rules is a global network of activists, organizers, designers, researchers, writers, coders and others dedicated to changing the rules that create inequality, poverty and climate change. <a href='#/about' routerLink='/about'>You can find out more here</a>"
     },
     {
       "questionTxt":"Who are the people behind The Rules?",
@@ -36,7 +36,7 @@
     },
     {
       "questionTxt":"I would like to support the work and/or volunteer, what should I do?",
-      "answerTxt":"Write to <a href='mailto:contact@therules.org' target='_blank'>contact@therules.org</a> . Mention any specific skill sets you’d like to volunteer. You can also find out more about how to <a href='/#/get-involved'>get involved with The Rules’ work</a>, or <a href='http://eepurl.com/VdmKr' target='_blank'>sign up to receive the weekly newsletter for the most current opportunities</a>"
+      "answerTxt":"Write to <a href='mailto:contact@therules.org' target='_blank'>contact@therules.org</a> . Mention any specific skill sets you’d like to volunteer. You can also find out more about how to <a href='#/get-involved'>get involved with The Rules’ work</a>, or <a href='http://eepurl.com/VdmKr' target='_blank'>sign up to receive the weekly newsletter for the most current opportunities</a>"
     },
     {
       "questionTxt":"I really like your video/graphics/posters. Can I use them for our presentation/video/report etc?",
