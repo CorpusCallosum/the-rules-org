@@ -17,7 +17,7 @@ export class NewsletterSignupComponent implements OnInit {
   ngAfterViewInit() {
     var s = document.createElement("script");
     s.type = "text/javascript";
-    s.src = "http://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js";
+    s.src = "https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js";
     this.elementRef.nativeElement.appendChild(s);
   }
 }
