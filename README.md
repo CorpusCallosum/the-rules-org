@@ -10,8 +10,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Gettings set up
 1. Clone the repository
 2. Open Terminal
-3. Install the Angular CLI globally (see below for instructions)
-4. Install the node package by running `sudo npm install`
+3. If you don't already have it, install the Angular CLI globally on your computer by running sudo npm install -g @angular/cli@latest
+4. In terminal navigate to the folder where you cloned the repository and install the node package by running `sudo npm install`
 
 ## Steps for making changes to Text / HTML
 1. Run `ng serve` for a dev server. Navigate to `http://localhost:4200/` in your browser. The app will automatically reload if you change any of the source files.
