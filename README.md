@@ -19,9 +19,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 3. The contents of the FAQ and Get Involved sections are stored as JSON data files located in `src/assets/data` folder
 4. Make any changes to HTML or JSON, then save the file, Angular CLI will automatically recompile and reload the page
 5. Once the changes are complete, run `ng build` to build the project into the `dist` folder
-6. Copy the contents of the `dist` folder into the root of the repository - this is where the site gets served from on gh-pages
-7. Push the updates into the gh-pages branch of the repository - this is where the site is served from
-8. Changes usually take effect within a few minutes - clear your cache and reload the page www.therules.org to see your changes.
+6. Using FTP, copy over the the contents of the `dist` folder into the root of the SFTP host.
+7. Presto! Your changes should now be visible on http://therules.org
 
 ## Install the Angular CLI and Node Packages
 
