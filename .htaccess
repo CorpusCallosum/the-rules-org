@@ -1,6 +1,23 @@
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteCond %{HTTP_HOST} =therules.org [NC]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_URI} !^/?#/
-RewriteRule ^/?(.*) http://blog.therules.org/$1 [R=301]
+RewriteRule . /index.php [L]
+</IfModule>
+# Exclude the file upload and WP CRON scripts from authentication
+<FilesMatch "(async-upload\.php|wp-cron\.php|xmlrpc\.php)$">
+Satisfy Any
+Order allow,deny
+Allow from all
+Deny from none
+</FilesMatch>
+<IfModule mod_headers.c>
+Header add Access-Control-Allow-Origin "*"
+</IfModule>
+
+# END WordPress
+
