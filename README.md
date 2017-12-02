@@ -3,7 +3,24 @@
 Website front-end for www.therules.org
 dev hosted on: https://corpuscallosum.github.io/the-rules-org/dist/
 
+Site built by Jack Kalish - www.jackkalish.com
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+
+## Gettings set up
+1. Clone the repository
+2. Open Terminal
+3. If you don't already have it, install the Angular CLI globally on your computer by running sudo npm install -g @angular/cli@latest
+4. In terminal navigate to the folder where you cloned the repository and install the node package by running `sudo npm install`
+
+## Steps for making changes to Text / HTML
+1. Run `ng serve` for a dev server. Navigate to `http://localhost:4200/` in your browser. The app will automatically reload if you change any of the source files.
+2. HTML files for different pages can be found in the `src/app folder`.
+3. The contents of the FAQ and Get Involved sections are stored as JSON data files located in `src/assets/data` folder
+4. Make any changes to HTML or JSON, then save the file, Angular CLI will automatically recompile and reload the page
+5. Once the changes are complete, run `ng build` to build the project into the `dist` folder
+6. Using FTP, copy over the the contents of the `dist` folder into the root of the SFTP host.
+7. Presto! Your changes should now be visible on http://therules.org
 
 ## Install the Angular CLI and Node Packages
 
