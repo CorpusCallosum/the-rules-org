@@ -36,15 +36,28 @@ export class HomePageComponent implements OnInit {
   emailError:String = "";
 
   videos = [
+    //Change the Rules
     {
-      "src":"assets/videos/hero/chl.mp4",
-      "title":"The CHL is the space where we work to better understand what stories are shaping culture. We seek to answer questions such as: what are the stories we believe and share about how the world works? How do these stories help sustain the way human beings or the environment are defined by the economy? The CHL test the ways of effectively changing those stories over time, so as to change our culture.",
-      "image":"assets/videos/hero/chl.gif"
-    },
-    {
-      "src":"assets/videos/hero/CHANGE_THE_RULES.m4v",
+      "src":"assets/videos/hero/rules-video.m4v",
       "title":"Brooklyn offal retro drinking vinegar officia mixtape meggings literally bicycle rights. Duis before they sold out ugh, kitsch wayfarers shaman affogato twee synth chia laboris subway tile post-ironic air plant salvia. 3 wolf moon jean shorts pok pok man braid la croix PBR&B artisan deserunt nulla asymmetrical nisi messenger bag air plant snackwave keffiyeh.",
-      "image":"assets/images/slideshow/change-the-rules.jpg"
+      "image":"assets/videos/hero/rules-mobile.png",
+      "poster":"assets/videos/hero/rules-poster.png"
+    },
+
+    //Culture Hack Lab
+    {
+      "src":"assets/videos/hero/chl-video.mov",
+      "title":"The CHL is the space where we work to better understand what stories are shaping culture. We seek to answer questions such as: what are the stories we believe and share about how the world works? How do these stories help sustain the way human beings or the environment are defined by the economy? The CHL test the ways of effectively changing those stories over time, so as to change our culture.",
+      "image":"assets/videos/hero/chl-mobile.gif",
+      "poster":"assets/videos/hero/chl-poster.png"
+    },
+    
+    //Aurora
+    {
+      "src":"assets/videos/hero/aurora-video.mp4",
+      "title":"Brooklyn offal retro drinking vinegar officia mixtape meggings literally bicycle rights. Duis before they sold out ugh, kitsch wayfarers shaman affogato twee synth chia laboris subway tile post-ironic air plant salvia. 3 wolf moon jean shorts pok pok man braid la croix PBR&B artisan deserunt nulla asymmetrical nisi messenger bag air plant snackwave keffiyeh.",
+      "image":"assets/videos/hero/aurora-mobile.gif",
+      "poster":"assets/videos/hero/aurora-poster.png"
     }
   ];
 

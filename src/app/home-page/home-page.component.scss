@@ -129,6 +129,7 @@
 }
 
 .image-caption{
+  color: $accentColor2;
   font-family: fira-regular;
   font-size: 13px;
   background-color: rgba(0,0,0,1);
@@ -136,6 +137,7 @@
   padding: 5px 10px;
   opacity: .8;
   margin-top: -35px;
+  font-style: italic;
 }
 
 .join-bottom{
