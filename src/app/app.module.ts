@@ -17,7 +17,6 @@ import { BannerComponent } from './banner/banner.component';
 import { VideoOverlayComponent } from './video-overlay/video-overlay.component';
 import { NewsletterSignupComponent } from './newsletter-signup/newsletter-signup.component';
 import { PagePostgrowthComponent } from './page-postgrowth/page-postgrowth.component';
-import { YoutubeVideoComponent } from './youtube-video/youtube-video.component';
 
 
 //
@@ -33,9 +32,8 @@ import { YoutubeVideoComponent } from './youtube-video/youtube-video.component';
     BannerComponent,
     VideoOverlayComponent,
     NewsletterSignupComponent,
-    PagePostgrowthComponent,
-    YoutubeVideoComponent
-  ],
+    PagePostgrowthComponent
+   ],
   imports: [
     BrowserModule,
     FormsModule,
