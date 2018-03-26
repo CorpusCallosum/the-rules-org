@@ -22,6 +22,12 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 6. Using FTP, copy over the the contents of the `dist` folder into the root of the SFTP host.
 7. Presto! Your changes should now be visible on http://therules.org
 
+## How to add a new page
+1. Use `ng generate component page-name` to create a new component for your page.
+2. In `app-routing.module.ts` import your new component and add the route for it.
+3. Your new page should now load when you navigate to the route - check it out!
+4. Edit your page HTML just as you would any other - it is located in `/page-name/page-name.component.html`
+
 ## Install the Angular CLI and Node Packages
 
 First thing's first--
@@ -45,11 +51,9 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 For building to test on gh-pages, use the command `npm run build-ghp`. This script is defined in package.json
 
 ## Running unit tests
-
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
 ## Running end-to-end tests
-
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 Before running the tests make sure you are serving the app via `ng serve`.
 

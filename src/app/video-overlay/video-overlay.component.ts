@@ -9,6 +9,7 @@ import {DomSanitizer,SafeResourceUrl,} from '@angular/platform-browser';
 export class VideoOverlayComponent implements OnInit {
 
   @Input() ytid:string;
+  @Input() noOverlay:Boolean = false;
   url: SafeResourceUrl;
 
   isOpen:Boolean = false;
@@ -37,7 +38,10 @@ export class VideoOverlayComponent implements OnInit {
         });
       }*/
 
+
+    if(!this.noOverlay){
       this.monitor = setInterval(this.checkfocus.bind(this), 100);
+    }
 
   }
 
