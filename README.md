@@ -22,6 +22,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 6. Using FTP, copy over the the contents of the `dist` folder into the root of the SFTP host.
 7. Presto! Your changes should now be visible on http://therules.org
 
+## How to add a new page
+
+
 ## Install the Angular CLI and Node Packages
 
 First thing's first--
