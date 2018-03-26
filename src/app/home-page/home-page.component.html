@@ -1,74 +1,63 @@
 <div id="hero">
   <div id="video-viewport">
     <video id="hero-video" width="1280" height="720" autoplay muted playsinline
-            poster="./assets/images/standing-rock.png"
-            [src]="videos[activeVideoId].src" poster="assets/images/video_placeholder.jpg"
+            poster="{{videos[activeVideoId].poster}}"
+            [src]="videos[activeVideoId].src"
             [ngClass]="{'animate-hide': hideVideo }"
             >
       Your browser does not support the video tag.
     </video>
-    <!--<img [src]="videos[activeVideoId].image" />-->
-    <div class="slideShow">
-      <div
-        class="img"
-        [ngStyle]="{'background-image': 'url('+v.image+')'}"
-        *ngFor="let v of videos; let i = index" [attr.data-index]="i"
-        [ngClass]="{'active': activeVideoId==i}"> </div>
-    </div>
+    
   </div>
-  <div class="video-info" [ngClass]="{'animate-hide': hideVideo }">{{videoTitle}}</div>
+
+  <div class="slideShow">
+      <img [src]="v.image" class="img"
+        *ngFor="let v of videos; let i = index" [attr.data-index]="i"
+        [ngClass]="{'active': activeVideoId==i}"/>
+
+      
+  </div>
+
+  <!--<div class="video-info" [ngClass]="{'animate-hide': hideVideo }">{{videoTitle}}</div>-->
 </div>
 
 
 <div class="container">
 
-  <!--<div class="row">
-    <div class="col-md-12">
-      <h1>Our World</h1>
-    </div>
-  </div>-->
-
   <div class="row">
     <div class="col-md-6">
      <h1>Our World</h1>
       <p>
-        Our world is in crisis. It’s political, economical, environmental, and spiritual.
+        Our world is in crisis. It’s political, economic, environmental, and spiritual.
       </p>
 
       <p>
-        Everyone is asking why but few people are satisfied with the answers their politicians, the ‘experts’ or the media are giving them.
+        Everyone is asking why but few of us are satisfied with the answers our politicians or much of the mainstream media are giving us.
       </p>
 
       <p>
-        At The Rules, we work to make sense of these crises, and reveal a global malaise, experienced differently in local contexts.
+        The Rules works to make sense of these crises and contribute to the transition toward a more just and thriving world. We connect dots to show how seemingly separate issues are interconnected. We reveal and critique the rules of the current system, and shine a light on beautiful alternatives that work for all and honour Mother Earth. 
       </p>
-
 
     </div>
     <div class="col-md-6">
-      <app-video-overlay [ytid]="'jA1_vcqvoFs'"></app-video-overlay>
-      <!--<div class="video-container">
-        <iframe class="video" width="100%" height="300" src="https://www.youtube.com/embed/9ncMdmLFe4Y?rel=0&amp;showinfo=0?ecver=1" frameborder="0" allowfullscreen></iframe>
-      </div>-->
+      <app-video-overlay [ytid]="'ACke28f3swE'"></app-video-overlay>
     </div>
   </div>
   <div class="row">
-    <div class="col-md-3 visible-md-block visible-lg-block">
+    
+    <!-- Standing Rock Portrait-->
+    <div class="col-md-3 col-sm-6">
       <img src="./assets/images/standing-rock.png" alt="Standing Rock" height="100%" width="100%">
+      <span class="image-caption">Portrait inspired by Standing Rock</span>
     </div>
-    <div class="col-md-9">
-       <p>
-        Our work is to connect the dots: to show how these seemingly disparate issues are all interconnected. We reveal and critique the rules of our system but we also shine a light on a diversity of beautiful alternatives, showing that we have the power to change those rules.
-      </p>
-      <p>
-        As the Indian writer Arundhati Roy says: “Another world is not only possible, she is on her way. On a quiet day, I can hear her breathing.” The Rules exists to contribute to the transition to this more just and thriving world.
-      </p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-12">
 
+    <div class="col-md-9 col-sm-6">
+      <p style="text-align: center; font-size: 1.5em;">
+        As writer Arundhati Roy says: “Another world is not only possible, she is on her way. On a quiet day, I can hear her breathing.” 
+      </p>
     </div>
+
   </div>
 </div>
 
@@ -77,43 +66,50 @@
 <div class="container">
   <div class="row">
     <div class="col-md-8">
-      <p>
-        Now that you know a little more <a routerLink="/about">about The Rules</a> if you still have any questions you may <a routerLink="/faq">find the answer here</a>. If there’s a desire to know more, please get in touch.
-      </p>
 
-      <p>
-        <a href="">info@therules.org</a><br/>
-        <a href="">Facebook</a> / <a href="">Twitter</a>
-      </p>
+      <div class="join-bottom">
+        <p>
+          Across our various social networks you’ll find conversations and collaborations between individuals and organisations who share a belief that the capitalist system needs to be transcended. Whether on Facebook, YouTube, Instagram or Twitter, you’ll find space held for debate, inspiration and collaboration. Here are the various ways you can become a part of the TR community:
+        </p>
 
-      <!--<h2>The TR community</h2>-->
+        <ul>
+          <li>
+            Sign up for TR emails to learn of opportunities to collaborate and to receive remixable content: <a href="http://eepurl.com/VdmKr" target="_blank">eepurl.com/VdmKr</a>
+          </li>
+
+          <li>
+            Like us on Facebook: <a href="https://www.facebook.com/therules.org" target="_blank">www.facebook.com/therules.org</a>
+          </li>
+
+          <li>
+            Follow us on Twitter: <a href="https://twitter.com/TheRulesOrg" target="_blank">@TheRulesOrg</a>
+          </li>
+  
+          <li>
+            Follow us on Instagram: <a href="https://www.instagram.com/therulesorg/" target="_blank">@therulesorg</a>
+          </li>
+
+          <li>
+            Follow us on YouTube: <a href="https://www.youtube.com/therulesorg" target="_blank">www.youtube.com/therulesorg</a>
+          </li>
+
+          <li>
+            Follow us on Telegram: <a href="https://t.me/therules" target="_blank">t.me/therules</a>
+          </li>
+
+        </ul>
+      </div>
+
+      <br>
       <p>
-      The Rules community is constantly growing and evolving. We’re deeply diverse, but share one thing in common - an interest in changing the way the world is currently working (even if we might disagree on how that might look). Join in!
+        If you still have questions about The Rules, you may be able to <a routerLink="/faq">find your answers here</a>. If you can’t find what you’re looking for, you can email <a href="mailto:contact@therules.org" target="_blank">contact@therules.org</a>.
       </p>
-      <ul>
-        <li>Sign up for /TR emails for mischief-making opportunities and remixable content</li>
-        <li>Follow us on Twitter for updates, commentary and culture changing content: <a href="https://www.instagram.com/therulesorg">@TheRulesOrg</a></li>
-        <li>
-          Like us on Facebook for thoughtful insights, opportunities to engage and rigorous debate: <a href="https://www.facebook.com/therules.org">https://www.facebook.com/therules.org</a>
-        </li>
-        <li>Follow us on Instagram for creative interventions and pictures depicting what’s possible: @therulesorg</li>
-      </ul>
 
     </div>
 
     <!-- NEWSLETTER SIGNUP FORM -->
     <div class="col-md-4">
-      <h4>First Name (Or Nickname)</h4>
-      <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
-
-      <h4>Second Name</h4>
-      <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
-
-      <h4>Email Address</h4>
-      <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
-
-      <br>
-      <button type="button" class="btn btn-default">SIGN UP</button>
+      <app-newsletter-signup></app-newsletter-signup>
     </div>
 
   </div>

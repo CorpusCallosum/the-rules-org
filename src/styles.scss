@@ -9,7 +9,7 @@
 body{
   background-color: $bgColor;
   color: $textColor;
-  font-family: fira-medium;
+  font-family: fira-medium, arial, sans-serif;
   font-size: 18px;
 }
 
@@ -36,27 +36,39 @@ h2 {
 }
 
 h4{
-  color: $accentColor2Light;
+  color: white;
   font-family: fira-book;
 }
 
 p{
-  color: $textColor;
-  font-family: fira-medium;
   font-size: 18px;
   margin-bottom: 1em;
   strong{
     font-family: fira-book;
     color: white;
+    font-style: italic;
   }
 }
+
+strong{
+  font-family: fira-bold;
+  color: white;
+}
+
+li{
+  margin: 10px 0px;
+}
+
 
 //LINKS
 a{
   color: $textColor;
   text-decoration: underline;
   cursor: pointer;
-  &:hover{
+ /* &:visited{
+    color: $accentColor1Shadow;
+  }*/
+  &:hover, &:focus{
     color: $accentColor1;
   }
 }
@@ -68,13 +80,14 @@ button{
 }
 
 .btn{
+  text-transform: uppercase;
   border-radius: 3px;
   //font-size: 1.2em;
 }
 
 .btn-default{
   background-color: $accentColor2;
-  border: none;
+  border: none !important;
   &:hover{
     background-color: $accentColor1Shadow;
   }
@@ -100,6 +113,7 @@ button{
 
 .row {
   //margin: 15px 0px 15px 0px;
+  margin-bottom: 10px;
 }
 
 /*VIDEO WRAPPER to maintain aspect ratio */

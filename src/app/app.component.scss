@@ -10,7 +10,7 @@
   font-family: blackout-midnight;
   margin:0;
   z-index: 999;
-  margin-bottom: -50px;
+  margin-bottom: 0px;
   width: 100%;
   
   &.home{
@@ -21,6 +21,7 @@
     position: fixed;
     top: 0;
     left: 0;
+    margin-bottom: -50px;
   }
 }
 
@@ -61,7 +62,7 @@ nav a:focus {
 }
 
 .nav > li{
-
+    margin: 0px;
 }
 
 nav a:hover {
@@ -85,7 +86,14 @@ $footerTextColor:#adadad;
   color: #555;
   border-top: none;
   margin-top: 2em;
+  padding: 1em 1em;
   a{
     color: #adadad;
+    display: block;
+    text-decoration: none;
+    line-height: 2;
+    &:hover, &:focus{
+      color: $accentColor1;
+    }
   }
 }
