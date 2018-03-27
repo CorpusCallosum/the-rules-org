@@ -987,7 +987,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/sharable-image/sharable-image.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"sharable-image\">\n  <a href=\"{{url}}\" title=\"{{title}}\" target=\"_blank\"><img src=\"{{url}}\" alt=\"{{title}}\" width=\"100%\" height=\"auto\"></a>\n\n  <div class=\"share\">\n    Share this: \n    <share-button button=\"facebook\" [url]=url ></share-button>\n    <share-button button=\"twitter\" [url]=url></share-button>\n    <share-button button=\"pinterest\" [url]=url></share-button>\n  </div>\n</div>"
+module.exports = "<div class=\"sharable-image\">\n  <a href=\"{{url}}\" title=\"{{title}}\" target=\"_blank\"><img src=\"{{url}}\" alt=\"{{title}}\" width=\"100%\" height=\"auto\"></a>\n\n  <div class=\"share\">\n    Share this: \n    <span>\n      <share-button button=\"facebook\" theme=\"circles-dark\" [url]=url ></share-button>\n      <share-button button=\"twitter\" theme=\"circles-dark\" [url]=url></share-button>\n      <share-button button=\"pinterest\" theme=\"circles-dark\" [url]=url></share-button>\n    </span>\n  </div>\n</div>"
 
 /***/ }),
 
