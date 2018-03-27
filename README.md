@@ -1,7 +1,8 @@
 # TheRules
 
 Website front-end for www.therules.org
-dev hosted on: https://corpuscallosum.github.io/the-rules-org/dist/
+
+Dev hosted on: https://corpuscallosum.github.io/the-rules-org/dist-ghp/
 
 Site built by Jack Kalish - www.jackkalish.com
 
@@ -28,8 +29,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 3. Your new page should now load when you navigate to the route - check it out!
 4. Edit your page HTML just as you would any other - it is located in `/page-name/page-name.component.html`
 
-## Install the Angular CLI and Node Packages
+## Social Sharing
+- We are using @ngx-share for social sharing implementation.
+- Documentation here: https://murhafsousli.github.io/ngx-sharebuttons/
+- Global settings for the `<share-buttons>` component are defined in `app.module.ts`
+- A custom `<sharable-image>` component is available - see `page-postgrowth` for implementation (https://therules.org/#/postgrowth)
 
+## Install the Angular CLI and Node Packages
 First thing's first--
 If you don't already have it, install the Angular CLI globally on your computer by running `sudo npm install -g @angular/cli@latest`
 
