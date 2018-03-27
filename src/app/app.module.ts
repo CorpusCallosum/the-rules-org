@@ -4,7 +4,10 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule }   from '@angular/router';
 
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+
 import{AppRoutingModule}  from './app-routing.module'
+import {ShareButtonsModule} from 'ngx-sharebuttons';
 
 //my custom components and services imported here
 import { AppComponent }        from './app.component';
@@ -17,7 +20,6 @@ import { BannerComponent } from './banner/banner.component';
 import { VideoOverlayComponent } from './video-overlay/video-overlay.component';
 import { NewsletterSignupComponent } from './newsletter-signup/newsletter-signup.component';
 import { PagePostgrowthComponent } from './page-postgrowth/page-postgrowth.component';
-import { YoutubeVideoComponent } from './youtube-video/youtube-video.component';
 
 
 //
@@ -33,16 +35,17 @@ import { YoutubeVideoComponent } from './youtube-video/youtube-video.component';
     BannerComponent,
     VideoOverlayComponent,
     NewsletterSignupComponent,
-    PagePostgrowthComponent,
-    YoutubeVideoComponent
-  ],
+    PagePostgrowthComponent
+   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ShareButtonsModule.forRoot(),
+    HttpClientModule
   ],
-  providers: [],
+  providers: [HttpClientModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
