@@ -4,7 +4,10 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule }   from '@angular/router';
 
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+
 import{AppRoutingModule}  from './app-routing.module'
+import {ShareButtonsModule} from 'ngx-sharebuttons';
 
 //my custom components and services imported here
 import { AppComponent }        from './app.component';
@@ -38,9 +41,11 @@ import { PagePostgrowthComponent } from './page-postgrowth/page-postgrowth.compo
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ShareButtonsModule.forRoot(),
+    HttpClientModule
   ],
-  providers: [],
+  providers: [HttpClientModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
