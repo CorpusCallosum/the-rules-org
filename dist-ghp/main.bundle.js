@@ -47,7 +47,7 @@ module.exports = module.exports.toString();
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutPageComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -55,7 +55,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 
-var AboutPageComponent = /** @class */ (function () {
+var AboutPageComponent = (function () {
     function AboutPageComponent() {
         this.badges = [
             {
@@ -88,7 +88,7 @@ var AboutPageComponent = /** @class */ (function () {
         this.badgeChanged = false;
     };
     AboutPageComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'my-app',
             template: __webpack_require__("../../../../../src/app/about-page/about-page.component.html"),
             styles: [__webpack_require__("../../../../../src/app/about-page/about-page.component.scss")]
@@ -106,8 +106,8 @@ var AboutPageComponent = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppRoutingModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_page_home_page_component__ = __webpack_require__("../../../../../src/app/home-page/home-page.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__about_page_about_page_component__ = __webpack_require__("../../../../../src/app/about-page/about-page.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__faq_page_faq_page_component__ = __webpack_require__("../../../../../src/app/faq-page/faq-page.component.ts");
@@ -135,11 +135,11 @@ var routes = [
     { path: 'get-involved', component: __WEBPACK_IMPORTED_MODULE_5__get_involved_page_get_involved_page_component__["a" /* GetInvolvedPageComponent */] },
     { path: 'postgrowth', component: __WEBPACK_IMPORTED_MODULE_6__page_postgrowth_page_postgrowth_component__["a" /* PagePostgrowthComponent */] }
 ];
-var AppRoutingModule = /** @class */ (function () {
+var AppRoutingModule = (function () {
     function AppRoutingModule() {
     }
     AppRoutingModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* NgModule */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             imports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["d" /* RouterModule */].forRoot(routes, { useHash: true })],
             exports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["d" /* RouterModule */]]
         })
@@ -181,8 +181,8 @@ module.exports = module.exports.toString();
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -196,7 +196,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var AppComponent = /** @class */ (function () {
+var AppComponent = (function () {
     function AppComponent(route, router) {
         this.title = 'The Rules Org';
         this.menuItems = [
@@ -226,11 +226,11 @@ var AppComponent = /** @class */ (function () {
         });
     };
     AppComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'my-app',
             template: __webpack_require__("../../../../../src/app/app.component.html"),
             styles: [__webpack_require__("../../../../../src/app/app.component.scss")],
-            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_19" /* ViewEncapsulation */].None,
+            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* ViewEncapsulation */].None,
         }),
         __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* Router */]) === "function" && _b || Object])
     ], AppComponent);
@@ -247,27 +247,32 @@ var AppComponent = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__("../../../platform-browser/@angular/platform-browser.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_routing_module__ = __webpack_require__("../../../../../src/app/app-routing.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__home_page_home_page_component__ = __webpack_require__("../../../../../src/app/home-page/home-page.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__about_page_about_page_component__ = __webpack_require__("../../../../../src/app/about-page/about-page.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__faq_page_faq_page_component__ = __webpack_require__("../../../../../src/app/faq-page/faq-page.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__get_involved_page_get_involved_page_component__ = __webpack_require__("../../../../../src/app/get-involved-page/get-involved-page.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__searchable_accordian_searchable_accordian_component__ = __webpack_require__("../../../../../src/app/searchable-accordian/searchable-accordian.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__banner_banner_component__ = __webpack_require__("../../../../../src/app/banner/banner.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__video_overlay_video_overlay_component__ = __webpack_require__("../../../../../src/app/video-overlay/video-overlay.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__newsletter_signup_newsletter_signup_component__ = __webpack_require__("../../../../../src/app/newsletter-signup/newsletter-signup.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__page_postgrowth_page_postgrowth_component__ = __webpack_require__("../../../../../src/app/page-postgrowth/page-postgrowth.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__("../../../platform-browser/esm5/platform-browser.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__("../../../http/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common_http__ = __webpack_require__("../../../common/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_routing_module__ = __webpack_require__("../../../../../src/app/app-routing.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_ngx_sharebuttons__ = __webpack_require__("../../../../ngx-sharebuttons/ngx-sharebuttons.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__home_page_home_page_component__ = __webpack_require__("../../../../../src/app/home-page/home-page.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__about_page_about_page_component__ = __webpack_require__("../../../../../src/app/about-page/about-page.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__faq_page_faq_page_component__ = __webpack_require__("../../../../../src/app/faq-page/faq-page.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__get_involved_page_get_involved_page_component__ = __webpack_require__("../../../../../src/app/get-involved-page/get-involved-page.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__searchable_accordian_searchable_accordian_component__ = __webpack_require__("../../../../../src/app/searchable-accordian/searchable-accordian.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__banner_banner_component__ = __webpack_require__("../../../../../src/app/banner/banner.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__video_overlay_video_overlay_component__ = __webpack_require__("../../../../../src/app/video-overlay/video-overlay.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__newsletter_signup_newsletter_signup_component__ = __webpack_require__("../../../../../src/app/newsletter-signup/newsletter-signup.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__page_postgrowth_page_postgrowth_component__ = __webpack_require__("../../../../../src/app/page-postgrowth/page-postgrowth.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__sharable_image_sharable_image_component__ = __webpack_require__("../../../../../src/app/sharable-image/sharable-image.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
 
 
 
@@ -284,33 +289,37 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 //
-var AppModule = /** @class */ (function () {
+var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["M" /* NgModule */])({
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["I" /* NgModule */])({
             declarations: [
                 //and declared here:
-                __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */],
-                __WEBPACK_IMPORTED_MODULE_6__home_page_home_page_component__["a" /* HomePageComponent */],
-                __WEBPACK_IMPORTED_MODULE_7__about_page_about_page_component__["a" /* AboutPageComponent */],
-                __WEBPACK_IMPORTED_MODULE_8__faq_page_faq_page_component__["a" /* FaqPageComponent */],
-                __WEBPACK_IMPORTED_MODULE_9__get_involved_page_get_involved_page_component__["a" /* GetInvolvedPageComponent */],
-                __WEBPACK_IMPORTED_MODULE_10__searchable_accordian_searchable_accordian_component__["a" /* SearchableAccordianComponent */],
-                __WEBPACK_IMPORTED_MODULE_11__banner_banner_component__["a" /* BannerComponent */],
-                __WEBPACK_IMPORTED_MODULE_12__video_overlay_video_overlay_component__["a" /* VideoOverlayComponent */],
-                __WEBPACK_IMPORTED_MODULE_13__newsletter_signup_newsletter_signup_component__["a" /* NewsletterSignupComponent */],
-                __WEBPACK_IMPORTED_MODULE_14__page_postgrowth_page_postgrowth_component__["a" /* PagePostgrowthComponent */]
+                __WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* AppComponent */],
+                __WEBPACK_IMPORTED_MODULE_8__home_page_home_page_component__["a" /* HomePageComponent */],
+                __WEBPACK_IMPORTED_MODULE_9__about_page_about_page_component__["a" /* AboutPageComponent */],
+                __WEBPACK_IMPORTED_MODULE_10__faq_page_faq_page_component__["a" /* FaqPageComponent */],
+                __WEBPACK_IMPORTED_MODULE_11__get_involved_page_get_involved_page_component__["a" /* GetInvolvedPageComponent */],
+                __WEBPACK_IMPORTED_MODULE_12__searchable_accordian_searchable_accordian_component__["a" /* SearchableAccordianComponent */],
+                __WEBPACK_IMPORTED_MODULE_13__banner_banner_component__["a" /* BannerComponent */],
+                __WEBPACK_IMPORTED_MODULE_14__video_overlay_video_overlay_component__["a" /* VideoOverlayComponent */],
+                __WEBPACK_IMPORTED_MODULE_15__newsletter_signup_newsletter_signup_component__["a" /* NewsletterSignupComponent */],
+                __WEBPACK_IMPORTED_MODULE_16__page_postgrowth_page_postgrowth_component__["a" /* PagePostgrowthComponent */],
+                __WEBPACK_IMPORTED_MODULE_17__sharable_image_sharable_image_component__["a" /* SharableImageComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
                 __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* HttpModule */],
-                __WEBPACK_IMPORTED_MODULE_4__app_routing_module__["a" /* AppRoutingModule */]
+                __WEBPACK_IMPORTED_MODULE_5__app_routing_module__["a" /* AppRoutingModule */],
+                __WEBPACK_IMPORTED_MODULE_6_ngx_sharebuttons__["a" /* ShareButtonsModule */].forRoot(),
+                __WEBPACK_IMPORTED_MODULE_4__angular_common_http__["b" /* HttpClientModule */]
             ],
-            providers: [],
-            bootstrap: [__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]]
+            providers: [__WEBPACK_IMPORTED_MODULE_4__angular_common_http__["b" /* HttpClientModule */]],
+            bootstrap: [__WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* AppComponent */]]
         })
     ], AppModule);
     return AppModule;
@@ -350,7 +359,7 @@ module.exports = module.exports.toString();
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BannerComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -361,21 +370,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-var BannerComponent = /** @class */ (function () {
+var BannerComponent = (function () {
     function BannerComponent() {
     }
     BannerComponent.prototype.ngOnInit = function () {
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* Input */])(),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])(),
         __metadata("design:type", String)
     ], BannerComponent.prototype, "imgSrc", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* Input */])(),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])(),
         __metadata("design:type", String)
     ], BannerComponent.prototype, "title", void 0);
     BannerComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-banner',
             template: __webpack_require__("../../../../../src/app/banner/banner.component.html"),
             styles: [__webpack_require__("../../../../../src/app/banner/banner.component.scss")]
@@ -419,7 +428,7 @@ module.exports = "<!--GET INVOLVED PAGE -->\n<app-searchable-accordian\n  [title
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FaqPageComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -430,7 +439,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-var FaqPageComponent = /** @class */ (function () {
+var FaqPageComponent = (function () {
     //  cdr:ChangeDetectorRef;
     function FaqPageComponent() {
         //  this.cdr = cdr;
@@ -438,7 +447,7 @@ var FaqPageComponent = /** @class */ (function () {
     FaqPageComponent.prototype.ngOnInit = function () {
     };
     FaqPageComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-faq-page',
             template: __webpack_require__("../../../../../src/app/faq-page/faq-page.component.html"),
             styles: [__webpack_require__("../../../../../src/app/faq-page/faq-page.component.css")]
@@ -482,7 +491,7 @@ module.exports = "<!--GET INVOLVED PAGE -->\n\n<app-searchable-accordian\n  [tit
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GetInvolvedPageComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -493,13 +502,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-var GetInvolvedPageComponent = /** @class */ (function () {
+var GetInvolvedPageComponent = (function () {
     function GetInvolvedPageComponent() {
     }
     GetInvolvedPageComponent.prototype.ngOnInit = function () {
     };
     GetInvolvedPageComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-get-involved-page',
             template: __webpack_require__("../../../../../src/app/get-involved-page/get-involved-page.component.html"),
             styles: [__webpack_require__("../../../../../src/app/get-involved-page/get-involved-page.component.css")]
@@ -528,7 +537,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "/* IMPORTS */\n/* COLORS */\n/* Alternate Palette */\n/* FONTS */\n@font-face {\n  font-family: blackout-midnight;\n  src: url(\"/the-rules-org/dist-ghp/assets/fonts/blackout/blackout_midnight-webfont.ttf\"); }\n\n@font-face {\n  font-family: blackout-two-am;\n  src: url(\"/the-rules-org/dist-ghp/assets/fonts/blackout/blackout_two_am-webfont.ttf\"); }\n\n@font-face {\n  font-family: fira-thin;\n  src: url(\"/the-rules-org/dist-ghp/assets/fonts/fira/FiraSans-Thin.otf\") format(\"opentype\"); }\n\n@font-face {\n  font-family: fira-regular;\n  src: url(\"/the-rules-org/dist-ghp/assets/fonts/fira/FiraSans-Regular.otf\") format(\"opentype\"); }\n\n@font-face {\n  font-family: fira-book;\n  src: url(\"/the-rules-org/dist-ghp/assets/fonts/fira/FiraSans-Book.otf\") format(\"opentype\"); }\n\n@font-face {\n  font-family: fira-medium;\n  src: url(\"/the-rules-org/dist-ghp/assets/fonts/fira/FiraSans-Medium.otf\") format(\"opentype\"); }\n\n@font-face {\n  font-family: fira-semibold;\n  src: url(\"/the-rules-org/dist-ghp/assets/fonts/fira/FiraSans-SemiBold.otf\"); }\n\n@font-face {\n  font-family: fira-bold;\n  src: url(\"/the-rules-org/dist-ghp/assets/fonts/fira/FiraSans-Bold.otf\") format(\"opentype\"); }\n\n@font-face {\n  font-family: fira-bold-italic;\n  src: url(\"/the-rules-org/dist-ghp/assets/fonts/fira/FiraSans-BoldItalic.otf\") format(\"opentype\"); }\n\n@font-face {\n  font-family: fira-extrabold-italic;\n  src: url(\"/the-rules-org/dist-ghp/assets/fonts/fira/FiraSans-ExtraBoldItalic.otf\") format(\"opentype\"); }\n\n/*********************\nBREAKPOINTS\n*********************/\n/*@mixin breakpoint($point) {\n   @if $point == desktop {\n     @media (min-width: 70em) { @content ; }\n  }\n   @else if $point == laptop {\n     @media (min-width: 64em) { @content ; }\n  }\n    @else if $point == tablet {\n     @media (min-width: 50em) { @content ; }\n  }\n   @else if $point == phablet {\n     @media (min-width: 37.5em)  { @content ; }\n  }\n  @else if $point == mobile {\n     @media (max-width: 37.5em)  { @content ; }\n\n  }\n}*/\n#hero {\n  position: relative; }\n  #hero video {\n    position: relative;\n    display: none; }\n    @media (min-width: 768px) {\n      #hero video {\n        display: block; } }\n  #hero .img {\n    position: absolute;\n    top: 0;\n    left: 0;\n    display: block;\n    width: 100%;\n    height: auto;\n    background-size: contain;\n    background-position: center;\n    transition: .5s opacity;\n    opacity: 0;\n    background-repeat: no-repeat; }\n    @media (min-width: 768px) {\n      #hero .img {\n        display: none; } }\n    #hero .img.active {\n      opacity: 1; }\n  #hero .img:first-child {\n    position: relative; }\n\n.video-container {\n  transition: .5s opacity;\n  opacity: 1;\n  overflow: hidden; }\n  .video-container.animate-hide {\n    opacity: 0; }\n\n#video-viewport {\n  position: relative;\n  top: 0;\n  overflow: hidden;\n  display: none; }\n  #video-viewport.animate-hide {\n    opacity: 0; }\n  @media (min-width: 768px) {\n    #video-viewport {\n      display: block; } }\n\n.video-info {\n  font-size: 14px;\n  transition: .5s all;\n  z-index: 100;\n  position: absolute;\n  margin-right: 0px;\n  margin-bottom: 10px;\n  background-color: rgba(0, 0, 0, 0.5);\n  padding: 10px 30px 10px 10px;\n  font-family: fira-regular;\n  bottom: 0;\n  right: 0;\n  max-width: 90%;\n  display: none; }\n  .video-info.animate-hide {\n    margin-right: -100px; }\n  @media (min-width: 768px) {\n    .video-info {\n      display: block; } }\n\n.promo-link {\n  color: #33ffff;\n  padding: 1em 0;\n  display: inline-block; }\n\n.top {\n  background-image: url(/the-rules-org/dist-ghp/assets/images/hero-bg.jpg);\n  background-size: cover;\n  background-position: center;\n  width: 100%;\n  padding-bottom: 5%;\n  z-index: 9999;\n  background-color: transparent;\n  -webkit-animation: move 100s infinite linear;\n          animation: move 100s infinite linear;\n  margin-top: -.1em;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -ms-flex-line-pack: center;\n      align-content: center;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column; }\n  .top .title {\n    margin-left: auto;\n    margin-right: auto;\n    margin-top: 1.1vw;\n    width: 80%;\n    font-family: blackout-midnight;\n    color: #33ffff;\n    font-size: 12vw;\n    line-height: 1;\n    text-align: center;\n    text-shadow: 2px 2px 8px #000000; }\n\n@-webkit-keyframes move {\n  from {\n    background-position: 0 center; }\n  to {\n    background-position: 100vw center; } }\n\n@keyframes move {\n  from {\n    background-position: 0 center; }\n  to {\n    background-position: 100vw center; } }\n\n.image-caption {\n  color: #ffa509;\n  font-family: fira-regular;\n  font-size: 13px;\n  background-color: black;\n  display: block;\n  padding: 5px 10px;\n  opacity: .8;\n  margin-top: -35px;\n  font-style: italic; }\n\n.join-bottom {\n  background-color: rgba(0, 0, 0, 0.5);\n  padding: 10px 20px;\n  border-left: 3px solid #33ffff;\n  font-family: fira-regular;\n  color: #e0e0e0;\n  font-size: 16px; }\n  .join-bottom p {\n    font-size: 16px; }\n  .join-bottom ul {\n    list-style-type: square; }\n\n.errorMessage {\n  color: #ffa509;\n  font-family: fira-regular;\n  font-size: .8em; }\n\n.thanks {\n  color: #ffa509;\n  font-family: blackout-two-am;\n  font-size: 1.4em; }\n", ""]);
+exports.push([module.i, "/* IMPORTS */\n/* COLORS */\n/* Alternate Palette */\n/* FONTS */\n@font-face {\n  font-family: blackout-midnight;\n  src: url(\"/the-rules-org/dist-ghp/assets/fonts/blackout/blackout_midnight-webfont.ttf\"); }\n\n@font-face {\n  font-family: blackout-two-am;\n  src: url(\"/the-rules-org/dist-ghp/assets/fonts/blackout/blackout_two_am-webfont.ttf\"); }\n\n@font-face {\n  font-family: fira-thin;\n  src: url(\"/the-rules-org/dist-ghp/assets/fonts/fira/FiraSans-Thin.otf\") format(\"opentype\"); }\n\n@font-face {\n  font-family: fira-regular;\n  src: url(\"/the-rules-org/dist-ghp/assets/fonts/fira/FiraSans-Regular.otf\") format(\"opentype\"); }\n\n@font-face {\n  font-family: fira-book;\n  src: url(\"/the-rules-org/dist-ghp/assets/fonts/fira/FiraSans-Book.otf\") format(\"opentype\"); }\n\n@font-face {\n  font-family: fira-medium;\n  src: url(\"/the-rules-org/dist-ghp/assets/fonts/fira/FiraSans-Medium.otf\") format(\"opentype\"); }\n\n@font-face {\n  font-family: fira-semibold;\n  src: url(\"/the-rules-org/dist-ghp/assets/fonts/fira/FiraSans-SemiBold.otf\"); }\n\n@font-face {\n  font-family: fira-bold;\n  src: url(\"/the-rules-org/dist-ghp/assets/fonts/fira/FiraSans-Bold.otf\") format(\"opentype\"); }\n\n@font-face {\n  font-family: fira-bold-italic;\n  src: url(\"/the-rules-org/dist-ghp/assets/fonts/fira/FiraSans-BoldItalic.otf\") format(\"opentype\"); }\n\n@font-face {\n  font-family: fira-extrabold-italic;\n  src: url(\"/the-rules-org/dist-ghp/assets/fonts/fira/FiraSans-ExtraBoldItalic.otf\") format(\"opentype\"); }\n\n/*********************\nBREAKPOINTS\n*********************/\n/*@mixin breakpoint($point) {\n   @if $point == desktop {\n     @media (min-width: 70em) { @content ; }\n  }\n   @else if $point == laptop {\n     @media (min-width: 64em) { @content ; }\n  }\n    @else if $point == tablet {\n     @media (min-width: 50em) { @content ; }\n  }\n   @else if $point == phablet {\n     @media (min-width: 37.5em)  { @content ; }\n  }\n  @else if $point == mobile {\n     @media (max-width: 37.5em)  { @content ; }\n\n  }\n}*/\n#hero {\n  position: relative; }\n  #hero video {\n    position: relative;\n    display: none; }\n    @media (min-width: 768px) {\n      #hero video {\n        display: block; } }\n  #hero .img {\n    position: absolute;\n    top: 0;\n    left: 0;\n    display: block;\n    width: 100%;\n    height: auto;\n    background-size: contain;\n    background-position: center;\n    transition: .5s opacity;\n    opacity: 0;\n    background-repeat: no-repeat; }\n    @media (min-width: 768px) {\n      #hero .img {\n        display: none; } }\n    #hero .img.active {\n      opacity: 1; }\n  #hero .img:first-child {\n    position: relative; }\n\n.video-container {\n  transition: .5s opacity;\n  opacity: 1;\n  overflow: hidden; }\n  .video-container.animate-hide {\n    opacity: 0; }\n\n#video-viewport {\n  position: relative;\n  top: 0;\n  overflow: hidden;\n  display: none; }\n  #video-viewport.animate-hide {\n    opacity: 0; }\n  @media (min-width: 768px) {\n    #video-viewport {\n      display: block; } }\n\n.video-info {\n  font-size: 14px;\n  transition: .5s all;\n  z-index: 100;\n  position: absolute;\n  margin-right: 0px;\n  margin-bottom: 10px;\n  background-color: rgba(0, 0, 0, 0.5);\n  padding: 10px 30px 10px 10px;\n  font-family: fira-regular;\n  bottom: 0;\n  right: 0;\n  max-width: 90%;\n  display: none; }\n  .video-info.animate-hide {\n    margin-right: -100px; }\n  @media (min-width: 768px) {\n    .video-info {\n      display: block; } }\n\n.promo-link {\n  color: #33ffff;\n  padding: .5em 0;\n  display: block;\n  text-align: right; }\n\n.top {\n  background-image: url(/the-rules-org/dist-ghp/assets/images/hero-bg.jpg);\n  background-size: cover;\n  background-position: center;\n  width: 100%;\n  padding-bottom: 5%;\n  z-index: 9999;\n  background-color: transparent;\n  -webkit-animation: move 100s infinite linear;\n          animation: move 100s infinite linear;\n  margin-top: -.1em;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -ms-flex-line-pack: center;\n      align-content: center;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column; }\n  .top .title {\n    margin-left: auto;\n    margin-right: auto;\n    margin-top: 1.1vw;\n    width: 80%;\n    font-family: blackout-midnight;\n    color: #33ffff;\n    font-size: 12vw;\n    line-height: 1;\n    text-align: center;\n    text-shadow: 2px 2px 8px #000000; }\n\n@-webkit-keyframes move {\n  from {\n    background-position: 0 center; }\n  to {\n    background-position: 100vw center; } }\n\n@keyframes move {\n  from {\n    background-position: 0 center; }\n  to {\n    background-position: 100vw center; } }\n\n.image-caption {\n  color: #ffa509;\n  font-family: fira-regular;\n  font-size: 13px;\n  background-color: black;\n  display: block;\n  padding: 5px 10px;\n  opacity: .8;\n  margin-top: -35px;\n  font-style: italic; }\n\n.join-bottom {\n  background-color: rgba(0, 0, 0, 0.5);\n  padding: 10px 20px;\n  border-left: 3px solid #33ffff;\n  font-family: fira-regular;\n  color: #e0e0e0;\n  font-size: 16px; }\n  .join-bottom p {\n    font-size: 16px; }\n  .join-bottom ul {\n    list-style-type: square; }\n\n.errorMessage {\n  color: #ffa509;\n  font-family: fira-regular;\n  font-size: .8em; }\n\n.thanks {\n  color: #ffa509;\n  font-family: blackout-two-am;\n  font-size: 1.4em; }\n", ""]);
 
 // exports
 
@@ -543,7 +552,7 @@ module.exports = module.exports.toString();
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePageComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -554,7 +563,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-var HomePageComponent = /** @class */ (function () {
+var HomePageComponent = (function () {
     function HomePageComponent(ref) {
         this.ref = ref;
         this.firstNameError = "";
@@ -706,12 +715,12 @@ var HomePageComponent = /** @class */ (function () {
         clearInterval(this.slideShowTimer);
     };
     HomePageComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'my-app',
             template: __webpack_require__("../../../../../src/app/home-page/home-page.component.html"),
             styles: [__webpack_require__("../../../../../src/app/home-page/home-page.component.scss")],
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["l" /* ChangeDetectorRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["l" /* ChangeDetectorRef */]) === "function" && _a || Object])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["k" /* ChangeDetectorRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["k" /* ChangeDetectorRef */]) === "function" && _a || Object])
     ], HomePageComponent);
     return HomePageComponent;
     var _a;
@@ -751,7 +760,7 @@ module.exports = module.exports.toString();
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NewsletterSignupComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -762,7 +771,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-var NewsletterSignupComponent = /** @class */ (function () {
+var NewsletterSignupComponent = (function () {
     function NewsletterSignupComponent(elementRef) {
         this.elementRef = elementRef;
     }
@@ -778,12 +787,12 @@ var NewsletterSignupComponent = /** @class */ (function () {
         this.elementRef.nativeElement.appendChild(s);
     };
     NewsletterSignupComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-newsletter-signup',
             template: __webpack_require__("../../../../../src/app/newsletter-signup/newsletter-signup.component.html"),
             styles: [__webpack_require__("../../../../../src/app/newsletter-signup/newsletter-signup.component.scss")]
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* ElementRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* ElementRef */]) === "function" && _a || Object])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]) === "function" && _a || Object])
     ], NewsletterSignupComponent);
     return NewsletterSignupComponent;
     var _a;
@@ -796,7 +805,7 @@ var NewsletterSignupComponent = /** @class */ (function () {
 /***/ "../../../../../src/app/page-postgrowth/page-postgrowth.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n\n  <div class=\"row\">\n    <div class=\"col-md-12\">\n      <h1>Protected: Post Growth</h1>\n        <h2><span style=\"color: #ef5825;\">Can We Trust ‘Green Growth’? DIY Fact Check:</span></h2>\n    </div>\n  </div>\n\n\n  <div class=\"row\">\n    <div class=\"col-md-12\">\n      <div class=\"header-image\">\n        <img class=\"\" src=\"http://blog.therules.org/wp-content/uploads/2018/03/GG-fact-check-1.gif\" alt=\"\" width=\"100%\" height=\"auto\">\n      </div>\n    </div>\n  </div>\n\n  <div class=\"row\">\n    <div class=\"col-md-12\">\n      \n      <p><span style=\"color: #ebebeb;\">Here’s the magic number: <span style=\"color: #ef5825;\">50 billion tons</span>.</span></p>\n      <p><span style=\"color: #ebebeb;\">That’s how much of the Earth’s materials and life forms we can safely use each year, without destroying the web of life. &nbsp;That includes everything from wood to plastic, fish to livestock, minerals to metals: all the physical stuff that we consume.</span></p>\n      <p><span style=\"color: #ebebeb;\">Right now, <span style=\"color: #ef5825;\">we’re using about 80 billion tons each year</span> – way over the limit. &nbsp;So for growth to be green, we need to somehow get back down to 50 billion tons despite expanding GDP.</span></p>\n      <p><span style=\"color: #ebebeb;\">When green growth theory was first mooted, there was no evidence on whether it would actually work – it was purely speculative. &nbsp;But over the past few years, three major studies have set out to examine this question.</span></p>\n      <p><span style=\"color: #ebebeb;\"><a href=\"https://www.boell.de/en/ecology/publications-green-economies-around-the-world-15194.html\">A team of scientists</a> led by Monika Dittrich ran a model showing that under business-as-usual conditions, growth will drive global resource use to a staggering <span style=\"color: #ef5825;\">180 billion tons per year by 2050</span>. &nbsp;At well over three times the safe limit, that means game over for human civilization as we know it.</span></p>\n      <p><span style=\"color: #ebebeb;\">Then the team ran the model with the optimistic assumption that every nation on Earth immediately adopts best practice in efficiency, with all the best available technology. &nbsp;The results were a bit better: we would end up<span style=\"color: #ef5825;\"> hitting 93 billion tons per year by 2050</span>. But that’s not absolute decoupling, and it’s a far cry from anything approaching green growth.</span></p>\n      <p><span style=\"color: #ebebeb;\"><a href=\"http://eprints.whiterose.ac.uk/92268/13/Owen%20Journal%20of%20Cleaner%20Production%202015%20AAM.pdf\">A second team of scientists</a> tested the same question again in 2016. &nbsp;&nbsp;They chose a different approach: they put a price on carbon rising to $250 per ton, and assumed that we double our efficiency with rapid tech innovation. &nbsp;The results were almost exactly the same. If we keep growing the global economy by 3% each year – which is what the World Bank and IMP say is required to stop this economic house of cards from collapsing &nbsp;– <span style=\"color: #ef5825;\">they found that we’ll still hit about 95 billion tons by 2050</span>. No absolute decoupling. No green growth.</span></p>\n      <p><span style=\"color: #ebebeb;\">Finally, last year <a href=\"http://www.resourcepanel.org/reports/assessing-global-resource-use\">the UN Environment Program itself</a> – one of the main cheerleaders of green growth theory – weighed in on the debate, hoping to settle the matter once and for all. &nbsp;&nbsp;They modelled a carbon price rising to a whopping $573 per ton, slapped on a material extraction tax, and assumed rapid tech innovation spurred by strong government policy. &nbsp;The results? <span style=\"color: #ef5825;\">We hit 132 billion tons by 2050</span> – even worse than the two previous studies found. Worse because this time the scientists included the “<a href=\"https://link.springer.com/book/10.1057/9780230583108\">rebound effect</a>” in their model. &nbsp;As gains in efficiency reduce the cost of commodities, demand for those commodities goes up, cancelling out some of the reductions in material use.</span></p>\n      <p><span style=\"color: #ebebeb;\">And let’s not forget: all three of these models use radically optimistic assumptions. &nbsp;We’re a long way from even testing a global carbon tax, much less a tax of $573 per ton; and we’re not on track to double our efficiency. &nbsp;In fact, quite the opposite: right now our efficiency <a href=\"http://www.materialflows.net/materialflowsnet/trends/analyses-1980-2013/trends-in-global-material-extraction-gdp-and-material-intensity-1980-2013/\">is getting worse</a>, not better.</span></p>\n      <p><span style=\"color: #ef5825;\">We cannot rely on the myth of ‘green growth’. It’s trustworthy as ‘healthy cigarettes’ or ‘clean coal’.</span></p>\n      <h2><span style=\"color: #ebebeb;\"><span style=\"color: #33ffff;\">So it’s time to make room for new systems to emerge</span> – systems that don’t require endless exponential growth just to stay afloat.</span></h2>\n      <p><span style=\"color: #ebebeb;\">There are lots of ways to get there.</span></p>\n      <p><span style=\"color: #ebebeb;\">We could start by ditching GDP as an indicator of success in favor of a more balanced measure like the <a href=\"http://rprogress.org/sustainability_indicators/genuine_progress_indicator.htm\">Genuine Progress Indicator</a>, which accounts for negative “externalities” like pollution and material depletion. &nbsp;&nbsp;We could roll out a <a href=\"https://www.theguardian.com/global-development-professionals-network/2016/nov/05/how-a-new-money-system-could-help-stop-climate-change\">new money system</a> that doesn’t pump our system full of interest-bearing debt. And we could start thinking about putting <a href=\"https://peg.primeeconomics.org/policybriefs/a-sustainable-economy\">caps on material use</a>, so that we never extract more than the Earth can regenerate.</span></p>\n      <p><span style=\"color: #ebebeb;\">The old generation of innovators believed that tech would allow us to subdue nature and bend it to our will. &nbsp;Our generation is waking up to a more hopeful truth: that our survival depends not on domination, but on harmony.</span></p>\n\n      <p style=\"text-align: center;\"><span style=\"color: #ebebeb;\">For more information on post-growth economics:</span></p>\n\n    </div>\n  </div>\n\n  <!-- YOUTUBE VIDEOS -->\n  <div class=\"row\">\n    <div class=\"col-md-12\">\n      <app-video-overlay [ytid]=\"'vs9NKdGrmdA'\" [noOverlay]=\"true\">\n      </app-video-overlay>\n    </div>\n  </div>\n  <div class=\"row\">\n    <div class=\"col-md-12\">\n      <app-video-overlay [ytid]=\"'zCRKvDyyHmI'\" [noOverlay]=\"true\">\n      </app-video-overlay>\n    </div>\n  </div>\n\n  <div class=\"row\">\n    <div class=\"col-md-12\">\n      <p><span style=\"color: #ebebeb;\">The Post-Growth Institute –</span>&nbsp;<a href=\"https://www.postgrowth.org/post-growth-economics\">https://www.postgrowth.org/post-growth-economics</a></p>\n    </div>\n  </div>\n\n  <div class=\"row\">\n    <div class=\"col-md-12\">\n      <h2>\n        <span style=\"color: #ebebeb;\">Culture Hackers towards <span style=\"color: #33ffff;\">#PostGrowth</span>: share, remix, create your own content.&nbsp;</span>\n      </h2>\n    </div>\n  </div>\n      \n  <!--IMAGES-->\n  <div class=\"row\">\n    <div class=\"col-md-6\">\n      <a href=\"http://blog.therules.org/wp-content/uploads/2018/03/Green-Growth-Explained-1.jpg\" title=\"Green Growth Infographic (1 of 4)\" target=\"_blank\"><img src=\"http://blog.therules.org/wp-content/uploads/2018/03/Green-Growth-Explained-1-768x768.jpg\" width=\"100%\" height=\"auto\"></a>\n    </div>\n    <div class=\"col-md-6\">\n      <a href=\"http://blog.therules.org/wp-content/uploads/2018/03/Green-Growth-Explained-2.jpg\" title=\"Green Growth Infographic (2 of 4)\" target=\"_blank\"><img src=\"http://blog.therules.org/wp-content/uploads/2018/03/Green-Growth-Explained-2-768x771.jpg\" width=\"100%\" height=\"auto\"></a>\n    </div>\n  </div>\n\n  <div class=\"row\">\n    <div class=\"col-md-6\">\n      <a href=\"http://blog.therules.org/wp-content/uploads/2018/03/Green-Growth-Explained-3.jpg\" title=\"Green Growth Infographic (3 of 4)\" target=\"_blank\"><img src=\"http://blog.therules.org/wp-content/uploads/2018/03/Green-Growth-Explained-3-768x765.jpg\" width=\"100%\" height=\"auto\"></a>\n    </div>\n    <div class=\"col-md-6\">\n      <a href=\"http://blog.therules.org/wp-content/uploads/2018/03/Green-Growth-Explained-4.jpg\" title=\"Green Growth Infographic (4 of 4)\" target=\"_blank\"><img src=\"http://blog.therules.org/wp-content/uploads/2018/03/Green-Growth-Explained-4-768x766.jpg\" width=\"100%\" height=\"auto\"></a>\n    </div>\n  </div>\n\n  <!-- YOUTUBE VIDEO -->\n  <div class=\"row\">\n    <div class=\"col-md-12\">\n      <app-video-overlay [ytid]=\"'ACke28f3swE'\" [noOverlay]=\"true\"></app-video-overlay>\n    </div>\n  </div>\n\n</div>\n"
+module.exports = "<div class=\"container\">\n\n  <div class=\"row\">\n    <div class=\"col-md-12\">\n      <h1>Post Growth</h1>\n        <h2><span style=\"color: #ef5825;\">Can We Trust ‘Green Growth’? DIY Fact Check:</span></h2>\n    </div>\n  </div>\n\n\n  <div class=\"row\">\n    <div class=\"col-md-12\">\n      <div class=\"header-image\">\n        <img class=\"\" src=\"http://blog.therules.org/wp-content/uploads/2018/03/GG-fact-check-1.gif\" alt=\"\" width=\"100%\" height=\"auto\">\n      </div>\n    </div>\n  </div>\n\n  <div class=\"row\">\n    <div class=\"col-md-12\">\n      \n      <p><span style=\"color: #ebebeb;\">Here’s the magic number: <span style=\"color: #ef5825;\">50 billion tons</span>.</span></p>\n      <p><span style=\"color: #ebebeb;\">That’s how much of the Earth’s materials and life forms we can safely use each year, without destroying the web of life. &nbsp;That includes everything from wood to plastic, fish to livestock, minerals to metals: all the physical stuff that we consume.</span></p>\n      <p><span style=\"color: #ebebeb;\">Right now, <span style=\"color: #ef5825;\">we’re using about 80 billion tons each year</span> – way over the limit. &nbsp;So for growth to be green, we need to somehow get back down to 50 billion tons despite expanding GDP.</span></p>\n      <p><span style=\"color: #ebebeb;\">When green growth theory was first mooted, there was no evidence on whether it would actually work – it was purely speculative. &nbsp;But over the past few years, three major studies have set out to examine this question.</span></p>\n      <p><span style=\"color: #ebebeb;\"><a href=\"https://www.boell.de/en/ecology/publications-green-economies-around-the-world-15194.html\">A team of scientists</a> led by Monika Dittrich ran a model showing that under business-as-usual conditions, growth will drive global resource use to a staggering <span style=\"color: #ef5825;\">180 billion tons per year by 2050</span>. &nbsp;At well over three times the safe limit, that means game over for human civilization as we know it.</span></p>\n      <p><span style=\"color: #ebebeb;\">Then the team ran the model with the optimistic assumption that every nation on Earth immediately adopts best practice in efficiency, with all the best available technology. &nbsp;The results were a bit better: we would end up<span style=\"color: #ef5825;\"> hitting 93 billion tons per year by 2050</span>. But that’s not absolute decoupling, and it’s a far cry from anything approaching green growth.</span></p>\n      <p><span style=\"color: #ebebeb;\"><a href=\"http://eprints.whiterose.ac.uk/92268/13/Owen%20Journal%20of%20Cleaner%20Production%202015%20AAM.pdf\">A second team of scientists</a> tested the same question again in 2016. &nbsp;&nbsp;They chose a different approach: they put a price on carbon rising to $250 per ton, and assumed that we double our efficiency with rapid tech innovation. &nbsp;The results were almost exactly the same. If we keep growing the global economy by 3% each year – which is what the World Bank and IMP say is required to stop this economic house of cards from collapsing &nbsp;– <span style=\"color: #ef5825;\">they found that we’ll still hit about 95 billion tons by 2050</span>. No absolute decoupling. No green growth.</span></p>\n      <p><span style=\"color: #ebebeb;\">Finally, last year <a href=\"http://www.resourcepanel.org/reports/assessing-global-resource-use\">the UN Environment Program itself</a> – one of the main cheerleaders of green growth theory – weighed in on the debate, hoping to settle the matter once and for all. &nbsp;&nbsp;They modelled a carbon price rising to a whopping $573 per ton, slapped on a material extraction tax, and assumed rapid tech innovation spurred by strong government policy. &nbsp;The results? <span style=\"color: #ef5825;\">We hit 132 billion tons by 2050</span> – even worse than the two previous studies found. Worse because this time the scientists included the “<a href=\"https://link.springer.com/book/10.1057/9780230583108\">rebound effect</a>” in their model. &nbsp;As gains in efficiency reduce the cost of commodities, demand for those commodities goes up, cancelling out some of the reductions in material use.</span></p>\n      <p><span style=\"color: #ebebeb;\">And let’s not forget: all three of these models use radically optimistic assumptions. &nbsp;We’re a long way from even testing a global carbon tax, much less a tax of $573 per ton; and we’re not on track to double our efficiency. &nbsp;In fact, quite the opposite: right now our efficiency <a href=\"http://www.materialflows.net/materialflowsnet/trends/analyses-1980-2013/trends-in-global-material-extraction-gdp-and-material-intensity-1980-2013/\">is getting worse</a>, not better.</span></p>\n\n      <p><span style=\"color: #ef5825;\">We cannot rely on the myth of ‘green growth’. It’s trustworthy as ‘healthy cigarettes’ or ‘clean coal’.</span></p>\n    </div>\n  </div>\n\n  <!-- YOUTUBE VIDEO -->\n  <div class=\"row\">\n    <div class=\"col-md-12\">\n      <app-video-overlay [ytid]=\"'JO36VGjdMq8'\" [noOverlay]=\"true\"></app-video-overlay>\n    </div>\n  </div>\n\n  <div class=\"row\">\n    <div class=\"col-md-12\">\n      <h2><span style=\"color: #ebebeb;\"><span style=\"color: #33ffff;\">So it’s time to make room for new systems to emerge</span> – systems that don’t require endless exponential growth just to stay afloat.</span></h2>\n      <p><span style=\"color: #ebebeb;\">There are lots of ways to get there.</span></p>\n      <p><span style=\"color: #ebebeb;\">We could start by ditching GDP as an indicator of success in favor of a more balanced measure like the <a href=\"http://rprogress.org/sustainability_indicators/genuine_progress_indicator.htm\">Genuine Progress Indicator</a>, which accounts for negative “externalities” like pollution and material depletion. &nbsp;&nbsp;We could roll out a <a href=\"https://www.theguardian.com/global-development-professionals-network/2016/nov/05/how-a-new-money-system-could-help-stop-climate-change\">new money system</a> that doesn’t pump our system full of interest-bearing debt. And we could start thinking about putting <a href=\"https://peg.primeeconomics.org/policybriefs/a-sustainable-economy\">caps on material use</a>, so that we never extract more than the Earth can regenerate.</span></p>\n      <p><span style=\"color: #ebebeb;\">The old generation of innovators believed that tech would allow us to subdue nature and bend it to our will. &nbsp;Our generation is waking up to a more hopeful truth: that our survival depends not on domination, but on harmony.</span></p>\n\n    </div>\n  </div>\n\n   <div class=\"row\">\n    <div class=\"col-md-12\">\n      <h3 style=\"text-align: center;\"><span style=\"color: #ebebeb;\">For more information on post-growth economics:</span></h3>\n    </div>\n  </div>\n\n  <!-- YOUTUBE VIDEOS -->\n  <div class=\"row\">\n    <div class=\"col-md-6\">\n      <app-video-overlay [ytid]=\"'vs9NKdGrmdA'\" [noOverlay]=\"true\">\n      </app-video-overlay>\n    </div>\n\n    <div class=\"col-md-6\">\n      <app-video-overlay [ytid]=\"'zCRKvDyyHmI'\" [noOverlay]=\"true\">\n      </app-video-overlay>\n    </div>\n  </div>\n\n  <div class=\"row\">\n    <div class=\"col-md-12\">\n      <p><span style=\"color: #ebebeb;\">The Post-Growth Institute –</span>&nbsp;<a href=\"https://www.postgrowth.org/post-growth-economics\">https://www.postgrowth.org/post-growth-economics</a></p>\n    </div>\n  </div>\n\n  <div class=\"row\">\n    <div class=\"col-md-12\">\n      <h2>\n        <span style=\"color: #ebebeb;\">Culture Hackers towards <span style=\"color: #33ffff;\">#PostGrowth</span>: share, remix, create your own content.&nbsp;</span>\n      </h2>\n    </div>\n  </div>\n      \n  <!--IMAGES-->\n\n  \n\n  <div class=\"row\">\n    <div class=\"col-md-6\">\n      <app-sharable-image [url]=\"'http://blog.therules.org/wp-content/uploads/2018/03/Green-Growth-Explained-1.jpg'\" [title]=\"'Green Growth Infographic (1 of 4)'\">\n      </app-sharable-image>\n    </div>\n\n    <div class=\"col-md-6\">\n      <app-sharable-image [url]=\"'http://blog.therules.org/wp-content/uploads/2018/03/Green-Growth-Explained-2.jpg'\" [title]=\"'Green Growth Infographic (2 of 4)'\">\n      </app-sharable-image>\n    </div>\n  </div>\n\n  <div class=\"row\">\n    <div class=\"col-md-6\">\n      <app-sharable-image [url]=\"'http://blog.therules.org/wp-content/uploads/2018/03/Green-Growth-Explained-3.jpg'\" [title]=\"'Green Growth Infographic (3 of 4)'\">\n      </app-sharable-image>\n    </div>\n    <div class=\"col-md-6\">\n      <app-sharable-image [url]=\"'http://blog.therules.org/wp-content/uploads/2018/03/Green-Growth-Explained-4.jpg'\" [title]=\"'Green Growth Infographic (4 of 4)'\">\n      </app-sharable-image>\n    </div>\n  </div>\n\n  <!-- YOUTUBE VIDEO -->\n  <div class=\"row\">\n    <div class=\"col-md-12\">\n      <app-video-overlay [ytid]=\"'JO36VGjdMq8'\" [noOverlay]=\"true\"></app-video-overlay>\n    </div>\n  </div>\n\n</div>\n"
 
 /***/ }),
 
@@ -823,7 +832,7 @@ module.exports = module.exports.toString();
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PagePostgrowthComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -834,13 +843,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-var PagePostgrowthComponent = /** @class */ (function () {
+var PagePostgrowthComponent = (function () {
     function PagePostgrowthComponent() {
     }
     PagePostgrowthComponent.prototype.ngOnInit = function () {
     };
     PagePostgrowthComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-page-postgrowth',
             template: __webpack_require__("../../../../../src/app/page-postgrowth/page-postgrowth.component.html"),
             styles: [__webpack_require__("../../../../../src/app/page-postgrowth/page-postgrowth.component.scss")]
@@ -884,8 +893,8 @@ module.exports = module.exports.toString();
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SearchableAccordianComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/esm5/http.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -897,7 +906,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var SearchableAccordianComponent = /** @class */ (function () {
+var SearchableAccordianComponent = (function () {
     function SearchableAccordianComponent(http) {
         this.http = http;
         this.searchTerm = "";
@@ -934,15 +943,15 @@ var SearchableAccordianComponent = /** @class */ (function () {
             this.panelClicked = true;
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* Input */])(),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])(),
         __metadata("design:type", String)
     ], SearchableAccordianComponent.prototype, "title", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* Input */])(),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])(),
         __metadata("design:type", String)
     ], SearchableAccordianComponent.prototype, "dataFile", void 0);
     SearchableAccordianComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-searchable-accordian',
             template: __webpack_require__("../../../../../src/app/searchable-accordian/searchable-accordian.component.html"),
             styles: [__webpack_require__("../../../../../src/app/searchable-accordian/searchable-accordian.component.scss")]
@@ -954,6 +963,75 @@ var SearchableAccordianComponent = /** @class */ (function () {
 }());
 
 //# sourceMappingURL=searchable-accordian.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/sharable-image/sharable-image.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".sharable-image{\n  background-color: rgba(0,0,0,.5);\n  border: 2px solid rgba(255,255,255,.2);\n}\n\n.share{\n  padding: .5em 1em;\n}", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/sharable-image/sharable-image.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"sharable-image\">\n  <a href=\"{{url}}\" title=\"{{title}}\" target=\"_blank\"><img src=\"{{url}}\" alt=\"{{title}}\" width=\"100%\" height=\"auto\"></a>\n\n  <div class=\"share\">\n    Share this: \n    <share-button button=\"facebook\" [url]=url ></share-button>\n    <share-button button=\"twitter\" [url]=url></share-button>\n    <share-button button=\"pinterest\" [url]=url></share-button>\n  </div>\n</div>"
+
+/***/ }),
+
+/***/ "../../../../../src/app/sharable-image/sharable-image.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SharableImageComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var SharableImageComponent = (function () {
+    function SharableImageComponent() {
+    }
+    SharableImageComponent.prototype.ngOnInit = function () {
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])(),
+        __metadata("design:type", String)
+    ], SharableImageComponent.prototype, "url", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])(),
+        __metadata("design:type", String)
+    ], SharableImageComponent.prototype, "title", void 0);
+    SharableImageComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-sharable-image',
+            template: __webpack_require__("../../../../../src/app/sharable-image/sharable-image.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/sharable-image/sharable-image.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], SharableImageComponent);
+    return SharableImageComponent;
+}());
+
+//# sourceMappingURL=sharable-image.component.js.map
 
 /***/ }),
 
@@ -987,8 +1065,8 @@ module.exports = module.exports.toString();
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VideoOverlayComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__("../../../platform-browser/@angular/platform-browser.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__("../../../platform-browser/esm5/platform-browser.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1000,7 +1078,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var VideoOverlayComponent = /** @class */ (function () {
+var VideoOverlayComponent = (function () {
     function VideoOverlayComponent(sanitizer, ref) {
         this.sanitizer = sanitizer;
         this.ref = ref;
@@ -1053,20 +1131,20 @@ var VideoOverlayComponent = /** @class */ (function () {
         this.url = this.sanitizer.bypassSecurityTrustResourceUrl(ytUrl);
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* Input */])(),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])(),
         __metadata("design:type", String)
     ], VideoOverlayComponent.prototype, "ytid", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* Input */])(),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])(),
         __metadata("design:type", Object)
     ], VideoOverlayComponent.prototype, "noOverlay", void 0);
     VideoOverlayComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-video-overlay',
             template: __webpack_require__("../../../../../src/app/video-overlay/video-overlay.component.html"),
             styles: [__webpack_require__("../../../../../src/app/video-overlay/video-overlay.component.scss")]
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["b" /* DomSanitizer */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["b" /* DomSanitizer */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["l" /* ChangeDetectorRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["l" /* ChangeDetectorRef */]) === "function" && _b || Object])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["b" /* DomSanitizer */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["b" /* DomSanitizer */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["k" /* ChangeDetectorRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["k" /* ChangeDetectorRef */]) === "function" && _b || Object])
     ], VideoOverlayComponent);
     return VideoOverlayComponent;
     var _a, _b;
@@ -1097,8 +1175,8 @@ var environment = {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__("../../../platform-browser-dynamic/@angular/platform-browser-dynamic.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__("../../../platform-browser-dynamic/esm5/platform-browser-dynamic.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__("../../../../../src/app/app.module.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__("../../../../../src/environments/environment.ts");
 
@@ -1106,7 +1184,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].production) {
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_23" /* enableProdMode */])();
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_15" /* enableProdMode */])();
 }
 Object(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_2__app_app_module__["a" /* AppModule */]);
 //# sourceMappingURL=main.js.map
