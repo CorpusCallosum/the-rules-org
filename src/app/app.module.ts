@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule }   from '@angular/router';
 
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+
 import{AppRoutingModule}  from './app-routing.module'
 
 //my custom components and services imported here
@@ -16,7 +18,20 @@ import { SearchableAccordianComponent } from './searchable-accordian/searchable-
 import { BannerComponent } from './banner/banner.component';
 import { VideoOverlayComponent } from './video-overlay/video-overlay.component';
 import { NewsletterSignupComponent } from './newsletter-signup/newsletter-signup.component';
+import { PagePostgrowthComponent } from './page-postgrowth/page-postgrowth.component';
+import { SharableImageComponent } from './sharable-image/sharable-image.component';
 
+
+//share buttons
+import {ShareButtonsModule} from 'ngx-sharebuttons';
+import { ShareButtonsOptions } from '@ngx-share/core';
+
+//share buttons options
+const customOptions: ShareButtonsOptions = {
+  include: ['facebook', 'twitter', 'pinterest'],
+  exclude: ['tumblr', 'stumble', 'vk'],
+  theme: 'circles-dark'
+}
 
 //
 @NgModule({
@@ -30,15 +45,19 @@ import { NewsletterSignupComponent } from './newsletter-signup/newsletter-signup
     SearchableAccordianComponent,
     BannerComponent,
     VideoOverlayComponent,
-    NewsletterSignupComponent
-  ],
+    NewsletterSignupComponent,
+    PagePostgrowthComponent,
+    SharableImageComponent
+   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ShareButtonsModule.forRoot(customOptions),
+    HttpClientModule
   ],
-  providers: [],
+  providers: [HttpClientModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

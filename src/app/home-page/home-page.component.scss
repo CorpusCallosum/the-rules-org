@@ -42,7 +42,6 @@
   .img:first-child{
     position: relative;
   }
-
 }
 
 .video-container{
@@ -89,6 +88,13 @@
   @include breakpoint(sm){
     display: block;
   }
+}
+
+.promo-link{
+  color: $accentColor1;
+  padding: .5em 0;
+  display: block;
+  text-align: right;
 }
 
 .top{
