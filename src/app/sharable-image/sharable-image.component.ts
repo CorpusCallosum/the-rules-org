@@ -9,6 +9,8 @@ export class SharableImageComponent implements OnInit {
 
   @Input() url:string;
   @Input() title:string;
+  @Input() description:string;
+  @Input() tags:string;
 
 
   constructor() { }

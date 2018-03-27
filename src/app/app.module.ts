@@ -7,7 +7,6 @@ import { RouterModule }   from '@angular/router';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 import{AppRoutingModule}  from './app-routing.module'
-import {ShareButtonsModule} from 'ngx-sharebuttons';
 
 //my custom components and services imported here
 import { AppComponent }        from './app.component';
@@ -22,6 +21,17 @@ import { NewsletterSignupComponent } from './newsletter-signup/newsletter-signup
 import { PagePostgrowthComponent } from './page-postgrowth/page-postgrowth.component';
 import { SharableImageComponent } from './sharable-image/sharable-image.component';
 
+
+//share buttons
+import {ShareButtonsModule} from 'ngx-sharebuttons';
+import { ShareButtonsOptions } from '@ngx-share/core';
+
+//share buttons options
+const customOptions: ShareButtonsOptions = {
+  include: ['facebook', 'twitter', 'pinterest'],
+  exclude: ['tumblr', 'stumble', 'vk'],
+  theme: 'circles-dark'
+}
 
 //
 @NgModule({
@@ -44,7 +54,7 @@ import { SharableImageComponent } from './sharable-image/sharable-image.componen
     FormsModule,
     HttpModule,
     AppRoutingModule,
-    ShareButtonsModule.forRoot(),
+    ShareButtonsModule.forRoot(customOptions),
     HttpClientModule
   ],
   providers: [HttpClientModule],
